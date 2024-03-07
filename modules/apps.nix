@@ -49,6 +49,9 @@
     remmina         # Remote desktop client
     vscode          # Code editor
     appimage-run    # AppImage runner
+    slack           # Team communication
+    teams-for-linux # Unifficial Microsoft Teams client
+    discord         # Server communication
     #looking-glass-client # GPU accelerated KVM
     #obs-studio-plugins.looking-glass-obs # Looking Glass OBS plugin
 
