@@ -29,10 +29,10 @@
     rpcs3           # ps3 emulator
     ryujinx         # switch emulator
     dolphin-emu     # gamecube and wii emulator
-    retroarchFull   # multi-system emulator
+#    retroarchFull   # multi-system emulator
 
     # Media
-    davinci-resolve # Video Editor
+#    davinci-resolve # Video Editor
     obs-studio      # Streaming and recording
     ffmpeg          # Video and audio processing
 
