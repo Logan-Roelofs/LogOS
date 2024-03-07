@@ -52,6 +52,9 @@
     #looking-glass-client # GPU accelerated KVM
     #obs-studio-plugins.looking-glass-obs # Looking Glass OBS plugin
 
+    # Development
+    hugo            # Static site generator
+
     ];
 
   # This is required to run DaVinci Resolve to run on my AMD APU
