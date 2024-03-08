@@ -6,7 +6,7 @@
     firefox         # Firefox
     chromium        # Chromium
 
-    # CLI Utilities
+    # System Utilities
     util-linux      # mount kill lsblk etc
     tree            # list directory structure
     tldr            # Quick help for commands
@@ -19,7 +19,8 @@
     kitty           # The CLI itself
     gparted         # Partition manager
     ripgrep         # Fast file search   
-
+    gparted         # Partition manager
+    
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
     steam           # Steam
