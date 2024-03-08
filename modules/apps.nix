@@ -19,8 +19,8 @@
     kitty           # The CLI itself
     gparted         # Partition manager
     ripgrep         # Fast file search   
-    gparted         # Partition manager
-    
+    partition-manager # Partition manager
+
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
     steam           # Steam
