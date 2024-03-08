@@ -19,7 +19,6 @@
     kitty           # The CLI itself
     gparted         # Partition manager
     ripgrep         # Fast file search   
-    inetutils       # ping, ifconfig, etc
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
@@ -44,6 +43,8 @@
     hashcat         # Password cracker
     hash-identifier # Hash identifier
     burpsuite       # Web application security testing
+    samba4Full      # SmbClient and Samba server
+    inetutils       # telnet, ftp, rsh, rlogin, rcp, and rwho
 
     # GUI Applications
     spotify         # Music streaming
