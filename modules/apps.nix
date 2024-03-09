@@ -19,6 +19,7 @@
     kitty           # The CLI itself
     gparted         # Partition manager
     ripgrep         # Fast file search   
+    ventoy-full     # USB bootable drive creator
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
