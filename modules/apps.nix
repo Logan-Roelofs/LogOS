@@ -19,7 +19,6 @@
     kitty           # The CLI itself
     gparted         # Partition manager
     ripgrep         # Fast file search   
-    ventoy-full     # USB bootable drive creator
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
@@ -56,6 +55,7 @@
     slack           # Team communication
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
+
     #looking-glass-client # GPU accelerated KVM
     #obs-studio-plugins.looking-glass-obs # Looking Glass OBS plugin
 
@@ -69,4 +69,6 @@
     rocmPackages.clr.icd
   ];
 
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 }
