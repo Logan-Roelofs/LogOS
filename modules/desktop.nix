@@ -13,11 +13,9 @@
   ];
 
   security.polkit.enable = true;
-
   services.upower.enable = true;
 
   environment.systemPackages = with pkgs; [
-    polkit
     swww
     hyprpicker
     fd
