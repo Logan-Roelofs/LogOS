@@ -64,7 +64,6 @@
 
 
     # Virtualization
-    kvm            # Virtualization
     virt-manager   # Virtualization manager
     ];
 
