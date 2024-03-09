@@ -62,13 +62,14 @@
     # Development
     hugo            # Static site generator
 
+
+    # Virtualization
+    kvm            # Virtualization
+    virt-manager   # Virtualization manager
     ];
 
   # This is required to run DaVinci Resolve to run on my AMD APU
   hardware.opengl.extraPackages = with pkgs; [
     rocmPackages.clr.icd
   ];
-
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
 }
