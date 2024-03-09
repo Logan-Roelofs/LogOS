@@ -35,7 +35,7 @@
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username asztal; };
         modules = [ 
-          /etc/nixos/hardware-configuration.nix 
+          ./hardware/hardware-configuration.nix 
           ./modules/default.nix 
           inputs.home-manager.nixosModules.default
         ];
