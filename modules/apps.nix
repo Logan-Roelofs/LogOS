@@ -19,7 +19,7 @@
     kitty           # The CLI itself
     gparted         # Partition manager
     ripgrep         # Fast file search   
-    UNetbootin      # Bootable USB creator
+    unetbootin      # Bootable USB creator
     
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
