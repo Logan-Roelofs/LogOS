@@ -64,11 +64,11 @@ const options = mkOptions(OPTIONS, {
         layout: {
             start: opt<BarWidget[]>([
                 "launcher",
-                "workspaces",
+                "date",
                 "expander",
             ]),
             center: opt<BarWidget[]>([
-                "date",
+                "workspaces",
             ]),
             end: opt<BarWidget[]>([
 //                "media",
