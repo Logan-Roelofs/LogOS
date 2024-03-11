@@ -16,7 +16,7 @@ const options = mkOptions(OPTIONS, {
                 bg: opt("#e55f86"),
                 fg: opt("#141414"),
             },
-            bg: opt("#171717"),
+            bg: opt("#111111"),
             fg: opt("#eeeeee"),
             widget: opt("#eeeeee"),
             border: opt("#eeeeee"),
