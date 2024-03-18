@@ -20,6 +20,7 @@
     gparted         # Partition manager
     ripgrep         # Fast file search   
     freerdp
+    mongosh
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
