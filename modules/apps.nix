@@ -47,6 +47,7 @@
     samba           # Smb client
     inetutils       # telnet, ftp, rsh, rlogin, rcp, and rwho
     redis           # Redis-cli
+    gobuster
 
     # GUI Applications
     spotify         # Music streaming
