@@ -12,6 +12,11 @@
 
   ];
 
+  networking.extraHosts =
+    ''
+      10.10.11.227 tickets.keeper.htb keeper.htb
+    '';
+
   # Define Common System Packages
   environment.systemPackages = with pkgs; [
     blueberry
