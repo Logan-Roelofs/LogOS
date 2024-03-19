@@ -21,6 +21,7 @@
     ripgrep         # Fast file search   
     freerdp
     mongosh
+    updog
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
