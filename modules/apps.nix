@@ -65,6 +65,7 @@
 
     # Development
     python3
+    python2
     hugo            # Static site generator
 
 
