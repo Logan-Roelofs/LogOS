@@ -14,7 +14,7 @@
 
   networking.extraHosts =
     ''
-      10.10.11.227 tickets.keeper.htb keeper.htb
+      10.10.11.230 cozyhosting.htb
     '';
 
   # Define Common System Packages
