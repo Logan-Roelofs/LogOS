@@ -64,6 +64,7 @@
     #obs-studio-plugins.looking-glass-obs # Looking Glass OBS plugin
 
     # Development
+    python3
     hugo            # Static site generator
 
 
