@@ -39,6 +39,9 @@
     obs-studio      # Streaming and recording
     ffmpeg          # Video and audio processing
     grimblast
+    grim
+    slurp
+    wl-clipboard
 
     # Security Tools
     rustscan        # Fast port scanner
