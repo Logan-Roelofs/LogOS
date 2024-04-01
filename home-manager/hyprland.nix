@@ -82,6 +82,7 @@
           "$mainMod, R, exec, ags -t applauncher"
           "$mainMod, V, togglefloating,"
           "$mainMod, J, togglesplit, # dwindle"
+	  "$mainMod, S, exec, grimblast copy"
 
           "$mainMod, left, movefocus, l"
           "$mainMod, right, movefocus, r"
@@ -109,6 +110,7 @@
           "$mainMod SHIFT, 8, movetoworkspace, 8"
           "$mainMod SHIFT, 9, movetoworkspace, 9"
           "$mainMod SHIFT, 0, movetoworkspace, 10"
+      	  
       ];
 
       bindm = [
