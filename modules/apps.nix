@@ -38,6 +38,7 @@
 #    davinci-resolve # Video Editor
     obs-studio      # Streaming and recording
     ffmpeg          # Video and audio processing
+    gimp
     grimblast
     grim
     slurp
