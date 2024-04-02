@@ -22,6 +22,7 @@
     freerdp
     mongosh
     updog
+    tmux
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
