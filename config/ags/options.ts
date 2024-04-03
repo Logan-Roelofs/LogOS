@@ -73,8 +73,8 @@ const options = mkOptions(OPTIONS, {
             end: opt<BarWidget[]>([
 //                "media",
                 "expander",
-                "taskbar",
-                "messages",
+//                "taskbar",
+//                "messages",
 //                "systray",
                 "colorpicker",
 //                "screenrecord",
