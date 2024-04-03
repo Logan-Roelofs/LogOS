@@ -24,7 +24,7 @@
     updog
     tmux
     chafa
-    nvim
+    neovim
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
