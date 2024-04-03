@@ -25,7 +25,7 @@
 
   };
 
-  outputs = { self, nixpkgs, neovim-config, ... }@inputs:
+  outputs = { self, nixpkgs,  ... }@inputs:
     let
       username = "logan";
       system = "x86_64-linux";
@@ -35,7 +35,7 @@
       
       # Logos NixOs configuration
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs username asztal neovim-config; };
+        specialArgs = { inherit inputs username asztal; };
         modules = [ 
           ./hardware/hardware-configuration.nix 
           ./modules/default.nix 
