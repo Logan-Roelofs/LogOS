@@ -31,7 +31,7 @@
     attract-mode    # frontend for emulators
     xemu            # xbox emulator
     pcsx2           # ps2 emulator
-    rpcs3           # ps3 emulator
+#    rpcs3           # ps3 emulator
     ryujinx         # switch emulator
     dolphin-emu     # gamecube and wii emulator
 #    retroarchFull   # multi-system emulator
