@@ -73,7 +73,6 @@
 
     # Development
     python3
-    python2
     hugo            # Static site generator
 
 
@@ -84,9 +83,5 @@
   # This is required to run DaVinci Resolve to run on my AMD APU
   hardware.opengl.extraPackages = with pkgs; [
     rocmPackages.clr.icd
-  ];
-  
-  nixpkgs.config.permittedInsecurePackages = [
-    "python-2.7.18.7"
   ];
 }
