@@ -25,7 +25,7 @@
 
   # Initialize home-manager
   home-manager = {
-    extraSpecialArgs = { inherit inputs username asztal;};
+    extraSpecialArgs = { inherit inputs username asztal neovim-config;};
     users = {
       "${username}" = import ../home-manager/default.nix;
     };

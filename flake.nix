@@ -7,6 +7,8 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
+    neovim-config.url = "github:Logan-Roelofs/nvim-config";
+
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,7 +25,7 @@
 
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, neovim-config, ... }@inputs:
     let
       username = "logan";
       system = "x86_64-linux";
@@ -33,7 +35,7 @@
       
       # Logos NixOs configuration
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs username asztal; };
+        specialArgs = { inherit inputs username asztal neovim-config; };
         modules = [ 
           ./hardware/hardware-configuration.nix 
           ./modules/default.nix 

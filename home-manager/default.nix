@@ -1,10 +1,11 @@
-{ asztal, lib, pkgs, inputs, username,... }:
+{ asztal, lib, pkgs, inputs, username, neovim-config, ... }:
 let
   hyprlandConfig = import ./hyprland.nix { inherit lib pkgs inputs; };
   agsConfig = import ./ags.nix { inherit lib pkgs inputs asztal; };
   themeConfig = import ./theme.nix { inherit lib pkgs inputs asztal; };
   neovimConfig = import ./neovim.nix { inherit lib pkgs inputs asztal; };
   firefoxConfig = import ./firefox.nix { inherit lib pkgs inputs asztal; };
+  nvim = import ./nvim.nix {inherit lib pkgs inputs asztal neovim-config username; };
 in
 {
   home.username = "${username}";
@@ -23,6 +24,7 @@ in
     themeConfig
     neovimConfig
     firefoxConfig
+    neovim-config
   ];
 
 }
