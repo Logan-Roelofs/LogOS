@@ -5,7 +5,7 @@ let
   themeConfig = import ./theme.nix { inherit lib pkgs inputs asztal; };
   neovimConfig = import ./neovim.nix { inherit lib pkgs inputs asztal; };
   firefoxConfig = import ./firefox.nix { inherit lib pkgs inputs asztal; };
-  nvim = import ./nvim.nix {inherit lib pkgs inputs asztal neovim-config username; };
+  nvimConfig = import ./nvim.nix {inherit lib pkgs inputs asztal username; };
 in
 {
   home.username = "${username}";
@@ -22,9 +22,8 @@ in
     hyprlandConfig
     agsConfig
     themeConfig
-    neovimConfig
     firefoxConfig
-    neovim-config
+    nvimConfig
   ];
 
 }

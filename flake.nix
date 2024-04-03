@@ -7,8 +7,6 @@
 
     hyprland.url = "github:hyprwm/Hyprland";
 
-    neovim-config.url = "github:Logan-Roelofs/nvim-config";
-
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
