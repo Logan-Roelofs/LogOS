@@ -72,7 +72,9 @@
     #looking-glass-client # GPU accelerated KVM
     #obs-studio-plugins.looking-glass-obs # Looking Glass OBS plugin
     appeditor
-
+    gettext
+    meson
+    vala
 
     # Development
     python3
