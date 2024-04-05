@@ -25,7 +25,6 @@
     tmux
     chafa
     neovim
-    hicolor-icon-theme
 
     # Emulators and Game Managment
     steam-rom-manager # Steam ROM Manager
