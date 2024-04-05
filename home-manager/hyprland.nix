@@ -82,7 +82,7 @@
           "$mainMod, R, exec, ags -t applauncher"
           "$mainMod, V, togglefloating,"
           "$mainMod, J, togglesplit, # dwindle"
-	  "$mainMod, S, exec, grimblast copy"
+	        "$mainMod, S, exec, grimblast copy"
 
           "$mainMod, left, movefocus, l"
           "$mainMod, right, movefocus, r"
