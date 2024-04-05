@@ -79,8 +79,9 @@
           "$mainMod, C, killactive,"
           "$mainMod, M, exit,"
           "$mainMod, V, togglefloating,"
-          "$mainMod, R, exec, ags -t applauncher"
           "$mainMod, V, togglefloating,"
+          "$mainMod, R, exec, /home/logan/.config/rofi/launchers/type-3/launcher.sh"
+          #"$mainMod, R, exec, ags -t applauncher"
           "$mainMod, J, togglesplit, # dwindle"
 	        "$mainMod, S, exec, grimblast edit"
 
