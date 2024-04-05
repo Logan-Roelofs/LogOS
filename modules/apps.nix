@@ -67,7 +67,7 @@
     slack           # Team communication
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
-    flameshot
+    rofi
 
     #looking-glass-client # GPU accelerated KVM
     #obs-studio-plugins.looking-glass-obs # Looking Glass OBS plugin
