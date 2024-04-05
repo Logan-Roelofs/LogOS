@@ -71,6 +71,8 @@
     rofi-wayland-unwrapped
     #looking-glass-client # GPU accelerated KVM
     #obs-studio-plugins.looking-glass-obs # Looking Glass OBS plugin
+    appeditor
+
 
     # Development
     python3
