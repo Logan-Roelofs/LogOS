@@ -1,15 +1,13 @@
-{ pkgs, lib, inputs, username, asztal, ... }:
+{ config, pkgs, lib, inputs, username, asztal, ... }:
 {
   imports = [
     ./apps.nix
     ./shell.nix
-    ./desktop.nix
     ./theme.nix
     ./dev/rust.nix
     ./dev/dev.nix
     ./dev/cpp.nix
     ./dev/js.nix
-
   ];
 
   networking.extraHosts =
@@ -17,11 +15,23 @@
       10.10.11.230 cozyhosting.htb
     '';
 
-  # Define Common System Packages
-  environment.systemPackages = with pkgs; [
-    blueberry
-    openvpn
+  # Hyprland Configuration
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    xwayland.enable = true;
+  };
+  
+  # Define Common System Fonts
+  fonts.packages = with pkgs; [
+    font-awesome
+    ubuntu_font_family
+    nerdfonts
   ];
+
+  # Define Common System Services
+  security.polkit.enable = true;
+  services.upower.enable = true;
 
   # Initialize home-manager
   home-manager = {
@@ -36,7 +46,6 @@
     isNormalUser = true;
     description = "${username}";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
   };
 
   # Define Time Settings
