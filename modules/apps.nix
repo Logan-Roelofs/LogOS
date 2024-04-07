@@ -72,7 +72,7 @@
     rofi-wayland    # Application launcher
 
     # Development
-    python38        # Python 3.8
+    python3         # Python 3
     hugo            # Static site generator
 
 
