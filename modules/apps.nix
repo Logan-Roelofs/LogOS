@@ -27,6 +27,7 @@
     neovim          # Text editor
     blueberry       # Bluetooth manager
     openvpn         # VPN
+    yazi            # Terminal file manager
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
