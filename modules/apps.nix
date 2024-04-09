@@ -27,12 +27,8 @@
     neovim          # Text editor
     blueberry       # Bluetooth manager
     openvpn         # VPN
-<<<<<<< HEAD
-    ranger          # Terminal file manager
+    yazi            # Terminal file manager
     
-=======
-
->>>>>>> parent of d3edb02 (yazi)
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
     #steam           # Steam
