@@ -12,15 +12,14 @@ in
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.05";
 
-  home.packages = with pkgs; [
-#    emacs
-  ];
+  home.packages = with pkgs; [ proximity-sort ];
 
   programs.neovim = {
     enable = true;
-    extraLuaPackages = magick;
-    extraPackages = imagemagick;
-    # ... other config
+    package = pkgs.neovim-nightly;
+    extraLuaPackages = ps: [ ps.magick ];
+    extraPackages = with pkgs; [ imagemagick gcc ];
+    withNodeJs = true;
   };
 
   # Import the Hyprland configuration
