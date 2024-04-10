@@ -16,7 +16,14 @@ in
 #    emacs
   ];
 
-   
+  {
+  programs.neovim = {
+    enable = true;
+    extraLuaPackages = ps: [ ps.magick ];
+    extraPackages = ps: [ ps.imagemagick ];
+    # ... other config
+  };
+
   # Import the Hyprland configuration
   imports = [
     hyprlandConfig
