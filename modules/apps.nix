@@ -29,6 +29,8 @@
     openvpn         # VPN
     yazi            # Terminal file manager
     imagemagick     # Image support for nvim
+    luajitPackages.magick # Image support for nvim
+
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
