@@ -18,8 +18,8 @@ in
 
   programs.neovim = {
     enable = true;
-    extraLuaPackages = ps: [ ps.magick ];
-    extraPackages = ps: [ ps.imagemagick ];
+    extraLuaPackages = magick
+    extraPackages = imagemagick
     # ... other config
   };
 
