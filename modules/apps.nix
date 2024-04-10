@@ -24,7 +24,7 @@
     updog           # Simple HTTP server
     tmux            # Terminal multiplexer
     chafa           # Image to ASCII
-    neovim          # Text editor
+#    neovim          # Text editor
     blueberry       # Bluetooth manager
     openvpn         # VPN
     yazi            # Terminal file manager
