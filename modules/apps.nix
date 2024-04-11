@@ -65,6 +65,7 @@
     redis           # Redis-cli
     gobuster        # Directory brute-forcer
     enum4linux      # Enumerate information from Windows and Samba systems
+    legba           # password cracking
 
     # GUI Applications
     spotify         # Music streaming
