@@ -15,7 +15,7 @@ in
   programs.tmux = {
     enable = true;
     extraConfig = ''
-      set -gq allow-passthrough on
+      set -g allow-passthrough on
     '';
   };
   home.packages = with pkgs; [ proximity-sort ];
