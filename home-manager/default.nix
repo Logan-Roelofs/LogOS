@@ -12,13 +12,7 @@ in
   home.stateVersion = "23.05";
 
 
-  programs.tmux = {
-    enable = true;
-    extraConfig = ''
-      set -g allow-passthrough on
-    '';
-  };
-  home.packages = with pkgs; [ proximity-sort ];
+ home.packages = with pkgs; [ proximity-sort ];
   programs.neovim = {
     enable = true;
     extraLuaPackages = ps: [ ps.magick ];

@@ -21,7 +21,14 @@
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     xwayland.enable = true;
   };
-  
+
+  programs.tmux = {
+    enable = true;
+    extraConfig = ''
+      set -g allow-passthrough on
+    '';
+  };
+
   # Define Common System Fonts
   fonts.packages = with pkgs; [
     font-awesome
