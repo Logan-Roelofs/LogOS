@@ -65,7 +65,7 @@
     redis           # Redis-cli
     gobuster        # Directory brute-forcer
     enum4linux      # Enumerate information from Windows and Samba systems
-    legba           # password cracking
+    thc-hydra       # Password cracker
 
     # GUI Applications
     spotify         # Music streaming
