@@ -20,7 +20,8 @@
     extraConfig = ''
     set -g allow-passthrough on
     '';
-  }
+  };
+
   # Hyprland Configuration
   programs.hyprland = {
     enable = true;
