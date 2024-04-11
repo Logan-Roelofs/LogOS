@@ -15,6 +15,12 @@
       10.10.11.230 cozyhosting.htb
     '';
 
+  programs.tmux = {
+    enable = true;
+    extraConfig = ''
+    set -g allow-passthrough on
+    '';
+  }
   # Hyprland Configuration
   programs.hyprland = {
     enable = true;
