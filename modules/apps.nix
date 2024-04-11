@@ -63,7 +63,8 @@
     samba           # Smb client
     inetutils       # telnet, ftp, rsh, rlogin, rcp, and rwho
     redis           # Redis-cli
-    gobuster
+    gobuster        # Directory brute-forcer
+    enum4linux      # Enumerate information from Windows and Samba systems
 
     # GUI Applications
     spotify         # Music streaming
