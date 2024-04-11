@@ -19,6 +19,7 @@
     enable = true;
     extraConfig = ''
     set -g allow-passthrough on
+    set -g mouse on  
     '';
   };
 
