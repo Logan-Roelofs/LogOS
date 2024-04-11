@@ -22,7 +22,7 @@
     freerdp         # Remote desktop client
     mongosh         # MongoDB shell
     updog           # Simple HTTP server
-    tmux            # Terminal multiplexer
+#    tmux            # Terminal multiplexer
     chafa           # Image to ASCII
 #    neovim          # Text editor
     blueberry       # Bluetooth manager

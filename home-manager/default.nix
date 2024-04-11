@@ -11,8 +11,14 @@ in
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.05";
 
-  home.packages = with pkgs; [ proximity-sort ];
 
+  programs.tmux = {
+    enable = true;
+    extraConfig = ''
+      set -gq allow-passthrough on
+    '';
+  };
+  home.packages = with pkgs; [ proximity-sort ];
   programs.neovim = {
     enable = true;
     extraLuaPackages = ps: [ ps.magick ];
