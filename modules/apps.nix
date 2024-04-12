@@ -78,6 +78,8 @@
     rofi-wayland    # Application launcher
     spot            # Spotify client
     gnome.seahorse  # Password manager (Needed with spot)    
+    gnome.gnome-keyring # Password manager (Needed with spot and seahorse)
+    
     # Development
     python3         # Python 3
     hugo            # Static site generator
