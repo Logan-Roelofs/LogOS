@@ -76,8 +76,8 @@
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
     rofi-wayland    # Application launcher
-    spicetify-cli   # Spotify theme
-
+    spot           # Spotify client
+    
     # Development
     python3         # Python 3
     hugo            # Static site generator
