@@ -76,8 +76,8 @@
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
     rofi-wayland    # Application launcher
-    spot           # Spotify client
-    
+    spot            # Spotify client
+    gnome.seahorse  # Password manager (Needed with spot)    
     # Development
     python3         # Python 3
     hugo            # Static site generator
