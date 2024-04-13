@@ -66,6 +66,7 @@
     gobuster        # Directory brute-forcer
     enum4linux      # Enumerate information from Windows and Samba systems
     thc-hydra       # Password cracker
+    whatweb         # Web scanner
 
     # GUI Applications
     spotify         # Music streaming
