@@ -15,6 +15,7 @@
           "docker"
         ];
       };
+    interactiveShellInit = "TERM=xterm-256color";
     };
   };
 
