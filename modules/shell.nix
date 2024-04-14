@@ -14,8 +14,8 @@
           "helm"
           "docker"
         ];
-      initExtraFirst = "export TERM=xterm-256colorin";
       };
+    initExtraFirst = "export TERM=xterm-256colorin";
     };
   };
 
