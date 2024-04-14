@@ -15,7 +15,6 @@
           "docker"
         ];
       };
-    initExtraFirst = "export TERM=xterm-256colorin";
     };
   };
 
