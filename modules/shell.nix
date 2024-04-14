@@ -14,6 +14,9 @@
           "helm"
           "docker"
         ];
+      interactiveShellInit = ''
+       export TERM=xterm-256color
+      '';  
       };
     };
   };
