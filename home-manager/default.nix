@@ -11,6 +11,9 @@ in
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.05";
 
+  home.sessionVariables = {
+    TERM = "xterm-256color";
+  };
 
  home.packages = with pkgs; [ proximity-sort ];
   programs.neovim = {
