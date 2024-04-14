@@ -11,8 +11,6 @@ in
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.05";
 
-  programs.zsh.initExtra = "export TERM=xterm-256color \n";
-
  home.packages = with pkgs; [ proximity-sort ];
   programs.neovim = {
     enable = true;
