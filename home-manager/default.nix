@@ -11,14 +11,6 @@ in
   home.homeDirectory = "/home/${username}";
   home.stateVersion = "23.05";
 
-  home.file = {
-      ".zshrc" = {
-        text = ''
-          export TERM=xterm-256color
-        '';
-      };
-    };
-
   programs.zsh.initExtra = "export TERM=xterm-256color";
 
  home.packages = with pkgs; [ proximity-sort ];
