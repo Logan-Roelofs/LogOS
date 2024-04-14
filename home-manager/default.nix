@@ -19,7 +19,7 @@ in
       };
     };
 
-  home.program.zsh.initExtra = " export TERM=xterm-256color";
+  program.zsh.initExtra = " export TERM=xterm-256color";
 
  home.packages = with pkgs; [ proximity-sort ];
   programs.neovim = {
