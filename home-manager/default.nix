@@ -12,7 +12,7 @@ in
   home.stateVersion = "23.05";
 
   home.sessionVariables = {
-    TERM = "xterm-256color";
+    TERM = "screen";
   };
 
  home.packages = with pkgs; [ proximity-sort ];
