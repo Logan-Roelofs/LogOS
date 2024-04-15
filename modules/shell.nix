@@ -15,7 +15,7 @@
           "docker"
         ];
       };
-    interactiveShellInit = "TERM=xterm-kitty";
+    interactiveShellInit = "neofetch";
     };
   };
 
