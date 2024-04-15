@@ -68,6 +68,7 @@
     thc-hydra       # Password cracker
     whatweb         # Web scanner
     exploitdb       # Exploit database
+    ffuf            # Fast web fuzzer
 
     # GUI Applications
     spotify         # Music streaming
