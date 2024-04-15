@@ -15,13 +15,16 @@
       10.10.11.230 cozyhosting.htb
     '';
 
+
+  environment.systemPackages.pkgs.tmuxPlugins = [
+    sidebar
+  ];
   programs.tmux = {
     enable = true;
     extraConfig = ''
     set -g allow-passthrough on
     set -g mouse on  
     bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e; send-keys -M'"
-    set -g @plugin 'tmux-plugins/tmux-sidebar'
     set -as terminal-overrides ',xterm*:Tc:sitm=\E[3m'
     set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'  # undercurl support
     set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{255}%&%d::%p1%{255}%&%d%;m'  # underscore colors - needs tmux-3.0
