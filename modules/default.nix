@@ -16,8 +16,8 @@
     '';
 
 
-  environment.systemPackages.pkgs.tmuxPlugins = [
-    sidebar
+  environment.systemPackages = [
+    pkgs.tmuxPlugins.sidebar
   ];
   programs.tmux = {
     enable = true;
