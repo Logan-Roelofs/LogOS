@@ -67,6 +67,7 @@
     enum4linux      # Enumerate information from Windows and Samba systems
     thc-hydra       # Password cracker
     whatweb         # Web scanner
+    searchsploit    # Exploit database
 
     # GUI Applications
     spotify         # Music streaming
@@ -77,7 +78,6 @@
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
     rofi-wayland    # Application launcher
-    spot            # Spotify client
     gnome.seahorse  # Password manager (Needed with spot)    
     gnome.gnome-keyring # Password manager (Needed with spot and seahorse)
     
