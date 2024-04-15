@@ -68,7 +68,7 @@
     thc-hydra       # Password cracker
     whatweb         # Web scanner
     searchsploit    # Exploit database
-
+    
     # GUI Applications
     spotify         # Music streaming
     remmina         # Remote desktop client
