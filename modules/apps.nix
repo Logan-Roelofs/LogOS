@@ -67,8 +67,8 @@
     enum4linux      # Enumerate information from Windows and Samba systems
     thc-hydra       # Password cracker
     whatweb         # Web scanner
-    searchsploit    # Exploit database
-    
+    exploitdb       # Exploit database
+
     # GUI Applications
     spotify         # Music streaming
     remmina         # Remote desktop client
