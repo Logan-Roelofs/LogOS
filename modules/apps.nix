@@ -79,9 +79,8 @@
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
     rofi-wayland    # Application launcher
-    gnome.seahorse  # Password manager (Needed with spot)    
-    gnome.gnome-keyring # Password manager (Needed with spot and seahorse)
-    
+    obsidian        # Note taking
+
     # Development
     python3         # Python 3
     hugo            # Static site generator
