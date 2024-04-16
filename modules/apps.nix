@@ -69,6 +69,7 @@
     whatweb         # Web scanner
     exploitdb       # Exploit database
     ffuf            # Fast web fuzzer
+    cewl            # Custom word list generator
 
     # GUI Applications
     spotify         # Music streaming
