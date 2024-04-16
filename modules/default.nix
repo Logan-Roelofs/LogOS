@@ -24,6 +24,8 @@
     '';
   };
 
+  networking.firewall.enable = false;
+
   # Hyprland Configuration
   programs.hyprland = {
     enable = true;
