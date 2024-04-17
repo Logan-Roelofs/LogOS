@@ -85,6 +85,7 @@
     obsidian        # Note taking
 
     # Development
+    pipx            # Python package installer
     python3         # Python 3
     hugo            # Static site generator
 
