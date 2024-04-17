@@ -117,8 +117,11 @@
     #gnome.gnome-calculator # Calculator
     gnome.gnome-clocks # Clock
     gnome.gnome-software # for flatpak
- 
-
+    
+    (python3.withPackages (ps: with ps; [
+        pip
+        requests
+    ]))
     ];
 
   # This is required to run DaVinci Resolve to run on my AMD APU
@@ -126,10 +129,4 @@
     rocmPackages.clr.icd
   ];
   
-  environment.systemPackages = with pkgs; [
-    (python3.withPackages (ps: with ps; [
-        pip
-        requests
-    ]))
-  ];
 }
