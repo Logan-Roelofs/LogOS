@@ -85,8 +85,8 @@
     obsidian        # Note taking
 
     # Development
-    python311Packages.pip # Python 3.11 package manger 
     python3         # Python 3
+    python311Packages.requests # Python requests library
     hugo            # Static site generator
 
 
