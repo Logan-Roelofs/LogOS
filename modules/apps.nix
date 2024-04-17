@@ -32,6 +32,7 @@
     luajitPackages.magick # Image support for nvim
     netcat          # Network utility
     netcat-gnu      # Network utility
+    dos2unix        # Convert dos to unix
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
