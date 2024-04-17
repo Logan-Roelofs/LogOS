@@ -85,7 +85,7 @@
     obsidian        # Note taking
 
     # Development
-    pipx            # Python package installer
+    python311Packages.pip # Python 3.11 package manger 
     python3         # Python 3
     hugo            # Static site generator
 
