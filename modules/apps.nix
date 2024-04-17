@@ -85,8 +85,7 @@
     obsidian        # Note taking
 
     # Development
-    python3         # Python 3
-    python311Packages.requests # Python requests library
+    #python3         # Python 3
     hugo            # Static site generator
 
 
@@ -126,4 +125,11 @@
   hardware.opengl.extraPackages = with pkgs; [
     rocmPackages.clr.icd
   ];
+  
+  environment.systemPackages = with pkgs; [
+    (python3.withPackages (ps: with ps; [
+        pip
+        requests
+    ]))
+]
 }
