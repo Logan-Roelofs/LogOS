@@ -33,6 +33,8 @@
     netcat          # Network utility
     netcat-gnu      # Network utility
     dos2unix        # Convert dos to unix
+    nix-index       # Index nix packages
+
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
