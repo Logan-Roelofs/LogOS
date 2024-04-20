@@ -22,9 +22,7 @@
     freerdp         # Remote desktop client
     mongosh         # MongoDB shell
     updog           # Simple HTTP server
-#    tmux            # Terminal multiplexer
     chafa           # Image to ASCII
-#    neovim          # Text editor
     blueberry       # Bluetooth manager
     openvpn         # VPN
     yazi            # Terminal file manager
@@ -34,7 +32,7 @@
     netcat-gnu      # Network utility
     dos2unix        # Convert dos to unix
     nix-index       # Index nix packages
-
+    libxslt         # XSLT processor
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
@@ -87,9 +85,7 @@
     obsidian        # Note taking
 
     # Development
-    #python3         # Python 3
     hugo            # Static site generator
-
 
     # Virtualization
     virt-manager   # Virtualization manager
@@ -111,12 +107,10 @@
     gnome.adwaita-icon-theme # Icon theme
     gnome.nautilus # File manager
     baobab         # Disk usage analyzer
-    #gnome.gnome-calendar # Calendar
     gnome.gnome-boxes # Virtualization
     gnome.gnome-system-monitor # System monitor
     gnome.gnome-control-center # System settings
     gnome.gnome-weather # Weather
-    #gnome.gnome-calculator # Calculator
     gnome.gnome-clocks # Clock
     gnome.gnome-software # for flatpak
     
