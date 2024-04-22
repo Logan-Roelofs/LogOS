@@ -83,6 +83,7 @@
     discord         # Server communication
     rofi-wayland    # Application launcher
     obsidian        # Note taking
+    figma-linux     # Figma
 
     # Development
     hugo            # Static site generator
