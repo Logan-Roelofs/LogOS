@@ -33,6 +33,7 @@
     dos2unix        # Convert dos to unix
     nix-index       # Index nix packages
     libxslt         # XSLT processor
+    networkmanagerapplet
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
@@ -83,7 +84,6 @@
     discord         # Server communication
     rofi-wayland    # Application launcher
     obsidian        # Note taking
-    figma-linux     # Figma
 
     # Development
     hugo            # Static site generator
