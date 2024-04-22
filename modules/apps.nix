@@ -34,7 +34,6 @@
     nix-index       # Index nix packages
     libxslt         # XSLT processor
     networkmanagerapplet
-
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
     #steam           # Steam
