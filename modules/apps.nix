@@ -34,6 +34,7 @@
     nix-index       # Index nix packages
     libxslt         # XSLT processor
     networkmanagerapplet
+
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
     #steam           # Steam
@@ -83,6 +84,7 @@
     discord         # Server communication
     rofi-wayland    # Application launcher
     obsidian        # Note taking
+    emacs           # Text editor
 
     # Development
     hugo            # Static site generator
