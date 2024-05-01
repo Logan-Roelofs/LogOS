@@ -88,7 +88,8 @@
 
     # Development
     hugo            # Static site generator
-
+    godot_4         # Game engine
+    
     # Virtualization
     virt-manager   # Virtualization manager
 
