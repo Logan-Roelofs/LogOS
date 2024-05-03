@@ -4,6 +4,7 @@
     ./apps.nix
     ./shell.nix
     ./theme.nix
+    ./vm.nix
     ./dev/rust.nix
     ./dev/dev.nix
     ./dev/cpp.nix
