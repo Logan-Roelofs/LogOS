@@ -79,6 +79,7 @@
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
     rofi-wayland    # Application launcher
+    emacs           # Text editor
 
     # Development
     hugo            # Static site generator
