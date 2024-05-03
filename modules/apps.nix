@@ -17,9 +17,7 @@
     unzip           # Unzip files
     p7zip           # 7zip
     kitty           # The CLI itself
-    gparted         # Partition manager
     ripgrep         # Fast file search   
-    freerdp         # Remote desktop client
     mongosh         # MongoDB shell
     updog           # Simple HTTP server
     chafa           # Image to ASCII
