@@ -29,8 +29,6 @@
     imagemagick     # Image support for nvim
     luajitPackages.magick # Image support for nvim
     netcat          # Network utility
-    netcat-gnu      # Network utility
-    dos2unix        # Convert dos to unix
     nix-index       # Index nix packages
     libxslt         # XSLT processor
     networkmanagerapplet
@@ -82,17 +80,12 @@
     slack           # Team communication
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
-    rofi-wayland    # Application launcher
-    obsidian        # Note taking
-    emacs           # Text editor
+    rofi-wayland.rofi    # Application launcher
 
     # Development
     hugo            # Static site generator
     godot_4         # Game engine
     
-    # Virtualization
-    virt-manager   # Virtualization manager
-
     # Desktop Package Requirements
     swww           # Sway Wallpaper
     hyprpicker     # Hyprland color picker
@@ -110,12 +103,8 @@
     gnome.adwaita-icon-theme # Icon theme
     gnome.nautilus # File manager
     baobab         # Disk usage analyzer
-    gnome.gnome-boxes # Virtualization
     gnome.gnome-system-monitor # System monitor
     gnome.gnome-control-center # System settings
-    gnome.gnome-weather # Weather
-    gnome.gnome-clocks # Clock
-    gnome.gnome-software # for flatpak
     
     (python3.withPackages (ps: with ps; [
         pip
