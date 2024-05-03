@@ -80,7 +80,7 @@
     slack           # Team communication
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
-    rofi-wayland.rofi    # Application launcher
+    rofi-wayland    # Application launcher
 
     # Development
     hugo            # Static site generator
