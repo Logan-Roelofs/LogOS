@@ -8,4 +8,4 @@
     swappy  # gui for editing screenshots
     #convert not sure what package this comes from  but we already have it installed 
   ] 
-}
+};
