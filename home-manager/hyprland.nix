@@ -83,8 +83,8 @@
           "$mainMod, R, exec, /home/logan/.config/rofi/launchers/type-3/launcher.sh"
           #"$mainMod, R, exec, ags -t applauncher"
           "$mainMod, J, togglesplit, # dwindle"
-	        "$mainMod, S, exec, grim -g '$(slurp)' -| wl-copy --type image/png"
-          "$mainMod SHIFT, S, exec, grim -g '$(slurp)' -| swappy -f -"
+	        ''$mainMod, S, exec, grim -g "$(slurp)" -| wl-copy --type image/png''
+          ''$mainMod SHIFT, S, exec, grim -g "$(slurp)" -| swappy -f -''
 
           "$mainMod, left, movefocus, l"
           "$mainMod, right, movefocus, r"
