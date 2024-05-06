@@ -9,6 +9,7 @@
     ./dev/dev.nix
     ./dev/cpp.nix
     ./dev/js.nix
+    ./ss.nix
   ];
 
   networking.extraHosts =
