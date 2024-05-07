@@ -32,7 +32,7 @@
     networkmanagerapplet
     hyprland        # Hyprland
     home-manager    # Home Manager
-
+    neovim
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
     #steam           # Steam
