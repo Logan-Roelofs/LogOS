@@ -32,7 +32,8 @@
     networkmanagerapplet
     hyprland        # Hyprland
     home-manager    # Home Manager
-    neovim
+    neovim          # Text editor
+    gvfs            # Virtual file system
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
     #steam           # Steam
