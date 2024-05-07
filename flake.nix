@@ -12,9 +12,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-    matugen.url = "github:InioX/matugen";
-    ags.url = "github:Aylur/ags";
-    stm.url = "github:Aylur/stm";
+#    matugen.url = "github:InioX/matugen";
+#    ags.url = "github:Aylur/ags";
+#    stm.url = "github:Aylur/stm";
 
     lf-icons = {
       url = "github:gokcehan/lf";
@@ -28,12 +28,12 @@
       username = "logan";
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      asztal = pkgs.callPackage ./config/ags { inherit inputs; };
+ #     asztal = pkgs.callPackage ./config/ags { inherit inputs; };
     in{
       
       # Logos NixOs configuration
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs username asztal; };
+        specialArgs = { inherit inputs username; };
         modules = [ 
           ./hardware/hardware-configuration.nix 
           ./modules/default.nix 

@@ -1,7 +1,7 @@
-{ asztal, lib, pkgs, inputs, username, neovim-config, ... }:
+{ lib, pkgs, inputs, username, neovim-config, ... }:
 let
   hyprlandConfig = import ./hyprland.nix { inherit lib pkgs inputs; };
-  agsConfig = import ./ags.nix { inherit lib pkgs inputs asztal; };
+#  agsConfig = import ./ags.nix { inherit lib pkgs inputs asztal; };
   themeConfig = import ./theme.nix { inherit lib pkgs inputs asztal; };
   neovimConfig = import ./neovim.nix { inherit lib pkgs inputs asztal; };
   firefoxConfig = import ./firefox.nix { inherit lib pkgs inputs asztal; };
@@ -22,7 +22,7 @@ in
   # Import the Hyprland configuration
   imports = [
     hyprlandConfig
-    agsConfig
+    #agsConfig
     themeConfig
     firefoxConfig
   ];

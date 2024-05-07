@@ -1,4 +1,4 @@
-{ config, pkgs, lib, inputs, username, asztal, ... }:
+{ config, pkgs, lib, inputs, username, ... }:
 {
   imports = [
     ./apps.nix
@@ -51,7 +51,7 @@
 
   # Initialize home-manager
   home-manager = {
-    extraSpecialArgs = { inherit inputs username asztal;};
+    extraSpecialArgs = { inherit inputs username;};
     users = {
       "${username}" = import ../home-manager/default.nix;
     };
