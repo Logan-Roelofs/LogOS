@@ -31,6 +31,7 @@
     libxslt         # XSLT processor
     networkmanagerapplet
     hyprland        # Hyprland
+    home-manager    # Home Manager
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
