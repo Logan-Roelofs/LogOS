@@ -81,6 +81,9 @@
     rofi-wayland    # Application launcher
     emacs           # Text editor
     sweethome3d.application # Interior design
+    sweethome3d.textures-editor # Interior design
+    sweethome3d.furniture-editor # Interior design
+
     # Development
     hugo            # Static site generator
     godot_4         # Game engine
