@@ -83,9 +83,9 @@
     sweethome3d.application # Interior design
     sweethome3d.textures-editor # Interior design
     sweethome3d.furniture-editor # Interior design
-    ags             # gtk waybar
-    #gvfs            # Virtual file system
-    gnome.gvfs
+    ags             # gtk bar
+    libdbusmenu-gtk3 # gtk bar
+    gvfs            # Virtual file system
 
     # Development
     hugo            # Static site generator
