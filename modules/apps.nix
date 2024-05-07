@@ -83,6 +83,7 @@
     sweethome3d.application # Interior design
     sweethome3d.textures-editor # Interior design
     sweethome3d.furniture-editor # Interior design
+    ags             # gtk waybar
 
     # Development
     hugo            # Static site generator
