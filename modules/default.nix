@@ -10,6 +10,7 @@
     ./dev/cpp.nix
     ./dev/js.nix
     ./ss.nix
+    ./home-manger.nix
   ];
 
   networking.extraHosts =
