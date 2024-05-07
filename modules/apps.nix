@@ -80,7 +80,7 @@
     discord         # Server communication
     rofi-wayland    # Application launcher
     emacs           # Text editor
-
+    sweethome3d.application # Interior design
     # Development
     hugo            # Static site generator
     godot_4         # Game engine
