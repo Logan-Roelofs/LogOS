@@ -49,14 +49,6 @@
   security.polkit.enable = true;
   services.upower.enable = true;
 
-  # Initialize home-manager
-  home-manager = {
-    extraSpecialArgs = { inherit inputs username;};
-    users = {
-      "${username}" = import ../home-manager/default.nix;
-    };
-  };
-  
   # Define Main User 
   users.users.${username} = {
     isNormalUser = true;
@@ -101,7 +93,6 @@
 
   # Define Kernel Settings
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
 
   # Define Bootloader Settings
   boot.loader.grub.enable = true;
