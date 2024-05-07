@@ -3,6 +3,8 @@
 #
 # nix-channel --update
 #
+# MIGHT NEED TO REBOOT HERE
+#
 # nix-shell '<home-manager>' -A install
 #
 # home-manager switch
