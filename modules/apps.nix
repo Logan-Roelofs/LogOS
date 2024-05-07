@@ -84,7 +84,7 @@
     sweethome3d.textures-editor # Interior design
     sweethome3d.furniture-editor # Interior design
     ags             # gtk waybar
-
+    gvfs            # Virtual file system
     # Development
     hugo            # Static site generator
     godot_4         # Game engine
