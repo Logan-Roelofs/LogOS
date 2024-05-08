@@ -29,7 +29,7 @@
 
   networking.firewall.enable = false;
 
- Hyprland Configuration
+# Hyprland Configuration
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
