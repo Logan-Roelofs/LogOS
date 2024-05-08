@@ -30,7 +30,6 @@
     nix-index       # Index nix packages
     libxslt         # XSLT processor
     networkmanagerapplet
-    hyprland        # Hyprland
     home-manager    # Home Manager
     neovim          # Text editor
     gvfs            # Virtual file system

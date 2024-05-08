@@ -30,10 +30,10 @@
   networking.firewall.enable = false;
 
   # Hyprland Configuration
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+#  programs.hyprland = {
+#    enable = true;
+#    xwayland.enable = true;
+#  };
 
   # Define Common System Fonts
   fonts.packages = with pkgs; [
