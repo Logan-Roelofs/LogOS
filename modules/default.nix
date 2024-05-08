@@ -13,6 +13,11 @@
     ./home-manger.nix
   ];
 
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
   networking.extraHosts =
     ''
       10.10.11.230 cozyhosting.htb
