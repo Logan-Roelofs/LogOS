@@ -34,7 +34,6 @@
         "logan" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {inherit inputs username;};
-          home-manger.backupFileExtension = backup;
           modules = [./home.nix]; 
         };
       };
