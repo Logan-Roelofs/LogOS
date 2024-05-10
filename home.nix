@@ -1,6 +1,6 @@
 { inputs, config, pkgs, ... }: {
   imports = [
-    ./home/ags.nix
+#    ./home/ags.nix
     ./home/hyprland.nix
     ./home/theme.nix
   ];

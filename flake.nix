@@ -17,12 +17,11 @@
     let
       username = "logan";
       system = "x86_64-linux";
+      pkgs = import nixpkgs { inherit system; };
     in{
       # Logos NixOs configuration
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        pkgs = import nixpkgs { inherit system; };
         specialArgs = { inherit inputs username; };
-        extraSpecialArgs = { inherit inputs username; };
         modules = [
           ./hardware/hardware-configuration.nix 
           ./modules/default.nix 
