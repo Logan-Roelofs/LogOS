@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    <home-manager/nixos>
   };
 
   outputs = { self, nixpkgs,  ... }@inputs:
