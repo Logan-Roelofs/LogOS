@@ -15,7 +15,12 @@
       xwayland = {
         force_zero_scaling = true;
       };
-
+      
+      plugin = {
+        hyprwinwrap = {
+          "class" = "GLava";
+        };
+      };
       exec-once = [
         "ags"
       ];
