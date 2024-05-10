@@ -1,8 +1,8 @@
 { inputs, config, pkgs, ... }: {
   imports = [
-    ./modules/ags.nix
-    ./modules/hyprland.nix
-    ./modules/theme.nix
+    ./home/ags.nix
+    ./home/hyprland.nix
+    ./home/theme.nix
   ];
   
   home.username = "logan";

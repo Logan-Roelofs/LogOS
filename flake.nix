@@ -5,9 +5,15 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    ags.url = "github:Aylur/ags";
+    hyprland.url = "git+https://github.com/andresilva/Hyprland?ref=nix-build-improvements&submodules=1";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
   };
 
-  outputs = { self, nixpkgs,  ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       username = "logan";
       system = "x86_64-linux";

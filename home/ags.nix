@@ -11,7 +11,7 @@
     ];
   };
   home.file.".config/ags" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/home-manager/dotfiles/ags/";
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
     recursive = true;
   };
 }
