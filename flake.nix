@@ -21,7 +21,7 @@
     in{
       # Logos NixOs configuration
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs username; };
+        extraSpecialArgs = { inherit inputs username; };
         modules = [
           ./hardware/hardware-configuration.nix 
           ./modules/default.nix 
