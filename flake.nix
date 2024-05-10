@@ -30,7 +30,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.${username} = import ./home.nix;
-            extraSpecialArgs = { inherit inputs username; }
+            extraSpecialArgs = { inherit inputs username; };
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
           };
