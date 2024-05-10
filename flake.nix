@@ -19,22 +19,25 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
     in{
-      # Logos NixOs configuration
+      
+      # 'nixos-rebuild --flake .#logos'
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username; };
         modules = [
           ./hardware/hardware-configuration.nix 
           ./modules/default.nix 
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.${username} = import ./home.nix;
-            extraSpecialArgs = { inherit inputs username; };
-            # Optionally, use home-manager.extraSpecialArgs to pass
-            # arguments to home.nix
-          }
         ];
       };
+      
+      #'home-manger --flake .#logan@logos'
+      homeConfigurations = {
+        "logan" = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          extraSpecialArgs = {inherit inputs username;};
+          home-manger.backupFileExtension = backup;
+          modules = [./home.nix]; 
+        };
+      };
+
     };
 }
