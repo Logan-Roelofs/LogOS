@@ -7,10 +7,9 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     ags.url = "github:Aylur/ags";
     #hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    hyprland.url = pkgs.unstable.hyprland;
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
+      inputs.hyprland.follows = "nixpkgs";
     };
   };
 
