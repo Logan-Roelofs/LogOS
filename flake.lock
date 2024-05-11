@@ -77,17 +77,17 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1715448710,
-        "narHash": "sha256-RspV0imKhSldGV5wbuGfa8Bji7fXpeJQCSTdgadKsbk=",
+        "lastModified": 1715454343,
+        "narHash": "sha256-ZVp9ySwfUQMmyUW+3XxPhznjilnFpViGQNn9ilH/3xw=",
         "ref": "refs/heads/main",
-        "rev": "494b9415a1157279a1e1782ba635fc2ef6a18155",
-        "revCount": 4668,
+        "rev": "d378e14d5f17f0ebfc54e9283ec62ccc3f1b6d0e",
+        "revCount": 4669,
         "type": "git",
-        "url": "https://github.com/hyprwm/Hyprland"
+        "url": "https://github.com/Logan-Roelofs/Hyprland-fix"
       },
       "original": {
         "type": "git",
-        "url": "https://github.com/hyprwm/Hyprland"
+        "url": "https://github.com/Logan-Roelofs/Hyprland-fix"
       }
     },
     "hyprland-plugins": {
