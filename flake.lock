@@ -77,20 +77,20 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1715427964,
-        "narHash": "sha256-dPbljQH+aKcwZSn39nlJW7iTtA8I1ZYREsXVloiWaR0=",
-        "ref": "nix",
-        "rev": "42df58fc0636d922c2e369f22847bf47f2367855",
-        "revCount": 4669,
+        "lastModified": 1715380490,
+        "narHash": "sha256-nRnF/DZBA5vrI3Vcr1BHWMV60zNthgT1pZkBgNhPGvU=",
+        "ref": "nix-build-improvements",
+        "rev": "1bbf00451c2a41f917b2e7b5fd36f87600265447",
+        "revCount": 4642,
         "submodules": true,
         "type": "git",
-        "url": "https://github.com/hyprwm/Hyprland"
+        "url": "https://github.com/andresilva/Hyprland"
       },
       "original": {
-        "ref": "nix",
+        "ref": "nix-build-improvements",
         "submodules": true,
         "type": "git",
-        "url": "https://github.com/hyprwm/Hyprland"
+        "url": "https://github.com/andresilva/Hyprland"
       }
     },
     "hyprland-plugins": {
