@@ -78,14 +78,16 @@
       },
       "locked": {
         "lastModified": 1715454343,
-        "narHash": "sha256-ZVp9ySwfUQMmyUW+3XxPhznjilnFpViGQNn9ilH/3xw=",
+        "narHash": "sha256-vLLx5jQFX5zguzYKxZFEVnEFrpFzJL3i73qNJsKrqEY=",
         "ref": "refs/heads/main",
         "rev": "d378e14d5f17f0ebfc54e9283ec62ccc3f1b6d0e",
         "revCount": 4669,
+        "submodules": true,
         "type": "git",
         "url": "https://github.com/Logan-Roelofs/Hyprland-fix"
       },
       "original": {
+        "submodules": true,
         "type": "git",
         "url": "https://github.com/Logan-Roelofs/Hyprland-fix"
       }
