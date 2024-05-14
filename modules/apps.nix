@@ -36,7 +36,7 @@
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
-    steam           # Steam
+    #steam           # Steam
     #attract-mode    # frontend for emulators
     #xemu            # xbox emulator
     #pcsx2           # ps2 emulator
@@ -115,7 +115,9 @@
         pip
         requests
     ]))
-    ];
+  ];
+  
+  program.steam.enable = true;
 
   # This is required to run DaVinci Resolve to run on my AMD APU
   hardware.opengl.extraPackages = with pkgs; [
