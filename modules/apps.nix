@@ -117,7 +117,7 @@
     ]))
   ];
   
-  program.steam.enable = true;
+  programs.steam.enable = true;
 
   # This is required to run DaVinci Resolve to run on my AMD APU
   hardware.opengl.extraPackages = with pkgs; [
