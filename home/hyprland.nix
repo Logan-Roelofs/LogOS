@@ -4,7 +4,7 @@
     enable = true;
     xwayland.enable = true;
     plugins = [
-      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+#      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
     ];
     settings = { 
       
@@ -19,11 +19,12 @@
       
       plugin = {
         hyprwinwrap = {
-          "class" = "GLava";
+          "class" = "kitty-bg";
         };
       };
       exec-once = [
         "ags"
+        ''kitty -class="kitty-bg" "/home/logan/.config/hypr/cava.sh"''
       ];
 
       decoration = {
