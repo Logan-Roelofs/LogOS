@@ -21,7 +21,6 @@
       };
       exec-once = [
         "ags"
-        "kitty -class='kitty-bg' '/home/logan/.config/hypr/cava.sh'"
       ];
 
       decoration = {

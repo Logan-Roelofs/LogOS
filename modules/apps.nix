@@ -33,7 +33,6 @@
     home-manager    # Home Manager
     neovim          # Text editor
     gvfs            # Virtual file system
-    cava
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
