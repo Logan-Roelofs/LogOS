@@ -36,7 +36,7 @@
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
-    #steam           # Steam
+    steam           # Steam
     #attract-mode    # frontend for emulators
     #xemu            # xbox emulator
     #pcsx2           # ps2 emulator
