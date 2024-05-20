@@ -28,7 +28,7 @@
         "shadow_range" = "4";
         "shadow_render_power" = "3";
         "drop_shadow" = "true";
-        "col.shadow" = "rgba(1a1a1aee)";
+#        "col.shadow" = "rgba(1a1a1aee)";
       };
 
       animations = {
