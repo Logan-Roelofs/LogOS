@@ -3,7 +3,8 @@
 {
   #stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
   stylix.base16Scheme ={
-    base00 = "1e2430";
+    base00 = "171717";
+    #base00 = "1e2430";
     base01 = "2e3440";
     base02 = "3b4252";
     base03 = "434c5e";
