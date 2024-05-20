@@ -31,7 +31,10 @@
         "logan" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {inherit inputs username;};
-          modules = [./home.nix]; 
+          modules = [
+            ./home.nix
+            inputs.stylix.homeManagerModules.stylix
+          ]; 
         };
       };
     };
