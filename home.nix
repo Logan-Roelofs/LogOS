@@ -10,7 +10,7 @@
   home.homeDirectory = "/home/logan";
 
   home.packages = [
-    pkgs.wezterm
+    pkgs.hello
   ];
   
   home.file = {
