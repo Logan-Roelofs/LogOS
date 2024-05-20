@@ -23,6 +23,7 @@
   };
   stylix.image = ../dotfiles/wp/zen.png;
   stylix.targets.gtk.enable = false;
+  stylix.polarity = "dark"
   gtk = {
     enable = true;
     theme.package = pkgs.adw-gtk3;
