@@ -11,6 +11,7 @@
     ./dev/js.nix
     ./ss.nix
     ./home-manger.nix
+    ./stylix.nix
   ];
 
   networking.extraHosts =

@@ -6,7 +6,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     ags.url = "github:Aylur/ags";
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    stylix.url = "github:danth/stylix";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -21,7 +21,8 @@
         specialArgs = { inherit inputs username; };
         modules = [
           ./hardware/hardware-configuration.nix 
-          ./modules/default.nix 
+          ./modules/default.nix
+          inputs.stylix.nixosModules.stylix
         ];
       };
       
