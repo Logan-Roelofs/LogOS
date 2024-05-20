@@ -3,6 +3,7 @@
     ./home/ags.nix
     ./home/hyprland.nix
     ./home/theme.nix
+    # ./home/stylix.nix
   ];
   
   home.username = "logan";

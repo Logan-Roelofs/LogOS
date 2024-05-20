@@ -20,4 +20,6 @@
     base0E = "a3be8c";
     base0F = "b48ead";
   };
+  
+  stylix.image = ../dotfiles/wp/zen.png;
 }
