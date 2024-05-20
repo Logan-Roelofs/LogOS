@@ -9,8 +9,10 @@
   home.username = "logan";
   home.homeDirectory = "/home/logan";
 
+  programs.kitty.enable = true;
+
   home.packages = [
-    pkgs.kitty
+    pkgs.hello
   ];
   
   home.file = {
