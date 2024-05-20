@@ -10,7 +10,7 @@
   home.homeDirectory = "/home/logan";
 
   home.packages = [
-    pkgs.hello
+    pkgs.kitty
   ];
   
   home.file = {
