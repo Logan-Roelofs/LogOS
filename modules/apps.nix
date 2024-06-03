@@ -33,7 +33,7 @@
     home-manager    # Home Manager
     neovim          # Text editor
     gvfs            # Virtual file system
-    hyprnome
+    hyprlock
 
     # Emulators and Game Managment
     #steam-rom-manager # Steam ROM Manager
