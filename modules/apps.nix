@@ -16,7 +16,6 @@
     wget            # File downloader
     unzip           # Unzip files
     p7zip           # 7zip
-#    kitty           # The CLI itself
     ripgrep         # Fast file search   
     mongosh         # MongoDB shell
     updog           # Simple HTTP server

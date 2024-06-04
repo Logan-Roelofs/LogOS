@@ -4,6 +4,7 @@
     ./home/hyprland.nix
     ./home/theme.nix
     ./home/stylix.nix
+    ./home/apps.nix
   ];
   
   home.username = "logan";
