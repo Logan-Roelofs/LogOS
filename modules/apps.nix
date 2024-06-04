@@ -86,24 +86,19 @@
     godot_4         # Game engine
     
     # Desktop Package Requirements
-    #swww           # Sway Wallpaper
-    #hyprpicker     # Hyprland color picker
-    #fd             # Fast file search
-    #bun            # js run time 
-    #dart-sass      # sass compiler
-    #brightnessctl  # Brightness control
-    #wf-recorder    # Screen recorder
-    #wl-clipboard   # Clipboard manager
-    #wayshot        # Screenshot tool
-    #swappy         # Sway app switcher
-    #supergfxctl    # Sway wallpaper
-    #slurp          # Screenshot tool
-    #loupe          # Sway wallpaper
-    #gnome.adwaita-icon-theme # Icon theme
-    #gnome.nautilus # File manager
-    #baobab         # Disk usage analyzer
-    #gnome.gnome-system-monitor # System monitor
-    #gnome.gnome-control-center # System settings
+    swww           # Sway Wallpaper
+    hyprpicker     # Hyprland color picker
+    fd             # Fast file search
+    bun            # js run time 
+    dart-sass      # sass compiler
+    brightnessctl  # Brightness control
+    supergfxctl    # Sway wallpaper
+    slurp          # Screenshot tool
+    loupe          # Sway wallpaper
+    gnome.adwaita-icon-theme # Icon theme
+    gnome.nautilus # File manager
+    gnome.gnome-system-monitor # System monitor
+    gnome.gnome-control-center # System settings
     
     (python3.withPackages (ps: with ps; [
         pip
