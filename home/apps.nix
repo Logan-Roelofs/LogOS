@@ -8,6 +8,5 @@
   programs.kitty.enable = true;
 
   # Text Editor
-  programs.vscode.enable
-  
+  programs.vscode.enable = true;  
 }
