@@ -10,12 +10,6 @@
   home.username = "logan";
   home.homeDirectory = "/home/logan";
 
-  programs.kitty.enable = true;
-
-  home.packages = [
-    pkgs.hello
-  ];
-  
   programs.home-manager.enable = true;
   home.stateVersion = "23.11"; 
 }

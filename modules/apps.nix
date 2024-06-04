@@ -2,10 +2,6 @@
 {
   environment.systemPackages = with pkgs; [
   
-    # Web Browsers
-    firefox         # Firefox
-    chromium        # Chromium
-
     # System Utilities
     util-linux      # mount kill lsblk etc
     tree            # list directory structure
@@ -76,13 +72,11 @@
     # GUI Applications
     spotify         # Music streaming
     remmina         # Remote desktop client
-    vscode          # Code editor
     appimage-run    # AppImage runner
     slack           # Team communication
     teams-for-linux # Unifficial Microsoft Teams client
     discord         # Server communication
     rofi-wayland    # Application launcher
-    emacs           # Text editor
     sweethome3d.application # Interior design
     sweethome3d.textures-editor # Interior design
     sweethome3d.furniture-editor # Interior design
@@ -92,24 +86,24 @@
     godot_4         # Game engine
     
     # Desktop Package Requirements
-    swww           # Sway Wallpaper
-    hyprpicker     # Hyprland color picker
-    fd             # Fast file search
-    bun            # js run time 
-    dart-sass      # sass compiler
-    brightnessctl  # Brightness control
-    wf-recorder    # Screen recorder
-    wl-clipboard   # Clipboard manager
-    wayshot        # Screenshot tool
-    swappy         # Sway app switcher
-    supergfxctl    # Sway wallpaper
-    slurp          # Screenshot tool
-    loupe          # Sway wallpaper
-    gnome.adwaita-icon-theme # Icon theme
-    gnome.nautilus # File manager
-    baobab         # Disk usage analyzer
-    gnome.gnome-system-monitor # System monitor
-    gnome.gnome-control-center # System settings
+    #swww           # Sway Wallpaper
+    #hyprpicker     # Hyprland color picker
+    #fd             # Fast file search
+    #bun            # js run time 
+    #dart-sass      # sass compiler
+    #brightnessctl  # Brightness control
+    #wf-recorder    # Screen recorder
+    #wl-clipboard   # Clipboard manager
+    #wayshot        # Screenshot tool
+    #swappy         # Sway app switcher
+    #supergfxctl    # Sway wallpaper
+    #slurp          # Screenshot tool
+    #loupe          # Sway wallpaper
+    #gnome.adwaita-icon-theme # Icon theme
+    #gnome.nautilus # File manager
+    #baobab         # Disk usage analyzer
+    #gnome.gnome-system-monitor # System monitor
+    #gnome.gnome-control-center # System settings
     
     (python3.withPackages (ps: with ps; [
         pip
