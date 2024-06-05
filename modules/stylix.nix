@@ -22,6 +22,8 @@
     base0F = "b48ead";
   };
   stylix.autoEnable = true;
+  stylix.targets.grub.enable = false;
+  stylix.targets.plymouth.enable = false;
   stylix.image = ../dotfiles/wp/zen.png;
   stylix.targets.gtk.enable = false;
   stylix.polarity = "dark";
