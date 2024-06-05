@@ -20,9 +20,10 @@
     base0E = "B48EAD";
     base0F = "5E81AC";
   };
-  stylix.autoEnable = true;
+  # stylix.autoEnable = true;
+  
   stylix.targets.hyprland.enable = false;
-  stylix.targets.grub.enable = false;
+
   stylix.image = ../dotfiles/wp/zen.png;
   stylix.targets.gtk.enable = false;
   stylix.polarity = "dark";
