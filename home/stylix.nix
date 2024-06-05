@@ -21,9 +21,8 @@
     base0F = "5E81AC";
   };
   
-  stylix.fonts.packages = {
-    pkgs.monaspace
-  };
+  stylix.fonts.packages = pkgs.monaspace;
+
 
   stylix.autoEnable = true;
   stylix.targets.hyprland.enable = false;
