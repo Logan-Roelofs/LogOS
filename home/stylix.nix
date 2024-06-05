@@ -3,22 +3,22 @@
 {
   #stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
   stylix.base16Scheme ={
-    base00 = "171717"; # 1 A
-    base01 = "171717"; # 11 A
-    base02 = "171717"; # 12 A
-    base03 = "171717"; # 9 A
-    base04 = "171717"; # 13 A
-    base05 = "171717"; # 8 A
-    base06 = "171717"; # 14 A
-    base07 = "171717"; # 16 A
-    base08 = "FF0000"; # 
-    base09 = "00FF00"; # 
-    base0A = "0000FF"; # 
-    base0B = "FFFFFF"; # 
-    base0C = "000000"; # 
-    base0D = "FFFF00"; # 
-    base0E = "808000"; #
-    base0F = "800080"; #
+    base00 = "2E3440"; # 1 A
+    base08 = "3B4252"; # 2 
+    base0B = "434C5E"; # 3
+    base0A = "4C566A"; # 4
+    base0D = "D8DEE9"; # 5 
+    base0E = "E5E9F0"; # 6
+    base0C = "ECEFF4"; # 7 
+    base05 = "8FBCBB"; # 8 A
+    base03 = "88C0D0"; # 9 A
+    base09 = "81A1C1"; # 10
+    base01 = "5E81AC"; # 11 A
+    base02 = "BF616A"; # 12 A
+    base04 = "D08770"; # 13 A
+    base06 = "EBCB8B"; # 14 A
+    base0F = "A3BE8C"; # 15
+    base07 = "B48EAD"; # 16 A
 
     # Nord
     #base00 = "171717";
