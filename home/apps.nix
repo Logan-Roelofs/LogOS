@@ -6,9 +6,9 @@
   
   # System util
   programs.kitty.enable = true;
-  
+ 
   home.file.".config/kitty" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/logos/dotfiles/kitty/";   
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/logos/dotfiles/kitty/";
     recursive = true;
   };
 
