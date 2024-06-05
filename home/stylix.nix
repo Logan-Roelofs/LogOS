@@ -23,7 +23,7 @@
   
   stylix.fonts.packages = {
     pkgs.monaspace
-  }
+  };
 
   stylix.autoEnable = true;
   stylix.targets.hyprland.enable = false;
