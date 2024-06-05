@@ -42,6 +42,7 @@
     font-awesome
     ubuntu_font_family
     nerdfonts
+    monaspace
   ];
 
   # Remove nixos documentation
