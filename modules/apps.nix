@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
   
     # System Utilities
-    kitty 
     util-linux      # mount kill lsblk etc
     tree            # list directory structure
     tldr            # Quick help for commands
