@@ -26,6 +26,9 @@
       package = pkgs.monaspace;
       name = "Monaspace Xenon Var Regular";
     };
+    serif = config.stylix.fonts.monospace;
+    sansSerif = config.stylix.fonts.monospace;
+    emoji = config.stylix.fonts.monospace;
   };
 
   stylix.autoEnable = true;
