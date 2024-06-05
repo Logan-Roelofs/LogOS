@@ -23,8 +23,8 @@
   
   stylix.fonts = {
     monospace = {
-      package = pkgs.monaspace
-      name = "Monaspace Radon Var Regular"
+      package = pkgs.monaspace;
+      name = "Monaspace Radon Var Regular";
     }
   }
 
