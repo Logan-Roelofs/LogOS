@@ -7,7 +7,7 @@
       syntaxHighlighting.enable = true;
       ohMyZsh = {
         enable = true;
-        theme = "fox";
+        theme = "strug";
         plugins = [
 	        "git"
           "kubectl"
