@@ -25,8 +25,8 @@
     monospace = {
       package = pkgs.monaspace;
       name = "Monaspace Radon Var Regular";
-    }
-  }
+    };
+  };
 
 
   stylix.autoEnable = true;
