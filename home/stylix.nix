@@ -24,7 +24,7 @@
   stylix.fonts = {
     monospace = {
       package = pkgs.monaspace;
-      name = "Monaspace Radon Var Regular";
+      name = "Monaspace Xenon Var Regular";
     };
   };
 
