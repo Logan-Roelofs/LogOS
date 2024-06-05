@@ -7,6 +7,7 @@
       syntaxHighlighting.enable = true;
       ohMyZsh = {
         enable = true;
+        # Theme is the prompt layout
         theme = "strug";
         plugins = [
 	        "git"

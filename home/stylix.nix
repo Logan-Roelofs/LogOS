@@ -11,14 +11,14 @@
     base05 = "d4d7e0";
     base06 = "dbdde5";
     base07 = "e1e3e9";
-    base08 = "6777a7";
-    base09 = "5f7d88";
-    base0A = "6678a0";
-    base0B = "657c87";
-    base0C = "727889";
-    base0D = "6b7a87";
-    base0E = "6f76a1";
-    base0F = "767692";
+    base08 = "ffffff";
+    base09 = "ffa190";
+    base0A = "dcc264";
+    base0B = "9be16e";
+    base0C = "6feda7";
+    base0D = "72deee";
+    base0E = "a2bdff";
+    base0F = "e49dff";
 
     # Nord
     #base00 = "171717";
