@@ -21,7 +21,12 @@
     base0F = "5E81AC";
   };
   
-  stylix.fonts.packages = pkgs.monaspace;
+  stylix.fonts = {
+    monospace = {
+      package = pkgs.monaspace
+      name = "Monaspace Radon Var Regular"
+    }
+  }
 
 
   stylix.autoEnable = true;
