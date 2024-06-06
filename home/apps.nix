@@ -9,4 +9,6 @@
  
   # Text Editor
   programs.vscode.enable = true;  
+  programs.neovim.enable = true;
+
 }
