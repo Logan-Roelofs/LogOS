@@ -40,10 +40,6 @@
   };
   stylix.autoEnable = true;
   stylix.targets.grub.enable = false;
-  
-  stylix.targets.plymouth.enable = true;
-  stylix.targets.plymouth.logo = "NixOS logo";
-  stylix.targets.plymouth.logoAnimated = true;
 
   stylix.image = ../dotfiles/wp/zen.png;
   stylix.targets.gtk.enable = false;

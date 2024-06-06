@@ -49,7 +49,7 @@
 
   stylix.autoEnable = true;
   stylix.targets.hyprland.enable = false;
-  stylix.targets.nixvim.enable = false;
+#  stylix.targets.nixvim.enable = false;
   
   stylix.image = ../dotfiles/wp/zen.png;
   stylix.targets.gtk.enable = false;
