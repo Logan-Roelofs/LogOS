@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, pkgs, username, ... }:
 {
   # Web Webbrowsers
   programs.firefox.enable = true;
@@ -8,7 +8,7 @@
   programs.kitty.enable = true;
   users.${username}.yourname.shell = pkgs.zsh;
   programs.zsh = {
-    enable = true;autosuggestion
+    enable = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     oh-my-zsh = {

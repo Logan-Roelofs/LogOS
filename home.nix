@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }: {
+{ inputs, config, pkgs, username, ... }: {
   imports = [
     ./home/ags.nix
     ./home/hyprland.nix
