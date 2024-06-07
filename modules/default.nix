@@ -53,6 +53,7 @@
 
   # Define Main User 
   users.users.${username} = {
+    shell = pkgs.zsh;
     isNormalUser = true;
     description = "${username}";
     extraGroups = [ "networkmanager" "wheel" ];

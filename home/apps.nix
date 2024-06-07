@@ -6,7 +6,6 @@
   
   # System util
   programs.kitty.enable = true;
-  users.${username}.yourname.shell = pkgs.zsh;
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
