@@ -14,7 +14,7 @@
       ];
     };
   };
-  home.file.".oh-my-zsh/custom/themes/logan.zsh-theme" = { 
+  home.file.".oh-my-zsh/custom/themes/" = { 
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/logos/dotfiles/oh-my-zsh/";
     recursive = true;
   };
