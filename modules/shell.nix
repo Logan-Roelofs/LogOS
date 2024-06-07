@@ -16,7 +16,6 @@
           "docker"
         ];
       };
-    interactiveShellInit = "neofetch --ascii ~/.config/neofetch/hydra";
     };
   };
 
