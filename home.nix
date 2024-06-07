@@ -5,6 +5,7 @@
     ./home/theme.nix
     ./home/stylix.nix
     ./home/apps.nix
+    ./home/zsh.nix
   ];
   
   home.username = "logan";

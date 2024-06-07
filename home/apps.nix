@@ -6,23 +6,7 @@
   
   # System util
   programs.kitty.enable = true;
-  programs.zsh = {
-    enable = true;
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
-    oh-my-zsh = {
-      enable = true;
-      # Theme is the prompt layout
-      theme = "strug";
-      plugins = [
-        "git"
-	"kubectl"
-	"helm"
-	"docker"
-      ];
-    };
-  };
- 
+
   # Text Editor
   programs.vscode.enable = true;  
   programs.neovim.enable = true;

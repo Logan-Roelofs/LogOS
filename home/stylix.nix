@@ -5,21 +5,21 @@
   stylix.base16Scheme ={
 
     base00 = "#2E3440"; # 1 
-    base08 = "#3B4252"; # 2 
-    base0B = "#434C5E"; # 3
-    base0A = "#4C566A"; # 4
-    base0D = "#D8DEE9"; # 5 
-    base0E = "#E5E9F0"; # 6
-    base0C = "#ECEFF4"; # 7 
-    base05 = "#8FBCBB"; # 8 
-    base03 = "#88C0D0"; # 9 
+    base08 = "#88C0D0"; # 2 
+    base0B = "#BF616A"; # 3
+    base0A = "#5E81AC"; # 4
+    base0D = "#EBCB8B"; # 5 
+    base0E = "#A3BE8C"; # 6
+    base0C = "#D08770"; # 7 
+    base05 = "#E5E9F0"; # 8 
+    base03 = "#4C566A"; # 9 COMMET COLOR
     base09 = "#81A1C1"; # 10
-    base01 = "#5E81AC"; # 11 
-    base02 = "#BF616A"; # 12 
-    base04 = "#D08770"; # 13 
-    base06 = "#EBCB8B"; # 14 
-    base0F = "#A3BE8C"; # 15
-    base07 = "#B48EAD"; # 16
+    base01 = "#3B4252"; # 11 
+    base02 = "#434C5E"; # 12 
+    base04 = "#D8DEE9"; # 13 
+    base06 = "#ECEFF4"; # 14 
+    base0F = "#B48EAD"; # 15
+    base07 = "#8FBCBB"; # 16
 
     # Nord
     #base00 = "171717";
