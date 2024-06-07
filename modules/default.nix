@@ -50,7 +50,8 @@
   # Define Common System Services
   security.polkit.enable = true;
   services.upower.enable = true;
-
+  
+  programs.zsh.enable = true;
   # Define Main User 
   users.users.${username} = {
     shell = pkgs.zsh;
