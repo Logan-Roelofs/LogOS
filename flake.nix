@@ -32,7 +32,7 @@
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {inherit inputs username;};
           modules = [
-            ./home.nix
+            ./home/default.nix
             inputs.stylix.homeManagerModules.stylix
           ]; 
         };
