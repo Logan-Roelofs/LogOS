@@ -2,7 +2,6 @@
 {
   imports = [
     ./apps.nix
-    ./shell.nix
     ./vm.nix
     ./dev/rust.nix
     ./dev/dev.nix

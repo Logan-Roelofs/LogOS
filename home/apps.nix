@@ -8,9 +8,9 @@
   programs.kitty.enable = true;
   programs.zsh = {
     enable = true;
-    autosuggestions.enable = true;
+    autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    ohMyZsh = {
+    oh-my-zsh = {
       enable = true;
       # Theme is the prompt layout
       theme = "strug";
