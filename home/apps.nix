@@ -6,8 +6,9 @@
   
   # System util
   programs.kitty.enable = true;
+  users.${username}.yourname.shell = pkgs.zsh;
   programs.zsh = {
-    enable = true;
+    enable = true;autosuggestion
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     oh-my-zsh = {
@@ -64,7 +65,7 @@
   vim.keymap.set('n', '<A-8>', '<Cmd>BufferGoto 8<CR>', opts)
   vim.keymap.set('n', '<A-9>', '<Cmd>BufferGoto 9<CR>', opts)
   vim.keymap.set('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
-
+  vim.keymap.set('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
   -- Telescope
   vim.keymap.set("n", "<C-p>", ":Telescope find_files<CR>", {})
   vim.keymap.set("n", "<C-g>", ":Telescope live_grep<CR>", {})
