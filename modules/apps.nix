@@ -50,7 +50,8 @@
     grimblast       # Screenshot tool
     grim            # Screenshot tool
     slurp           # Screenshot tool
-    wl-clipboard    # Clipboard manager
+    wl-clipboard
+    wl-clipboard-x11    # Clipboard manager
 
     # Security Tools
     rustscan        # Fast port scanner

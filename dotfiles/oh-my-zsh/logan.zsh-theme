@@ -54,13 +54,13 @@ typeset -gA JOVIAL_SYMBOL=(
     corner.top    '╭─'
     corner.bottom '╰─'
 
-    git.dirty '✘✘✘'
+    git.dirty '✘'
     git.clean '✔'
 
     ## preset arrows
     # arrow '─>'
-    # arrow '─▶'
-    arrow '─➤'
+    arrow '─▶'
+    # arrow '─➤'
     arrow.git-clean '(๑˃̵ᴗ˂̵)و'
     arrow.git-dirty '(ﾉ˚Д˚)ﾉ'
 )
@@ -136,7 +136,7 @@ typeset -ga JOVIAL_PROMPT_PRIORITY=(
 )
 
 # pin last command execute elapsed, if the threshold is reached
-typeset -gi JOVIAL_EXEC_THRESHOLD_SECONDS=4
+typeset -gi JOVIAL_EXEC_THRESHOLD_SECONDS=3
 
 # prefixes and suffixes of jovial prompt part
 # all values wrapped in `${...}` will be subject to `Prompt-Expansion` during initialization
@@ -145,12 +145,13 @@ typeset -gA JOVIAL_AFFIXES=(
     # hostname/username use `Prompt-Expansion` syntax in default
     #   https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
     # but you can override it with simple constant string
-    hostname               '${(%):-%m}'
-    host.suffix            '${JOVIAL_PALETTE[normal]}] ${JOVIAL_PALETTE[conj.]}as'
+    # THIS NOW HAS THE USER NAME AND THE HOST NAME BELOW
+    hostname               '${(%):-%n}@${(%):-%m}'
+    host.suffix            '${JOVIAL_PALETTE[normal]}]${JOVIAL_PALETTE[conj.]}'
 
-    user.prefix            ' '
-    username               '${(%):-%n}'
-    user.suffix            ' ${JOVIAL_PALETTE[conj.]}in'
+    user.prefix            '%F[Blue]as'
+    username               ''
+    user.suffix            '${JOVIAL_PALETTE[conj.]}'
 
     path.prefix            ' '
     current-dir            '%~'
@@ -405,7 +406,7 @@ typeset -gA jovial_previous_parts=() jovial_previous_lengths=()
         path            ''
         dev-env         ''
         git-info        ''
-        current-time    ''
+        # current-time    ''
         typing          ''
         venv            ''
     )
@@ -416,7 +417,7 @@ typeset -gA jovial_previous_parts=() jovial_previous_lengths=()
         path            0
         dev-env         0
         git-info        0
-        current-time    0
+        # current-time    0
     )
 }
 
@@ -589,7 +590,7 @@ typeset -gA jovial_affix_lengths=()
     local current_time="${JOVIAL_AFFIXES[current-time.prefix]}${JOVIAL_PALETTE[time]}${(%):-%D{%H:%M:%S\}}${suffix}"
     # 8 is fixed lenght of datatime format `hh:mm:ss`
     jovial_part_lengths[current-time]=$(( 8 + ${jovial_affix_lengths[current-time]} ))
-    @jov.align-right "${current_time}" ${jovial_part_lengths[current-time]} 'jovial_parts[current-time]'
+    #@jov.align-right "${current_time}" ${jovial_part_lengths[current-time]} 'jovial_parts[current-time]'
 }
 
 
