@@ -149,7 +149,8 @@ typeset -gA JOVIAL_AFFIXES=(
     hostname               '${(%):-%n}@${(%):-%m}'
     host.suffix            '${JOVIAL_PALETTE[normal]}]${JOVIAL_PALETTE[conj.]}'
 
-    user.prefix            '%F{red}red%F{green}green%F{blue}blue%F{magenta}magenta%F{cyan}cyan%F{yellow}yellow%F{white}white%F{black}black%F{reset}'
+    user.prefix            ''
+    # user.prefix            '%F{red}red%F{green}green%F{blue}blue%F{magenta}magenta%F{cyan}cyan%F{yellow}yellow%F{white}white%F{black}black%F{reset}'
     username               ''
     user.suffix            '${JOVIAL_PALETTE[conj.]}'
 

@@ -1,46 +1,54 @@
-import GLib from "gi://GLib"
+const date = Variable("", {
+  poll: [1000, 'date "+%H:%M:%S %b %e."'],
+})
 
-const main = "/tmp/asztal/main.js"
-const entry = `${App.configDir}/main.ts`
-const bundler = GLib.getenv("AGS_BUNDLER") || "bun"
-
-const v = {
-    ags: pkg.version?.split(".").map(Number) || [],
-    expect: [1, 8, 1],
+function myLabel() {
+  return Widget.Label({
+    label: "Hello World",
+  })
 }
 
-try {
-    switch (bundler) {
-        case "bun": await Utils.execAsync([
-            "bun", "build", entry,
-            "--outfile", main,
-            "--external", "resource://*",
-            "--external", "gi://*",
-            "--external", "file://*",
-        ]); break
-
-        case "esbuild": await Utils.execAsync([
-            "esbuild", "--bundle", entry,
-            "--format=esm",
-            `--outfile=${main}`,
-            "--external:resource://*",
-            "--external:gi://*",
-            "--external:file://*",
-        ]); break
-
-        default:
-            throw `"${bundler}" is not a valid bundler`
-    }
-
-    if (v.ags[1] < v.expect[1] || v.ags[2] < v.expect[2]) {
-        print(`my config needs at least v${v.expect.join(".")}, yours is v${v.ags.join(".")}`)
-        App.quit()
-    }
-
-    await import(`file://${main}`)
-} catch (error) {
-    console.error(error)
-    App.quit()
+function Left() {
+    return Widget.Box({
+        spacing: 8,
+        children: [
+          myLabel() 
+        ],
+    })
 }
 
-export { }
+function Center() {
+    return Widget.Box({
+        spacing: 8,
+        children: [
+          myLabel(),
+        ],
+    })
+}
+
+function Right() {
+    return Widget.Box({
+        hpack: "end",
+        spacing: 8,
+        children: [
+          myLabel(),
+        ],
+    })
+}
+const Bar = (monitor) => Widget.Window({
+  name: `bar-${monitor}`, // name has to be unique
+  class_name: "bar",
+  monitor,
+  anchor: ["top", "left", "right"], // Sets widget to the top of the screen
+  exclusivity: "exclusive", // Makes room for the bar AKA no overlapping with other windows
+  child: Widget.CenterBox({
+    start_widget: Left(),
+    center_widget: Center(),
+    end_widget: Right(),
+  }),
+})
+
+App.config({
+  windows: [Bar(0),Bar(1)],
+})
+
