@@ -7,9 +7,7 @@
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
-    plugins = [
-      inputs.hyprland-plugins.packages.${pkgs.system}.hyprwinwrap
-    ];
+    plugins = with pkgs; [ inputs.hyprland-plugins.packages.${system}.hyprwinwrap ];
     settings = { 
       
       misc = {
