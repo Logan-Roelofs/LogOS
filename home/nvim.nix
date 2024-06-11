@@ -61,5 +61,15 @@
   
   -- Copilot
   vim.g.copilot_filetypes = { ['*'] = true }
+
+  -- Noice setup
+  require("noice").setup({
+    presets = {
+      bottom_search = false,
+      command_palette = false,
+      long_message_to_split = false,
+      inc_rename = false,
+   }
+  })
   '';
 }
