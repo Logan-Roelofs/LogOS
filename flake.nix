@@ -36,7 +36,7 @@
           modules = [
             ./home/default.nix
             inputs.stylix.homeManagerModules.stylix
-            hyprland.homeManagerModules.default
+            inputs.hyprland.homeManagerModules.default
           ]; 
         };
       };
