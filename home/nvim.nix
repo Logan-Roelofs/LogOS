@@ -8,9 +8,6 @@
     nvim-web-devicons
     
     # Programs
-    mason-nvim
-    CopilotChat-nvim
-    mason-lspconfig-nvim
     nvim-lspconfig
     telescope-nvim
     telescope-file-browser-nvim 
@@ -39,8 +36,9 @@
     nvim-tree-lua 	# File Explorer
       nui-nvim
       image-nvim
-    barbar-nvim 	# Buffer Bar (Tabs)
-      gitsigns-nvim
+    bufferline-nvim
+    #barbar-nvim 	# Buffer Bar (Tabs)
+    #  gitsigns-nvim
     copilot-vim 	# Copilot
     colorizer 		# Colorize hex codes
     lualine-nvim 	# Status Line
@@ -65,19 +63,26 @@
   vim.api.nvim_set_keymap('v', '<C-v>', '"+p', { noremap = true, silent = true })
   vim.api.nvim_set_keymap('i', '<C-v>', '<Esc>"+pa', { noremap = true, silent = true })
   
-  
-  -- BarBar
-  vim.keymap.set('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', opts)
-  vim.keymap.set('n', '<A-2>', '<Cmd>BufferGoto 2<CR>', opts)
-  vim.keymap.set('n', '<A-3>', '<Cmd>BufferGoto 3<CR>', opts)
-  vim.keymap.set('n', '<A-4>', '<Cmd>BufferGoto 4<CR>', opts)
-  vim.keymap.set('n', '<A-5>', '<Cmd>BufferGoto 5<CR>', opts)
-  vim.keymap.set('n', '<A-6>', '<Cmd>BufferGoto 6<CR>', opts)
-  vim.keymap.set('n', '<A-7>', '<Cmd>BufferGoto 7<CR>', opts)
-  vim.keymap.set('n', '<A-8>', '<Cmd>BufferGoto 8<CR>', opts)
-  vim.keymap.set('n', '<A-9>', '<Cmd>BufferGoto 9<CR>', opts)
-  vim.keymap.set('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
-  vim.keymap.set('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
+  -- Bufferline
+  vim.opt.termguicolors = true
+  require("bufferline").setup{
+    options = {
+      separator_style = "slant",
+      numbers = function(opts)
+        return string.format('%s',opts.raise(opts.ordinal))               -- "raise" | "lower" | "ordinal" | "id"
+      end,
+    }
+  }
+  vim.keymap.set('n', '<A-1>', '<Cmd>BufferLineGoToBuffer 1<CR>', opts)
+  vim.keymap.set('n', '<A-2>', '<Cmd>BufferLineGoToBuffer 2<CR>', opts)
+  vim.keymap.set('n', '<A-3>', '<Cmd>BufferLineGoToBuffer 3<CR>', opts)
+  vim.keymap.set('n', '<A-4>', '<Cmd>BufferLineGoToBuffer 4<CR>', opts)
+  vim.keymap.set('n', '<A-5>', '<Cmd>BufferLineGoToBuffer 5<CR>', opts)
+  vim.keymap.set('n', '<A-6>', '<Cmd>BufferLineGoToBuffer 6<CR>', opts)
+  vim.keymap.set('n', '<A-7>', '<Cmd>BufferLineGoToBuffer 7<CR>', opts)
+  vim.keymap.set('n', '<A-8>', '<Cmd>BufferLineGoToBuffer 8<CR>', opts)
+  vim.keymap.set('n', '<A-9>', '<Cmd>BufferLineGoToBuffer 9<CR>', opts)
+  vim.keymap.set('n', '<A-c>', '<Cmd>bd<CR>', opts)
   
   -- Telescope
   vim.keymap.set("n", "<C-p>", ":Telescope find_files<CR>", {})
@@ -116,25 +121,7 @@
     indent = { enable = true },
   })
   
-  -- Mason
-  require("mason").setup()
 
-  -- Mason LSP config
-  require("mason.lspconfig").setup({
-    ensure_installed = {
-      "lua_ls",
-      "rnix", -- Nix LSP
-    },
-  })
 
-  -- nvim-lspconfig
-  require("nvim-lspconfig").setup({
-    automatic_installation = true,
-  })
-
-  -- Copilot Chat
-  require("CopilotChat").setup ({
-    debug = true,
-  })
   '';
 }
