@@ -25,6 +25,7 @@
           ./hardware/hardware-configuration.nix 
           ./modules/default.nix
           inputs.stylix.nixosModules.stylix
+          inputs.hyprland.nixosModules.default
         ];
       };
       
