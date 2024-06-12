@@ -26,7 +26,7 @@
     libxslt         # XSLT processor
     networkmanagerapplet
     home-manager    # Home Manager
-    iterm2
+    terminator      # Terminal
 
     # neovim          # Text editor
     gvfs            # Virtual file system
