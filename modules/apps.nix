@@ -28,6 +28,7 @@
     home-manager    # Home Manager
     terminator      # Terminal
     cava
+    caido
 
     # neovim          # Text editor
     gvfs            # Virtual file system

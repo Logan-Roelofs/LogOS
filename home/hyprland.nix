@@ -18,6 +18,19 @@
       xwayland = {
         force_zero_scaling = true;
       };
+
+      env = [
+        # https://wiki.hyprland.org/FAQ/
+
+        # XDG Specifications
+        "XDG_CURRENT_DESKTOP,Hyprland"
+        "XDG_SESSION_TYPE,wayland"
+        "XDG_SESSION_DESKTOP,Hyprland"
+
+        # QT
+        "QT_AUTO_SCREEN_SCALE_FACTOR,1" # enable automatic scaling
+        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+      ];
       
       plugin = {
         hyprwinwrap = {
@@ -71,18 +84,14 @@
       ",preferred,auto,1"
       "eDP-1,preferred,auto,1.333333"
       ];
-
-      env = [
-        "XCURSOR_SIZE,24"
-      ];
       
       "$mainMod" = "SUPER";
       
       windowrule = [
         "opacity 0.95 override 0.8 override,^(kitty)$"
-        "opacity 0.95 override 0.8 override,^(kitty)$"
-        "tile, title:^(*)$"
-      ];
+        "tile,^(kitty)$"
+      ]; 
+
       bind =[
           "$mainMod, Q, exec, kitty"
           "$mainMod, C, killactive,"
