@@ -27,6 +27,7 @@
     networkmanagerapplet
     home-manager    # Home Manager
     terminator      # Terminal
+    cava
 
     # neovim          # Text editor
     gvfs            # Virtual file system

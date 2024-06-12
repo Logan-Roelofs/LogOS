@@ -21,7 +21,7 @@
       
       plugin = {
         hyprwinwrap = {
-          "class" = "";
+          "class" = "kitty-bg";
         };
       };
       
@@ -83,7 +83,7 @@
         "tile, title:^(*)$"
       ];
       bind =[
-          "$mainMod, Q, exec, kitty"
+          "$mainMod, Q, exec, kitty -o linux_display_server=x11"
           "$mainMod, C, killactive,"
           "$mainMod, M, exit,"
           "$mainMod, V, togglefloating,"
