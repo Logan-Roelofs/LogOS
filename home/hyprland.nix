@@ -21,9 +21,10 @@
       
       plugin = {
         hyprwinwrap = {
-          "class" = "kitty-bg";
+          "class" = "";
         };
       };
+      
       exec-once = [
         "ags"
       ];
