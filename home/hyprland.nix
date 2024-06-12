@@ -27,7 +27,7 @@
       
       exec-once = [
         "ags"
-        ''''
+        ''kitty --class="kitty-bg" "/home/logan/.config/hypr/cava.sh"''
       ];
 
       decoration = {
@@ -84,7 +84,7 @@
         "tile, title:^(*)$"
       ];
       bind =[
-          "$mainMod, Q, exec, kitty -o linux_display_server=x11"
+          "$mainMod, Q, exec, kitty"
           "$mainMod, C, killactive,"
           "$mainMod, M, exit,"
           "$mainMod, V, togglefloating,"
