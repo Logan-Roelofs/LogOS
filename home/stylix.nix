@@ -1,46 +1,42 @@
-{ pkgs, inputs, ...}:
-
-{
+{ pkgs, inputs, ... }: {
   #stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
-  stylix.base16Scheme ={
-
-    
+  stylix.base16Scheme = {
     # Personal base16 scheme
-    base00 = "#121212"; # ----
-    base01 = "#1A1A1A"; # ---
-    base02 = "#212121"; # --
-    base03 = "#292929"; # -
-    base04 = "#303030"; # +
-    base05 = "#D9D9D9"; # ++
-    base06 = "#404040"; # +++
-    base07 = "#4F4F4F"; # ++++
-    base08 = "#BF616A"; # red
-    base09 = "#ff851b"; # orange
-    base0A = "#EBCB8B"; # yellow
-    base0B = "#A3BE8C"; # green
-    base0C = "#88C0D0"; # aqua/cyan
-    base0D = "#5E81AC"; # blue
-    base0E = "#B48EAD"; # purple
-    base0F = "#665c54"; # brown
+    base00 = "#100F0F"; # ----    Main bg
+    base01 = "#1C1B1A"; # ---     Sidebar bg
+    base02 = "#282726"; # --      Highlight bg
+    base03 = "#575653"; # -       Comments          (Text 2)
+    base04 = "#878580"; # +       NA
+    base05 = "#CECDC3"; # ++      Default Text      (Text 1)
+    base06 = "#000FFF"; # +++     NA
+    base07 = "#FFFF00"; # ++++    NA
+    base08 = "#BF616A"; # red     Error / Failure
+    base09 = "#FF0000"; # orange
+    base0A = "#EBCB8B"; # yellow  Warning
+    base0B = "#A3BE8C"; # green   Success
+    base0C = "#8FBCBB"; # ---     Random stuff
+    base0D = "#88C0D0"; # --      Random stuff
+    base0E = "#81A1C1"; # ---     Random stuff
+    base0F = "#5E81AC"; # ----    Syntax stuff
 
     # Nord
     #base00 = "#2E3440"; # 1 Black	Background
     #base08 = "#BF616A"; # 2 RED 	Error / Failure
     #base0B = "#A3BE8C"; # 3 GREEN	Success
-    #base0A = "#EBCB8B"; # 4 YELLOW	
-    #base0D = "#5E81AC"; # 5 BLUE	
-    #base0E = "#B48EAD"; # 6 MAGENTA	
-    #base0C = "#88C0D0"; # 7 CYAN	
+    #base0A = "#EBCB8B"; # 4 YELLOW
+    #base0D = "#5E81AC"; # 5 BLUE
+    #base0E = "#B48EAD"; # 6 MAGENTA
+    #base0C = "#88C0D0"; # 7 CYAN
     #base05 = "#FFFFFF"; # 8 WHITE	Default Text
     #base03 = "#3B4252"; # 9 		Comment
     #base09 = "#434C5E"; # 10
-    #base01 = "#4C566A"; # 11 
-    #base02 = "#D8DEE9"; # 12 
-    #base04 = "#E5E9F0"; # 13 
-    #base06 = "#ECEFF4"; # 14 
+    #base01 = "#4C566A"; # 11
+    #base02 = "#D8DEE9"; # 12
+    #base04 = "#E5E9F0"; # 13
+    #base06 = "#ECEFF4"; # 14
     #base0F = "#8FBCBB"; # 15
     #base07 = "#5E81AC"; # 16
-    
+
     # Grovbox
     #base00 = "#1d2021"; # ----
     #base01 = "#3c3836"; # ---
@@ -77,7 +73,7 @@
     #base0E = "#00bb00";
     #base0F = "#005500";
   };
-  
+
   stylix.fonts = {
     monospace = {
       package = pkgs.monaspace;
@@ -87,8 +83,8 @@
 
   stylix.autoEnable = true;
   stylix.targets.hyprland.enable = false;
-#  stylix.targets.nixvim.enable = false;
-  
+  #  stylix.targets.nixvim.enable = false;
+
   stylix.image = ../dotfiles/wp/zen.png;
   stylix.targets.gtk.enable = false;
   stylix.polarity = "dark";

@@ -79,44 +79,44 @@ typeset -gA JOVIAL_SYMBOL=(
 #
 typeset -gA JOVIAL_PALETTE=(
     # hostname
-    host '%F{157}'
+    host '%F{cyan}'
 
     # common user name
-    user '%F{253}'
+    user '%F{cyan}'
 
     # only root user
     root '%B%F{203}'
 
     # current work dir path
-    path '%B%F{228}%}'
+    path '%B%F{magenta}%}'
 
     # git status info (dirty or clean / rebase / merge / cherry-pick)
     git '%F{159}'
 
     # virtual env activate prompt for python
-    venv '%F{159}'
+    venv '%F{cyan}'
  
     # current time when prompt render, pin at end-of-line
-    time '%F{254}'
+    time '%F{cyan}'
 
     # elapsed time of last command executed
-    elapsed '%F{222}'
+    elapsed '%F{cyan}'
 
     # exit code of last command
-    exit.mark '%F{246}'
-    exit.code '%B%F{203}'
+    exit.mark '%F{cyan}'
+    exit.code '%B%F{cyan}'
 
     # 'conj.': short for 'conjunction', like as, at, in, on, using
-    conj. '%F{102}'
+    conj. '%F{cyan}'
 
     # shell typing area pointer
-    typing '%F{252}'
+    typing '%F{cyan}'
 
     # for other common case text color
-    normal '%F{252}'
+    normal '%F{cyan}'
 
-    success '%F{040}'
-    error '%F{203}'
+    success '%F{green}'
+    error '%F{red}'
 )
 
 # parts dispaly order from left to right of jovial theme at the first line 

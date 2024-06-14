@@ -3,7 +3,10 @@
   
   home.packages = with pkgs; [
   ];
-  
+  home.file.".config/wp/" = { 
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/logos/dotfiles/wp/";
+    recursive = true;
+  }; 
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -34,13 +37,14 @@
       
       plugin = {
         hyprwinwrap = {
-          "class" = "kitty-bg";
+          class = "kitty-bg";  
         };
       };
       
       exec-once = [
         "ags"
-        ''kitty --class="kitty-bg" "/home/logan/.config/hypr/cava.sh"''
+        #''kitty --class="kitty-bg" "/home/logan/.config/hypr/cava.sh"''
+        #"firefox ~/.config/wp/move.html -kiosk"
       ];
 
       decoration = {
