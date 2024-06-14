@@ -1,37 +1,38 @@
-{ config, pkgs, ... }:
-{
+{ config, pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-  
+    # Electron
+    nodejs_22
+
     # System Utilities
-    util-linux      # mount kill lsblk etc
-    tree            # list directory structure
-    tldr            # Quick help for commands
-    git             # Version control
-    neofetch        # System info
-    htop            # Process viewer
-    wget            # File downloader
-    unzip           # Unzip files
-    p7zip           # 7zip
-    ripgrep         # Fast file search   
-    mongosh         # MongoDB shell
-    updog           # Simple HTTP server
-    chafa           # Image to ASCII
-    blueberry       # Bluetooth manager
-    openvpn         # VPN
-    yazi            # Terminal file manager
-    imagemagick     # Image support for nvim
+    util-linux # mount kill lsblk etc
+    tree # list directory structure
+    tldr # Quick help for commands
+    git # Version control
+    neofetch # System info
+    htop # Process viewer
+    wget # File downloader
+    unzip # Unzip files
+    p7zip # 7zip
+    ripgrep # Fast file search
+    mongosh # MongoDB shell
+    updog # Simple HTTP server
+    chafa # Image to ASCII
+    blueberry # Bluetooth manager
+    openvpn # VPN
+    yazi # Terminal file manager
+    imagemagick # Image support for nvim
     luajitPackages.magick # Image support for nvim
-    netcat          # Network utility
-    nix-index       # Index nix packages
-    libxslt         # XSLT processor
+    netcat # Network utility
+    nix-index # Index nix packages
+    libxslt # XSLT processor
     networkmanagerapplet
-    home-manager    # Home Manager
-    terminator      # Terminal
+    home-manager # Home Manager
+    terminator # Terminal
     cava
     caido
 
     # neovim          # Text editor
-    gvfs            # Virtual file system
+    gvfs # Virtual file system
     hyprlock
     flavours
     # Emulators and Game Managment
@@ -47,75 +48,69 @@
 
     # Media
     #davinci-resolve # Video Editor
-    obs-studio      # Streaming and recording
-    ffmpeg          # Video and audio processing
-    gimp            # Image editor
-    grimblast       # Screenshot tool
-    grim            # Screenshot tool
-    slurp           # Screenshot tool
+    obs-studio # Streaming and recording
+    ffmpeg # Video and audio processing
+    gimp # Image editor
+    grimblast # Screenshot tool
+    grim # Screenshot tool
+    slurp # Screenshot tool
     wl-clipboard
-    wl-clipboard-x11    # Clipboard manager
+    wl-clipboard-x11 # Clipboard manager
 
     # Security Tools
-    rustscan        # Fast port scanner
-    nmap            # Network scanner
-    john            # Password cracker
-    hashcat         # Password cracker
+    rustscan # Fast port scanner
+    nmap # Network scanner
+    john # Password cracker
+    hashcat # Password cracker
     hash-identifier # Hash identifier
-    burpsuite       # Web application security testing
-    samba           # Smb client
-    inetutils       # telnet, ftp, rsh, rlogin, rcp, and rwho
-    redis           # Redis-cli
-    gobuster        # Directory brute-forcer
-    enum4linux      # Enumerate information from Windows and Samba systems
-    thc-hydra       # Password cracker
-    whatweb         # Web scanner
-    exploitdb       # Exploit database
-    ffuf            # Fast web fuzzer
-    cewl            # Custom word list generator
+    burpsuite # Web application security testing
+    samba # Smb client
+    inetutils # telnet, ftp, rsh, rlogin, rcp, and rwho
+    redis # Redis-cli
+    gobuster # Directory brute-forcer
+    enum4linux # Enumerate information from Windows and Samba systems
+    thc-hydra # Password cracker
+    whatweb # Web scanner
+    exploitdb # Exploit database
+    ffuf # Fast web fuzzer
+    cewl # Custom word list generator
 
     # GUI Applications
-    spotify         # Music streaming
-    remmina         # Remote desktop client
-    appimage-run    # AppImage runner
-    slack           # Team communication
+    spotify # Music streaming
+    remmina # Remote desktop client
+    appimage-run # AppImage runner
+    slack # Team communication
     teams-for-linux # Unifficial Microsoft Teams client
-    discord         # Server communication
-    rofi-wayland    # Application launcher
+    discord # Server communication
+    rofi-wayland # Application launcher
     sweethome3d.application # Interior design
     sweethome3d.textures-editor # Interior design
     sweethome3d.furniture-editor # Interior design
 
     # Development
-    hugo            # Static site generator
-    godot_4         # Game engine
-    
+    hugo # Static site generator
+    godot_4 # Game engine
+
     # Desktop Package Requirements
-    swww           # Sway Wallpaper
-    hyprpicker     # Hyprland color picker
-    fd             # Fast file search
-    bun            # js run time 
-    dart-sass      # sass compiler
-    brightnessctl  # Brightness control
-    supergfxctl    # Sway wallpaper
-    slurp          # Screenshot tool
-    loupe          # Sway wallpaper
+    swww # Sway Wallpaper
+    hyprpicker # Hyprland color picker
+    fd # Fast file search
+    bun # js run time
+    dart-sass # sass compiler
+    brightnessctl # Brightness control
+    supergfxctl # Sway wallpaper
+    slurp # Screenshot tool
+    loupe # Sway wallpaper
     gnome.adwaita-icon-theme # Icon theme
     gnome.nautilus # File manager
     gnome.gnome-system-monitor # System monitor
     gnome.gnome-control-center # System settings
-    
-    (python3.withPackages (ps: with ps; [
-        pip
-        requests
-    ]))
+
+    (python3.withPackages (ps: with ps; [ pip requests ]))
   ];
-  
+
   programs.steam.enable = true;
 
   # This is required to run DaVinci Resolve to run on my AMD APU
-  hardware.opengl.extraPackages = with pkgs; [
-    rocmPackages.clr.icd
-  ];
-  
+  hardware.opengl.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
 }
