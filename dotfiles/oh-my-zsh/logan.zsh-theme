@@ -54,8 +54,10 @@ typeset -gA JOVIAL_SYMBOL=(
     corner.top    '╭─'
     corner.bottom '╰─'
 
-    git.dirty '✘'
-    git.clean '✔'
+    git.dirty ''
+    #git.dirty '✘'
+    git.clean ''
+    #git.clean '✔'
 
     ## preset arrows
     # arrow '─>'
@@ -819,8 +821,7 @@ typeset -ga JOVIAL_DEV_ENV_DETECT_FUNCS=(
     ref="${ref#refs/heads/}"
 
     echo "${ref}"
-}
-
+} 
 
 # use `exec` to parallel run commands and capture stdout into file descriptor
 #   @jov.set-git-info [true|false]
@@ -835,8 +836,8 @@ typeset -ga JOVIAL_DEV_ENV_DETECT_FUNCS=(
         exec {dirty_fd}<> <(@jov.judge-git-dirty)
     fi
 
-    exec {branch_fd}<> <(@jov.git-branch)
-    exec {action_fd}<> <(@jov.git-action-prompt)
+    # exec {branch_fd}<> <(@jov.git-branch)
+    # exec {action_fd}<> <(@jov.git-action-prompt)
 
     # read and close file descriptors
     local git_branch="$(<& ${branch_fd})"
@@ -966,7 +967,7 @@ add-zsh-hook precmd @jov.prompt-prepare
         user ''
         path ''
         dev-env ''
-        git-info ''
+        # git-info ''
         current-time ''
         typing ''
         venv ''
