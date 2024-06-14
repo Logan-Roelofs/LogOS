@@ -161,8 +161,10 @@ typeset -gA JOVIAL_AFFIXES=(
     dev-env.prefix         ' '
     dev-env.suffix         ''
 
-    git-info.prefix        ' ${JOVIAL_PALETTE[conj.]}on ${JOVIAL_PALETTE[normal]}('
-    git-info.suffix        '${JOVIAL_PALETTE[normal]})'
+    git-info.prefix        ''
+    #git-info.prefix        ' ${JOVIAL_PALETTE[conj.]}on ${JOVIAL_PALETTE[normal]}('
+    git-info.suffix        ' '
+    #git-info.suffix       '${JOVIAL_PALETTE[normal]})'
 
     venv.prefix            ' ${JOVIAL_PALETTE[normal]}('
     venv.suffix            '${JOVIAL_PALETTE[normal]})'
@@ -448,9 +450,9 @@ typeset -gA jovial_affix_lengths=()
 
     if [[ -n ${jovial_rev_git_dir} ]]; then
         if [[ ${jovial_is_git_dirty} == false ]]; then
-            jovial_parts[typing]+="${JOVIAL_SYMBOL[arrow.git-clean]}"
+            jovial_parts[typing]+="%F{green}${JOVIAL_SYMBOL[arrow.git-clean]}"
         else
-            jovial_parts[typing]+="${JOVIAL_SYMBOL[arrow.git-dirty]}"
+            jovial_parts[typing]+="%F{red}${JOVIAL_SYMBOL[arrow.git-dirty]}"
         fi
     else
         jovial_parts[typing]+="${JOVIAL_SYMBOL[arrow]}"
