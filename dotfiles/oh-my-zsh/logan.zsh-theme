@@ -61,8 +61,10 @@ typeset -gA JOVIAL_SYMBOL=(
     # arrow '─>'
     arrow '─▶'
     # arrow '─➤'
-    arrow.git-clean '(๑˃̵ᴗ˂̵)و'
-    arrow.git-dirty '(ﾉ˚Д˚)ﾉ'
+    #arrow.git-clean '(๑˃̵ᴗ˂̵)و'
+    arrow.git-clean 'っ(ツ)っ'
+    #arrow.git-dirty '(ﾉ˚Д˚)ﾉ'
+    arrow.git-dirty '\(°□°)/'
 )
 
 
