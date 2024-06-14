@@ -79,7 +79,7 @@ typeset -gA JOVIAL_SYMBOL=(
 #
 typeset -gA JOVIAL_PALETTE=(
     # hostname
-    host '%F{cyan}'
+    host '%F{magenta}'
 
     # common user name
     user '%F{cyan}'
@@ -91,7 +91,7 @@ typeset -gA JOVIAL_PALETTE=(
     path '%B%F{magenta}%}'
 
     # git status info (dirty or clean / rebase / merge / cherry-pick)
-    git '%F{159}'
+    git '%F{cyan}'
 
     # virtual env activate prompt for python
     venv '%F{cyan}'
