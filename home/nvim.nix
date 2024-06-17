@@ -4,6 +4,7 @@
     # https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
     pyright
     quick-lint-js
+    javascript-typescript-langserver
 
     # List of formatters:
     # https://github.com/stevearc/conform.nvim?tab=readme-ov-file#formatters
@@ -123,7 +124,8 @@
       })
 
       -- LSPconfig (Error Checking)
-      require'lspconfig'.quick_lint_js.setup{}
+      --require'lspconfig'.quick_lint_js.setup{}
+      require'lspconfig'.tsserver.setup{}
       require'lspconfig'.pyright.setup{}
 
       -- Conform (Formatter)
