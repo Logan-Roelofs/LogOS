@@ -1,5 +1,5 @@
 { inputs, config, pkgs, ... }: {
-  home.packages = with pkgs; [ ];
+  home.packages = with pkgs; [ electron_30 nodejs ];
   home.file.".config/wp/" = {
     source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.homeDirectory}/.config/logos/dotfiles/wp/";
