@@ -30,6 +30,8 @@
     terminator # Terminal
     cava
     caido
+    swww
+    waypaper
 
     # neovim          # Text editor
     gvfs # Virtual file system
