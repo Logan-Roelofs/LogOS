@@ -1,7 +1,6 @@
 const { app, BrowserWindow } = require("electron");
 
 function createWindow() {
-  // Create the browser window.
   const win = new BrowserWindow({
     width: 800,
     height: 600,
@@ -9,9 +8,8 @@ function createWindow() {
       nodeIntegration: true,
     },
   });
-
-  // and load the index.html of the app.
   win.loadFile("waves.html");
+  win.setMenuBarVisibility(false);
 }
 
 app.whenReady().then(createWindow);

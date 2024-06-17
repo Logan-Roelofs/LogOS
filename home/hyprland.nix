@@ -31,7 +31,7 @@
         "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
       ];
 
-      plugin = { hyprwinwrap = { class = "kitty-bg"; }; };
+      plugin = { hyprwinwrap = { class = "waves"; }; };
 
       exec-once = [
         "ags"

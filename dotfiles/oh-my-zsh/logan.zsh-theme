@@ -163,8 +163,8 @@ typeset -gA JOVIAL_AFFIXES=(
     dev-env.prefix         ' '
     dev-env.suffix         ''
 
-    git-info.prefix        ' ${JOVIAL_PALETTE[conj.]}on ${JOVIAL_PALETTE[normal]}('
-    git-info.suffix        '${JOVIAL_PALETTE[normal]})'
+    git-info.prefix        ' ${JOVIAL_PALETTE[conj.]}${JOVIAL_PALETTE[normal]}'
+    git-info.suffix        '${JOVIAL_PALETTE[normal]}'
 
     venv.prefix            ' ${JOVIAL_PALETTE[normal]}('
     venv.suffix            '${JOVIAL_PALETTE[normal]})'
