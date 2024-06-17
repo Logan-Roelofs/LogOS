@@ -125,7 +125,9 @@
 
       -- LSPconfig (Error Checking)
       --require'lspconfig'.quick_lint_js.setup{}
-      require'lspconfig'.tsserver.setup{}
+      require'lspconfig'.tsserver.setup{
+        cmd = { "typescript-language-server"},
+      }
       require'lspconfig'.pyright.setup{}
 
       -- Conform (Formatter)
