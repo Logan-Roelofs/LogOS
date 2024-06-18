@@ -124,6 +124,9 @@
         indent = { enable = true },
       })
 
+      -- Alpha (Dashboard)
+      require'alpha'.setup(require'alpha.themes.dashboard'.config)
+
       -- LSPconfig (Error Checking)
       require'lspconfig'.quick_lint_js.setup{}
       require'lspconfig'.tsserver.setup{
