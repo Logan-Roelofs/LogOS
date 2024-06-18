@@ -1,37 +1,34 @@
 { inputs, config, pkgs, ... }: {
   programs.hyprlock.enable = true;
-  programs.hyprlock.settings = ''
-    {
-      general = {
-        disable_loading_bar = true;
-        grace = 300;
-        hide_cursor = true;
-        no_fade_in = false;
-      };
+  programs.hyprlock.settings = {
+    general = {
+      disable_loading_bar = false;
+      grace = 1;
+      ignore_empty_input = true
+      text_trim = true
+      hide_cursor = true;
+      no_fade_in = true;
+    };
 
-      background = [
-        {
-          path = "screenshot";
-          blur_passes = 3;
-          blur_size = 8;
-        }
-      ];
+    background = [{
+      path = "screenshot";
+      blur_passes = 3;
+      blur_size = 7;
+    }];
 
-      input-field = [
-        {
-          size = "200, 50";
-          position = "0, -80";
-          monitor = "";
-          dots_center = true;
-          fade_on_empty = false;
-          font_color = "rgb(202, 211, 245)";
-          inner_color = "rgb(91, 96, 120)";
-          outer_color = "rgb(24, 25, 38)";
-          outline_thickness = 5;
-          placeholder_text = '\'<span foreground="##cad3f5">Password...</span>'\';
-          shadow_passes = 2;
-        }
-      ];
-    }
-  '';
+    input-field = [{
+      size = "200, 50";
+      position = "0, -80";
+      monitor = "";
+      dots_center = true;
+      fade_on_empty = false;
+      font_color = "rgb(202, 211, 245)";
+      inner_color = "rgb(91, 96, 120)";
+      outer_color = "rgb(24, 25, 38)";
+      outline_thickness = 5;
+      placeholder_text =
+        '''/'<span foreground="##cad3f5">Password...</span>'/'';
+      shadow_passes = 10;
+    }];
+  };
 }
