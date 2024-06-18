@@ -1,5 +1,4 @@
-{ config, pkgs, lib, inputs, username, ... }:
-{
+{ config, pkgs, lib, inputs, username, ... }: {
   imports = [
     ./apps.nix
     ./vm.nix
@@ -12,27 +11,28 @@
     ./stylix.nix
   ];
 
-  networking.extraHosts =
-    ''
-      10.10.11.230 cozyhosting.htb
-    '';
+  networking.extraHosts = ''
+    10.10.11.230 cozyhosting.htb
+  '';
+
+  services.envfs.enable = true; # Enable envfs for user environments (e.g. /bin)
 
   programs.tmux = {
     enable = true;
     extraConfig = ''
-    set -g allow-passthrough on
-    set -g mouse on  
-    bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e; send-keys -M'"
+      set -g allow-passthrough on
+      set -g mouse on
+      bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e; send-keys -M'"
     '';
   };
 
   networking.firewall.enable = false;
 
-# Hyprland Configuration
+  # Hyprland Configuration
 
   programs.hyprland = {
-      enable = true;
-      xwayland.enable = true;
+    enable = true;
+    xwayland.enable = true;
   };
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   environment.variables.KITTY_DISABLE_WAYLAND = "1";
@@ -50,9 +50,9 @@
   # Define Common System Services
   security.polkit.enable = true;
   services.upower.enable = true;
-  
+
   programs.zsh.enable = true;
-  # Define Main User 
+  # Define Main User
   users.users.${username} = {
     shell = pkgs.zsh;
     isNormalUser = true;
@@ -79,7 +79,7 @@
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
   hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true; 
+  hardware.bluetooth.powerOnBoot = true;
 
   # Define Nixos Settings
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -101,10 +101,10 @@
   # Define Bootloader Settings
   boot.loader.grub.enable = true;
   boot.loader.grub.efiSupport = true;
-  boot.loader.grub.efiInstallAsRemovable = true; 
-  boot.loader.efi.efiSysMountPoint = "/boot"; 
+  boot.loader.grub.efiInstallAsRemovable = true;
+  boot.loader.efi.efiSysMountPoint = "/boot";
   boot.loader.grub.device = "nodev";
   boot.loader.grub.useOSProber = true;
-#  boot.loader.systemd-boot.enable = true;
-#  boot.loader.efi.canTouchEfiVariables = true;
+  #  boot.loader.systemd-boot.enable = true;
+  #  boot.loader.efi.canTouchEfiVariables = true;
 }
