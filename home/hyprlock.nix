@@ -15,7 +15,7 @@
   programs.hyprlock.settings = {
     general = {
       disable_loading_bar = true;
-      grace = 1;
+      grace = 0;
       ignore_empty_input = true;
       hide_cursor = true;
       no_fade_in = true;
@@ -31,23 +31,28 @@
     label = [{
       text = ''cmd[update:1000] echo -e "$(~/.config/hyprlock/info.sh)"'';
       color = "#CECDC3";
-      font_size = 12;
-      position = "-20, -510";
+      #font_size = 12;
+      position = "0, 0";
       halign = "right";
-      valign = "center";
+      valign = "bottom";
     }];
 
     input-field = [{
-      size = "200, 50";
-      position = "0, -80";
+      size = "250, 60";
+      position = "0, 0";
       monitor = "";
-      dots_center = true;
       fade_on_empty = false;
-      font_color = "#1C1B1A";
-      inner_color = "#CECDC3";
-      outer_color = "#1C1B1A";
-      outline_thickness = 5;
-      placeholder_text = ''<span foreground="##CECDC3">Password...</span>'';
+      font_color = "#CECDC3";
+      inner_color = "#100F0F";
+      outline_thickness = 0;
+      outer_color = "#100F0F";
+      dots_size = 0.2; # Scale of input-field height, 0.2 - 0.8
+      dots_spacing = 0.5; # Scale of dots' absolute size, 0.0 - 1.0
+      dots_center = true;
+      hide_input = false;
+      valign = "center";
+      halign = "center";
+      placeholder_text = ''<span foreground="##1C1B1A"> $USER</span>'';
       shadow_passes = 10;
     }];
   };
