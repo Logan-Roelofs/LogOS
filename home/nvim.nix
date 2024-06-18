@@ -39,6 +39,7 @@
       telescope-file-browser-nvim # File Browser
       telescope-ui-select-nvim # UI for Telescope
       nvim-treesitter.withAllGrammars # Syntax Highlighting
+      alpha-nvim # Dashboard
 
       # Common Dependencies
       plenary-nvim
