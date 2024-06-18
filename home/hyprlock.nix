@@ -1,18 +1,22 @@
 { inputs, config, pkgs, ... }: {
   programs.hyprlock.enable = true;
 
-  home.file.".config/hyprlock" = {
-    source = config.lib.file.mkOutOfStoreSymlink
-      "${config.home.homeDirectory}/.config/logos/dotfiles/hyprlock/";
-    recursive = true;
+  #  home.file.".config/hyprlock" = {
+  #    source = config.lib.file.mkOutOfStoreSymlink
+  #      "${config.home.homeDirectory}/.config/logos/dotfiles/hyprlock/";
+  #    recursive = true;
+  #  };
+  home.file.".config/hyprlock/info.sh".enable = true;
+  home.file.".config/hyprlock/info.sh" = {
+    source = ../dotfiles/hyprlock/info.sh;
   };
+  home.file.".config/hyprlock/info.sh".executable = null;
 
   programs.hyprlock.settings = {
     general = {
       disable_loading_bar = true;
       grace = 1;
       ignore_empty_input = true;
-      text_trim = true;
       hide_cursor = true;
       no_fade_in = true;
     };
