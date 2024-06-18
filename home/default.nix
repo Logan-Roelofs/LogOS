@@ -2,15 +2,16 @@
   imports = [
     ./ags.nix
     ./hyprland.nix
+    ./hyprlock.nix
     ./stylix.nix
     ./apps.nix
     ./zsh.nix
     ./nvim.nix
   ];
-  
+
   home.username = "logan";
   home.homeDirectory = "/home/logan";
   nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
-  home.stateVersion = "23.11"; 
+  home.stateVersion = "23.11";
 }

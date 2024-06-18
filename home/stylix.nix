@@ -11,7 +11,7 @@
     base06 = "#000FFF"; # +++     NA
     base07 = "#FFFF00"; # ++++    NA
     base08 = "#BF616A"; # red     Error / Failure
-    base09 = "#FF0000"; # orange
+    base09 = "#c4943b"; # orange
     base0A = "#EBCB8B"; # yellow  Warning
     base0B = "#A3BE8C"; # green   Success
     base0C = "#8FBCBB"; # ---     Random stuff

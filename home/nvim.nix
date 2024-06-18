@@ -124,7 +124,7 @@
       })
 
       -- LSPconfig (Error Checking)
-      --require'lspconfig'.quick_lint_js.setup{}
+      require'lspconfig'.quick_lint_js.setup{}
       require'lspconfig'.tsserver.setup{
         cmd = {"javascript-typescript-langserver"},
       }
