@@ -40,6 +40,7 @@
       telescope-ui-select-nvim # UI for Telescope
       nvim-treesitter.withAllGrammars # Syntax Highlighting
       dashboard-nvim # Dashboard
+      otter-nvim # lsp diagnostics in nix files comments (for other languages)
 
       # Common Dependencies
       plenary-nvim
@@ -172,7 +173,8 @@
             timeout_ms = 500,
           },
         })
-
+        -- otter-nvim
+        require("otter").activate({ "javascript", "typescript", "python", "lua", "nix"},true, true,nil)
         -- image-nvim
         require("image").setup({
           backend = "kitty",
