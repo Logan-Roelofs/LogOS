@@ -1,3 +1,4 @@
+import * as menu from "../menu/menu.js";
 const hyprland = await Service.import("hyprland");
 const audio = await Service.import("audio");
 const battery = await Service.import("battery");
@@ -9,6 +10,60 @@ export function Clock() {
   return Widget.Label({
     class_name: "clock",
     label: date.bind(),
+  });
+}
+
+export function calendar() {
+  return Widget.Calendar({
+    class_name: "calendar",
+    showDayNames: true,
+    showDetails: true,
+    showHeading: true,
+    showWeekNumbers: true,
+    detail: (self, y, m, d) => {
+      return `<span color="white">${y}. ${m}. ${d}.</span>`;
+    },
+    onDaySelected: ({ date: [y, m, d] }) => {
+      print(`${y}. ${m}. ${d}.`);
+    },
+  });
+}
+
+export function revealer() {
+  return Widget.Revealer({
+    revealChild: false,
+    transitionDuration: 1000,
+    transition: "slide_right",
+    child: Widget.Label("revealer!"),
+    setup: (self) =>
+      self.poll(2000, () => {
+        self.reveal_child = !self.reveal_child;
+      }),
+  });
+}
+
+export function menuinit() {
+  return Widget.Button({
+    onClicked: () => App.addWindow(menu.menu(0)),
+  });
+}
+
+export function RightClickMenu() {
+  const menu = Widget.Menu({
+    children: [
+      Widget.MenuItem({
+        child: Widget.Label("MenuItem"),
+      }),
+      Widget.MenuItem({
+        child: Widget.Label("MenuItem"),
+      }),
+    ],
+  });
+
+  return Widget.Button({
+    on_primary_click: (_, event) => {
+      menu.popup_at_pointer(event);
+    },
   });
 }
 

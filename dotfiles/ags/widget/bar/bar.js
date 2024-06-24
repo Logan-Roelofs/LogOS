@@ -9,7 +9,7 @@ function left() {
 
 function center() {
   return Widget.Box({
-    children: [barLib.Workspaces()],
+    children: [barLib.Workspaces(), barLib.menuinit()],
     spacing: 8,
   });
 }
