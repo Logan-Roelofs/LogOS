@@ -5,8 +5,7 @@
 
   # System util
   programs.kitty.enable = true;
-  programs.alacritty.enable = true;
-
+  programs.zellij.enable = true;
   # Text Editor
   programs.vscode.enable = true;
 }
