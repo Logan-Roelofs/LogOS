@@ -39,7 +39,7 @@
       telescope-file-browser-nvim # File Browser
       telescope-ui-select-nvim # UI for Telescope
       nvim-treesitter.withAllGrammars # Syntax Highlighting
-      alpha-nvim # Dashboard
+      dashboard-nvim # Dashboard
 
       # Common Dependencies
       plenary-nvim
@@ -124,8 +124,20 @@
         indent = { enable = true },
       })
 
-      -- Alpha (Dashboard)
-      require'alpha'.setup(require'alpha.themes.dashboard'.config)
+      -- Dashboard
+      require('dashboard').setup({
+        config = {
+          footer = { "Neovim" },
+          week_header = {
+            enable  --boolean use a week header
+          },
+        },
+        hide = {
+          statusline = true,
+          tabline = true,
+          winbar = true,
+        },
+      })
 
       -- LSPconfig (Error Checking)
       require'lspconfig'.quick_lint_js.setup{}
