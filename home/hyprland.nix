@@ -77,8 +77,11 @@
 
       "$mainMod" = "SUPER";
 
-      windowrule =
-        [ "opacity 0.95 override 0.8 override,^(kitty)$" "tile,^(kitty)$" ];
+      windowrule = [
+        "opacity 0.95 override 0.8 override,^(kitty)$"
+        "tile,^(kitty)$"
+        "tile,^(steam_app_2379780)$"
+      ];
 
       bind = [
         "$mainMod, Q, exec, kitty"

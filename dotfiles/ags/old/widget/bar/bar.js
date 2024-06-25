@@ -9,7 +9,7 @@ function left() {
 
 function center() {
   return Widget.Box({
-    children: [barLib.Workspaces(), barLib.menuinit()],
+    children: [barLib.Workspaces()],
     spacing: 8,
   });
 }
@@ -18,7 +18,12 @@ function right() {
   return Widget.Box({
     hpack: "end",
     spacing: 8,
-    children: [barLib.Volume(), barLib.BatteryLabel()],
+    children: [
+      barLib.Volume(),
+      barLib.BatteryLabel(),
+      barLib.bright(),
+      barLib.menuinit(),
+    ],
   });
 }
 

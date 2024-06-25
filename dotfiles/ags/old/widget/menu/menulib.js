@@ -1,7 +1,32 @@
 const hyprland = await Service.import("hyprland");
 const audio = await Service.import("audio");
 const battery = await Service.import("battery");
+const bluetooth = await Service.import("bluetooth");
 
+export function blutooth() {
+  return Widget.Box({
+    setup: (self) =>
+      self.hook(
+        bluetooth,
+        (self) => {
+          self.children = bluetooth.connected_devices.map(
+            ({ icon_name, name }) =>
+              Widget.Box([
+                Widget.Icon(icon_name + "-symbolic"),
+                Widget.Label(name),
+              ]),
+          );
+          self.visible = bluetooth.connected_devices.length > 0;
+        },
+        "notify::connected-devices",
+      ),
+  });
+  const indicator = Widget.Icon({
+    icon: bluetooth
+      .bind("enabled")
+      .as((on) => `bluetooth-${on ? "active" : "disabled"}-symbolic`),
+  });
+}
 export function BatteryLabel() {
   const value = battery.bind("percent").as((p) => (p > 0 ? p / 100 : 0));
   const icon = battery

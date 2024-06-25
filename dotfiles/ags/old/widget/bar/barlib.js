@@ -2,6 +2,36 @@ import * as menu from "../menu/menu.js";
 const hyprland = await Service.import("hyprland");
 const audio = await Service.import("audio");
 const battery = await Service.import("battery");
+import brightness from "./service/brightness.js";
+
+export function bright() {
+  return Widget.Slider({
+    on_change: (self) => (brightness.screen_value = self.value),
+    value: brightness.bind("screen-value"),
+  });
+
+  const label = Label({
+    label: brightness.bind("screen-value").as((v) => `${v}`),
+    setup: (self) =>
+      self.hook(
+        brightness,
+        (self, screenValue) => {
+          // screenValue is the passed parameter from the 'screen-changed' signal
+          self.label = screenValue ?? 0;
+
+          // NOTE:
+          // since hooks are run upon construction
+          // the passed screenValue will be undefined the first time
+
+          // all three are valid
+          self.label = `${brightness.screenValue}`;
+          self.label = `${brightness.screen_value}`;
+          self.label = `${brightness["screen-value"]}`;
+        },
+        "screen-changed",
+      ),
+  });
+}
 
 export function Clock() {
   const date = Variable("", {
@@ -44,7 +74,10 @@ export function revealer() {
 
 export function menuinit() {
   return Widget.Button({
-    onClicked: () => App.addWindow(menu.menu(0)),
+    on_primary_click: (_, event) => App.addWindow(menu.menu(1)),
+    //child: App.addWindow(menu.menu(1)),
+    //on_secondary_click: (_, event) => App.toggleWindow("menu"),
+    //onClicked: () => App.toggleWindow("menu"),
   });
 }
 
