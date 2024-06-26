@@ -1,5 +1,4 @@
-{ inputs, config, pkgs, ... }:
-{
+{ inputs, config, pkgs, ... }: {
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
@@ -9,13 +8,12 @@
       enable = true;
       # Theme is the prompt layout
       theme = "logan";
-      plugins = [
-        "git"
-      ];
+      plugins = [ "git" ];
     };
   };
-  home.file.".oh-my-zsh/custom/themes/" = { 
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/logos/dotfiles/oh-my-zsh/";
+  home.file.".oh-my-zsh/custom/themes/" = {
+    source = config.lib.file.mkOutOfStoreSymlink
+      "${config.home.homeDirectory}/.config/logos/dotfiles/oh-my-zsh/";
     recursive = true;
   };
 }

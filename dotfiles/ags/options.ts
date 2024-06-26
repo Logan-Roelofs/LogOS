@@ -75,16 +75,18 @@ const options = mkOptions(OPTIONS, {
         "expander",
         //                "messages",
       ]),
-      center: opt<Array<import("widget/bar/Bar").BarWidget>>(["workspaces"]),
+      center: opt<Array<import("widget/bar/Bar").BarWidget>>([
+        "workspaces",
+        "systray",
+      ]),
       end: opt<Array<import("widget/bar/Bar").BarWidget>>([
         // "media",
         "expander",
-        "colorpicker",
-        "systray",
+        //"colorpicker",
         //"screenrecord",
-        "system",
         //                "powermenu",
         "date",
+        "system",
       ]),
     },
     launcher: {
