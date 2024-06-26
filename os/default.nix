@@ -60,7 +60,7 @@
         setw -g mode-style 'fg=colour1 bg=colour18 bold'
 
         # pane borders
-        set -g pane-border-style 'fg=colour3'
+        set -g pane-border-style 'fg=colour5'
         set -g pane-active-border-style 'fg=colour4'
 
         # statusbar
@@ -73,7 +73,7 @@
         set -g status-right-length 50
         set -g status-left-length 10
 
-        setw -g window-status-current-style 'fg=colour0 bg=colour4 bold'
+        setw -g window-status-current-style 'fg=colour0 bg=colour5 bold'
         setw -g window-status-current-format ' #I #W #F '
 
         setw -g window-status-style 'fg=colour1 dim'
