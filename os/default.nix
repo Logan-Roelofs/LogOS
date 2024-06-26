@@ -33,6 +33,13 @@
         unbind '"'
         unbind %
 
+        # rename window
+        bind-key r command-prompt -I "#W" "rename-window '%%'"
+
+        # Start windows and panes at 1, not 0
+        set -g base-index 1
+        setw -g pane-base-index 1
+
         # switch panes using Alt-arrow without prefix
         bind -n M-Left select-pane -L
         bind -n M-Right select-pane -R
@@ -43,6 +50,8 @@
         bind -n M-e select-pane -U
         bind -n M-d select-pane -D
 
+        # don't rename windows automatically
+        set-option -g allow-rename off
 
         # Enable mouse control (clickable windows, panes, resizable panes)
         set -g mouse on
