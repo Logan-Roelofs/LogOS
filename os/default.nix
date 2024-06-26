@@ -66,10 +66,10 @@
         # statusbar
         set -g status-position bottom
         set -g status-justify left
-        set -g status-style 'fg=colour1'
+        set -g status-style 'fg=colour2'
         set -g status-left '''
-        set -g status-right '%Y-%m-%d %H:%M '
-        set -g status-right-length 50
+        # set -g status-right '%Y-%m-%d %H:%M '
+        # set -g status-right-length 50
         set -g status-left-length 10
 
         setw -g window-status-current-style 'fg=colour0 bg=colour1 bold'
