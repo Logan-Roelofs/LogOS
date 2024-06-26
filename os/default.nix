@@ -38,6 +38,11 @@
         bind -n M-Right select-pane -R
         bind -n M-Up select-pane -U
         bind -n M-Down select-pane -D
+        bind -n M-s select-pane -L
+        bind -n M-f select-pane -R
+        bind -n M-e select-pane -U
+        bind -n M-d select-pane -D
+
 
         # Enable mouse control (clickable windows, panes, resizable panes)
         set -g mouse on
@@ -76,8 +81,8 @@
         setw -g window-status-current-style 'fg=colour0 bg=colour6 bold'
         setw -g window-status-current-format ' #I #W #F '
 
-        setw -g window-status-style 'fg=colour1 dim'
-        setw -g window-status-format ' #I #[fg=colour7]#W #[fg=colour1]#F '
+        setw -g window-status-style 'fg=colour6 dim'
+        setw -g window-status-format ' #I #[fg=colour7]#W #[fg=colour6]#F '
 
         setw -g window-status-bell-style 'fg=colour2 bg=colour1 bold'
 
