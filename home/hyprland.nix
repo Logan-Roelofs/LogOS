@@ -64,8 +64,7 @@
         "gaps_in" = "5";
         "gaps_out" = "10";
         "border_size" = "3";
-
-        #        "col.active_border" = "rgba(0e7ac2ee) rgba(20c20eee) 45deg";
+        "col.active_border" = "#51a4e7";
         #        "col.inactive_border" = "rgba(595959aa)";
         "layout" = "dwindle";
         "allow_tearing" = "false";
