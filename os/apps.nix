@@ -76,6 +76,7 @@
     exploitdb # Exploit database
     ffuf # Fast web fuzzer
     cewl # Custom word list generator
+    nfs-utils # NFS client
 
     # GUI Applications
     spotify # Music streaming
