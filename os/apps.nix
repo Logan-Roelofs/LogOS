@@ -77,6 +77,7 @@
     ffuf # Fast web fuzzer
     cewl # Custom word list generator
     nfs-utils # NFS client
+    dig # DNS lookup
 
     # GUI Applications
     spotify # Music streaming
