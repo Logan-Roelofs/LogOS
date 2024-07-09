@@ -78,7 +78,7 @@
     cewl # Custom word list generator
     nfs-utils # NFS client
     dig # DNS lookup
-    theHarvester # Email, subdomain, and people search
+    theharvester # Email, subdomain, and people search
 
     # GUI Applications
     spotify # Music streaming
