@@ -100,11 +100,11 @@
               mappings = {
                 ["i"] = {
                   -- Remap remove action in insert mode
-                  ["<C-x>"] = require("telescope").extensions.file_browser.actions.remove
+                  ["<A-d>"] = require("telescope").extensions.file_browser.actions.remove
                 },
                 ["n"] = {
                   -- Remap remove action in normal mode
-                  ["x"] = require("telescope").extensions.file_browser.actions.remove
+                  ["<A-d>"] = require("telescope").extensions.file_browser.actions.remove
                 },
               },
             },
