@@ -94,7 +94,22 @@
         vim.keymap.set("n", "<C-p>", ":Telescope find_files<CR>", {})
         vim.keymap.set("n", "<C-g>", ":Telescope live_grep<CR>", {})
         vim.keymap.set("n", "<C-n>", ":Telescope file_browser<CR>", {})
-
+        require('telescope').setup {
+          extensions = {
+            file_browser = {
+              mappings = {
+                ["i"] = {
+                  -- Remap remove action in insert mode
+                  ["<C-x>"] = require("telescope").extensions.file_browser.actions.remove
+                },
+                ["n"] = {
+                  -- Remap remove action in normal mode
+                  ["x"] = require("telescope").extensions.file_browser.actions.remove
+                },
+              },
+            },
+          },
+        }
         -- Copilot
         vim.g.copilot_filetypes = { ['*'] = true }
 
