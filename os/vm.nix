@@ -16,6 +16,8 @@
     spice-protocol
     win-virtio
     win-spice
+    bridge-utils
+    libosinfo
     gnome.adwaita-icon-theme
   ];
 
