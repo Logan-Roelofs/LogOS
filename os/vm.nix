@@ -1,11 +1,11 @@
 # To get clipboard sharing working between the host and the guest, you need to
 # install the spice-vdagent package on the guest and enable the spice-vdagentd
-{ config, pkgs, ... }: {
+{ config, pkgs, username, ... }: {
   # Enable dconf (System Management Tool)
   programs.dconf.enable = true;
 
   # Add user to libvirtd group
-  users.users.logan.extraGroups = [ "libvirtd" ];
+  users.users.${username}.extraGroups = [ "libvirtd" ];
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [
