@@ -32,6 +32,7 @@
     caido
     swww
     waypaper
+    tt
 
     # neovim          # Text editor
     gvfs # Virtual file system
