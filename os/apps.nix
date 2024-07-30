@@ -112,7 +112,7 @@
     gnome.gnome-system-monitor # System monitor
     gnome.gnome-control-center # System settings
 
-    (python3.withPackages (ps: with ps; [ pip requests ]))
+    (python3.withPackages (ps: with ps; [ pip requests impacket ]))
   ];
 
   programs.steam.enable = true;
