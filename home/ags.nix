@@ -9,6 +9,7 @@
       gtksourceview
       webkitgtk
       accountsservice
+      pavucontrol
     ];
   };
   home.file.".config/ags" = {
