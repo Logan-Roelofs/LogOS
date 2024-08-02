@@ -58,6 +58,7 @@
         vim.opt.tabstop = 2
         vim.opt.shiftwidth = 2
         vim.opt.expandtab = true
+        vim.cmd[[setlocal spell spelllang=en_us]]
 
         vim.api.nvim_set_keymap('n', '<C-x>', '"+d', { noremap = true, silent = true })
         vim.api.nvim_set_keymap('v', '<C-x>', '"+x', { noremap = true, silent = true })
