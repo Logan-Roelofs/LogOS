@@ -114,6 +114,7 @@
 
     (python3.withPackages (ps: with ps; [ pip requests impacket pyftpdlib ]))
   ];
+    python2Full
 
   programs.steam.enable = true;
 
