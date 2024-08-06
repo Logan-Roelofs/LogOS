@@ -111,10 +111,9 @@
     gnome.nautilus # File manager
     gnome.gnome-system-monitor # System monitor
     gnome.gnome-control-center # System settings
-    python2Full # Python 2
     (python3.withPackages (ps: with ps; [ pip requests impacket pyftpdlib ]))
   ];
-
+  nixpkgs.config.permittedInsecurePackages = [ "python2Full" ];
   programs.steam.enable = true;
 
   # This is required to run DaVinci Resolve to run on my AMD APU
