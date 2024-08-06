@@ -53,7 +53,29 @@
     #davinci-resolve # Video Editor
     obs-studio # Streaming and recording
     ffmpeg # Video and audio processing
-    gimp # Image editor
+    gimp-with-plugins # Image editor
+    #$installed = $false
+
+# Check 64-bit registry
+$regPath64 = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$appGUID"
+if (Test-Path -Path $regPath64) {
+    $app = Get-ItemProperty -Path $regPath64
+    write-host "App: $($app.DisplayName) $($app.DisplayVersion)"
+    if ($app.DisplayName -eq $AppDisplayName -and $app.DisplayVersion -eq $AppDisplayVersion) {
+        $installed = $true
+    }
+}
+
+# Check 32-bit registry if not already found
+if (-not $installed) {
+    $regPath32 = "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$appGUID"
+    if (Test-Path -Path $regPath32) {
+        $app = Get-ItemProperty -Path $regPath32
+        if ($app.DisplayName -eq $AppDisplayName -and $app.DisplayVersion -eq $AppDisplayVersion) {
+            $installed = $true
+        }
+    }
+} gimp # Image editor
     grimblast # Screenshot tool
     grim # Screenshot tool
     slurp # Screenshot tool
