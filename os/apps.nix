@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
     # Electron
     nodejs_22
@@ -111,9 +111,10 @@
     gnome.nautilus # File manager
     gnome.gnome-system-monitor # System monitor
     gnome.gnome-control-center # System settings
+
     (python3.withPackages (ps: with ps; [ pip requests impacket pyftpdlib ]))
+    inputs.nixpkgs-python.packages.x86_64-linux."2.7"
   ];
-  nixpkgs.config.permittedInsecurePackages = [ "python2Full" ];
   programs.steam.enable = true;
 
   # This is required to run DaVinci Resolve to run on my AMD APU

@@ -15,6 +15,7 @@
       inputs.hyprland.follows = "hyprland";
     };
     stylix.url = "github:danth/stylix";
+    nixpkgs-python.url = "github:cachix/nixpkgs-python";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
