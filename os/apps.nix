@@ -59,6 +59,7 @@
     slurp # Screenshot tool
     wl-clipboard
     wl-clipboard-x11 # Clipboard manager
+    inkscape-with-extensions
 
     # Security Tools
     rustscan # Fast port scanner
