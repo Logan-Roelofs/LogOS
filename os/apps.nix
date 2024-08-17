@@ -33,6 +33,7 @@
     swww
     waypaper
     tt
+    nixos-generators
 
     # neovim          # Text editor
     gvfs # Virtual file system
