@@ -34,6 +34,7 @@
     waypaper
     tt
     nixos-generators
+    awscli2
 
     # neovim          # Text editor
     gvfs # Virtual file system
