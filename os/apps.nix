@@ -35,6 +35,7 @@
     tt
     nixos-generators
     awscli2
+    yarn
 
     # neovim          # Text editor
     gvfs # Virtual file system
