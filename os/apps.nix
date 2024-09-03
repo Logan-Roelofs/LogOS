@@ -37,6 +37,7 @@
     awscli2
     yarn
     figma-linux
+    xdg-utils
 
     # neovim          # Text editor
     gvfs # Virtual file system
