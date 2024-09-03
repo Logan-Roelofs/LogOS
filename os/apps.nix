@@ -36,6 +36,7 @@
     nixos-generators
     awscli2
     yarn
+    figma-linux
 
     # neovim          # Text editor
     gvfs # Virtual file system
