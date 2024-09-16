@@ -93,7 +93,6 @@
     remmina # Remote desktop client
     appimage-run # AppImage runner
     slack # Team communication
-    arc-browser
     teams-for-linux # Unifficial Microsoft Teams client
     discord # Server communication
     rofi-wayland # Application launcher
