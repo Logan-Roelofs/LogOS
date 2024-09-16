@@ -2,7 +2,7 @@
   environment.systemPackages = with pkgs; [
     # Electron
     nodejs_22
-    nodePackages.gatsby-cli
+    typescript
 
     # System Utilities
     util-linux # mount kill lsblk etc
