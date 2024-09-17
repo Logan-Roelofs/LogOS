@@ -39,6 +39,7 @@
     yarn
     figma-linux
     xdg-utils
+    nwg-displays
 
     # neovim          # Text editor
     gvfs # Virtual file system
