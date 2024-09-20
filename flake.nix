@@ -16,6 +16,7 @@
     };
     stylix.url = "github:danth/stylix";
     nixpkgs-python.url = "github:cachix/nixpkgs-python";
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:

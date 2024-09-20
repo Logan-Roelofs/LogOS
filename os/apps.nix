@@ -41,6 +41,7 @@
     xdg-utils
     nwg-displays
     vscode-fhs
+    inputs.zen-browser.packages."${system}".default
 
     # neovim          # Text editor
     gvfs # Virtual file system
