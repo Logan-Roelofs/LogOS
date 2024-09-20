@@ -5,11 +5,4 @@
 
   # System util
   programs.kitty.enable = true;
-  
-  # IDE
-  programs.vscode.enable = true;
-  programs.vscode.userSettings = {
-    "git.enabled" = "off";
-  }
-
 }
