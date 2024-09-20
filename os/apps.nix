@@ -40,7 +40,6 @@
     figma-linux
     xdg-utils
     nwg-displays
-    vscode-fhs
 
     # neovim          # Text editor
     gvfs # Virtual file system
