@@ -1,11 +1,11 @@
 { inputs, config, pkgs, ... }: {
   programs.vscode = {
     enable = true;
-    #package = pkgs.vscodium-fhs;
+    package = pkgs.vscodium-fhs;
     userSettings = {
-      "git.enabled" = true;
+      "git.enabled" = false;
       "editor.tabSize" = 2;
-      "terminal.integrated.sendKeybindingsToShell" = false;
+      "terminal.integrated.sendKeybindingsToShell" = true;
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
