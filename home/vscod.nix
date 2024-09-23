@@ -10,6 +10,7 @@
       "editor.minimap.enabled" = false;
       "window.menuBarVisibility" = "toggle";
       "accessibility.verbosity.panelChat" = false;
+      "workbench.sideBar.location" = "left";
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
