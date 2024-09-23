@@ -17,6 +17,13 @@
 
   services.envfs.enable = true; # Enable envfs for user environments (e.g. /bin)
 
+  nix = {
+    package = pkgs.nixFlakes;
+    extraOptions = ''
+      experimental-features = nix-command flakes
+    '';
+  };
+
   programs.tmux = {
     enable = true;
     extraConfig =
