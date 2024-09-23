@@ -23,7 +23,7 @@
   programs.vscode = {
     enable = true;
     userSettings = {
-       "editor.formatOnSave": true,
+       "editor.formatOnSave" = "true";
     }
   }
 }
