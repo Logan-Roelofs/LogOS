@@ -5,6 +5,7 @@
     userSettings = {
       "git.enabled" = false;
       "editor.tabSize" = 2;
+      "terminal.integrated.sendKeybindingsToShell" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
@@ -12,7 +13,7 @@
       github.copilot-chat
       github.copilot
       jnoortheen.nix-ide
-      
+
     ];
   };
   home.packages = with pkgs; [ nixpkgs-fmt ];
