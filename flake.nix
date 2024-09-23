@@ -33,6 +33,13 @@
           ./os/default.nix
           inputs.stylix.nixosModules.stylix
           inputs.hyprland.nixosModules.default
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.logan = import ./home/default.nix;
+            home-manager.extraSpecialArgs = { inherit inputs username; };
+          }
         ];
       };
 
