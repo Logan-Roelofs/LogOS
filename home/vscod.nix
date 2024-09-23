@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ... }: {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium-fhs;
+    #package = pkgs.vscodium-fhs;
     userSettings = {
       "git.enabled" = false;
       "editor.tabSize" = 2;
