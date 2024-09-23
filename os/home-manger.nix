@@ -8,7 +8,7 @@
 # nix-shell '<home-manager>' -A install
 #
 # home-manager switch
-{ config, pkgs, inputs, ... }: {
+{ config, pkgs, inputs, home-manager, ... }: {
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   nix.settings.allowed-users =
