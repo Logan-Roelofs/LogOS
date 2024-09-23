@@ -42,10 +42,13 @@
     nwg-displays
     (vscode-with-extensions.override {
       vscode = vscodium;
-      vscodeExtensions = with vscode-extensions;
-        [
-          vscode-extensions.jnoortheen.nix-ide
-        ]; # ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      vscodeExtensions = with vscode-extensions; [
+        # Language Support
+        vscode-extensions.jnoortheen.nix-ide
+        # Ai
+        vscode-extensions.github.copilot
+        vscode-extensions.github.copilot-chat
+      ]; # ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       #      {
       #        name = "remote-ssh-edit";
       #        publisher = "ms-vscode-remote";
