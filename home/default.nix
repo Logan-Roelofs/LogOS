@@ -7,6 +7,7 @@
     ./apps.nix
     ./zsh.nix
     ./nvim.nix
+    ./vscod.nix
   ];
 
   home.username = "logan";
