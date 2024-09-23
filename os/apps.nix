@@ -48,8 +48,7 @@
         # Ai
         vscode-extensions.github.copilot
         vscode-extensions.github.copilot-chat
-        vscode-extensions.vscodevim.vim
-      ]; # ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+        vscode-extensions.vscodevim.vim]; # ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       #      {
       #        name = "remote-ssh-edit";
       #        publisher = "ms-vscode-remote";
@@ -58,6 +57,7 @@
       #      }
       #    ];
     })
+    nixpkgs-fmt
     inputs.zen-browser.packages."${system}".default
 
     # neovim          # Text editor
