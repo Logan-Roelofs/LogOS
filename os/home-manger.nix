@@ -9,6 +9,8 @@
 #
 # home-manager switch
 { config, pkgs, inputs, ... }: {
+  home-manager.useGlobalPkgs = true;
+  home-manager.useUserPackages = true;
   nix.settings.allowed-users =
     [ "*" ]; # Allow all users to use nix daemon (used for home-manager)
 }
