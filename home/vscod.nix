@@ -6,6 +6,8 @@
       "git.enabled" = false;
       "editor.tabSize" = 2;
       "terminal.integrated.sendKeybindingsToShell" = true;
+      # remove the code minimap
+      "editor.minimap.enabled" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
