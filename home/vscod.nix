@@ -3,7 +3,7 @@
     enable = true;
     #package = pkgs.vscodium-fhs;
     userSettings = {
-      "git.enabled" = false;
+      "git.enabled" = true;
       "editor.tabSize" = 2;
       "terminal.integrated.sendKeybindingsToShell" = false;
     };
