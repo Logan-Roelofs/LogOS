@@ -9,6 +9,7 @@
       # remove the code minimap
       "editor.minimap.enabled" = false;
       "window.menuBarVisibility" = "toggle";
+      "accessibility.verbosity.panelChat" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
