@@ -1,4 +1,4 @@
-{ config, pkgs, lib, inputs, username, ... }: {
+{ config, pkgs, lib, inputs, username, home-manager, ... }: {
   imports = [
     ./apps.nix
     ./vm.nix

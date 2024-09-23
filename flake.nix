@@ -27,7 +27,7 @@
     in {
       # 'nixos-rebuild --flake .#logos'
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs username; };
+        specialArgs = { inherit inputs username home-manager; };
         modules = [
           ./hardware/hardware-configuration.nix
           ./os/default.nix
