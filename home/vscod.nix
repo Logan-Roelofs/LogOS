@@ -2,9 +2,9 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium-fhs;
-    userSettings = {
-      "git.enable" = false;
-      "editor.tabSize" = 2;
-    };
+    #userSettings = {
+    # "git.enable" = false;
+    #  "editor.tabSize" = 2;
+    #};
   };
 }
