@@ -40,16 +40,16 @@
     figma-linux
     xdg-utils
     nwg-displays
-    (vscode-with-extensions.override {
-      vscode = vscodium-fhs;
-      vscodeExtensions = with vscode-extensions; [
+#    (vscode-with-extensions.override {
+#      vscode = vscodium-fhs;
+#      vscodeExtensions = with vscode-extensions; [
         # Language Support
-        vscode-extensions.jnoortheen.nix-ide
+#        vscode-extensions.jnoortheen.nix-ide
         # Ai
-        vscode-extensions.github.copilot
-        vscode-extensions.github.copilot-chat
-        vscode-extensions.vscodevim.vim
-      ]; # ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+#        vscode-extensions.github.copilot
+#        vscode-extensions.github.copilot-chat
+#        vscode-extensions.vscodevim.vim
+#      ]; # ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       #      {
       #        name = "remote-ssh-edit";
       #        publisher = "ms-vscode-remote";
@@ -57,8 +57,8 @@
       #        sha256 = "1hp6gjh4xp2m1xlm1jsdzxw9d8frkiidhph6nvl24d0h8z34w49g";
       #      }
       #    ];
-    })
-    nixpkgs-fmt
+#    })
+#    nixpkgs-fmt
     inputs.zen-browser.packages."${system}".default
 
     # neovim          # Text editor
