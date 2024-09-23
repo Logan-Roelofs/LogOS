@@ -1,1 +1,1 @@
-/nix/store/sq4wl8l4w7dxyj0q2y45jmwwx66pakzj-home-manager-files/.config/hyprlock/info.sh
+/nix/store/6vhz9yazd38s2fc3ckbn6jsbxvzq8zjm-home-manager-files/.config/hyprlock/info.sh

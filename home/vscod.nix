@@ -3,7 +3,7 @@
     enable = true;
     package = pkgs.vscodium-fhs;
     userSettings = {
-      "git.enable" = false;
+      "git.enabled" = false;
       "editor.tabSize" = 2;
     };
     extensions = with pkgs.vscode-extensions; [
@@ -12,6 +12,7 @@
       github.copilot-chat
       github.copilot
       jnoortheen.nix-ide
+      
     ];
   };
   home.packages = with pkgs; [ nixpkgs-fmt ];
