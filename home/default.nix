@@ -2,7 +2,6 @@
   imports = [
     ./ags.nix
     ./hyprland.nix
-    ./hyprlock.nix
     ./stylix.nix
     ./apps.nix
     ./zsh.nix
