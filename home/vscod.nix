@@ -20,4 +20,10 @@
     })
     nixpkgs-fmt
   ];
+  programs.vscode = {
+    enable = true;
+    userSettings = {
+       "editor.formatOnSave": true,
+    }
+  }
 }
