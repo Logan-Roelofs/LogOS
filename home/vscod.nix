@@ -8,6 +8,7 @@
       "terminal.integrated.sendKeybindingsToShell" = true;
       # remove the code minimap
       "editor.minimap.enabled" = false;
+      "window.menuBarVisibility" = "toggle";
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
