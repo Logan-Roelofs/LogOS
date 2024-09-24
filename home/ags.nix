@@ -12,11 +12,10 @@
       pavucontrol
     ];
   };
-  home.file.".config/ags" = {
-    source = builtins.trace
-      "${config.home.homeDirectory}/.config/logos/dotfiles/ags/"
-      (config.lib.file.mkOutOfStoreSymlink
-        "${config.home.homeDirectory}/.config/logos/dotfiles/ags/");
-    recursive = true;
-  };
+home.file.".config/ags" = let
+  sourcePath = "../dotfiles/ags/";
+in {
+  source = builtins.trace sourcePath (config.lib.file.mkOutOfStoreSymlink sourcePath);
+  recursive = true;
+};
 }
