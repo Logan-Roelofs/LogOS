@@ -8,8 +8,6 @@
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
-    plugins = with pkgs;
-      [ inputs.hyprland-plugins.packages.${system}.hyprwinwrap ];
     settings = {
       misc = {
         "force_default_wallpaper" = "0";

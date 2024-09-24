@@ -10,10 +10,6 @@
       url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
     stylix.url = "github:danth/stylix";
     nixpkgs-python.url = "github:cachix/nixpkgs-python";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
@@ -25,7 +21,7 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
     in {
-      # 'nixos-rebuild --flake .#logos'
+      # 'sudo nixos-rebuild --flake .#logos'
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username home-manager; };
         modules = [
