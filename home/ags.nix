@@ -13,9 +13,10 @@
     ];
   };
 home.file.".config/ags" = let
+  PROJECT_ROOT = builtins.toString ./.;
   sourcePath = "../dotfiles/ags/";
 in {
-  source = builtins.trace sourcePath (config.lib.file.mkOutOfStoreSymlink sourcePath);
+  source = builtins.trace PROJECT_ROOT (config.lib.file.mkOutOfStoreSymlink PROJECT_ROOT);
   recursive = true;
 };
 }
