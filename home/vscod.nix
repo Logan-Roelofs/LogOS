@@ -11,6 +11,7 @@
       "window.menuBarVisibility" = "toggle";
       "accessibility.verbosity.panelChat" = false;
       "workbench.colorTheme" = "Visual Studio Dark";
+      "github.copilot.enable.*" = true;
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
