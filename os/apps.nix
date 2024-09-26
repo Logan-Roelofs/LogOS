@@ -125,6 +125,7 @@
     # Development
     hugo # Static site generator
     godot_4 # Game engine
+    pipenv
 
     # Desktop Package Requirements
     swww # Sway Wallpaper
