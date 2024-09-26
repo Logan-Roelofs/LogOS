@@ -11,7 +11,13 @@
       "window.menuBarVisibility" = "toggle";
       "accessibility.verbosity.panelChat" = false;
       "workbench.colorTheme" = "Visual Studio Dark";
-      "github.copilot.enable.*" = true;
+      "github.copilot.enable" = {
+        "*" = true;
+        "plaintext" = true;
+        "markdown" = true;
+        "scminput" = true;
+      };
+      "editor.fontFamily" = "'Monaspace Neon'";
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
