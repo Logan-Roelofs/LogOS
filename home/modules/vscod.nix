@@ -37,5 +37,4 @@
     ripgrep
     bat
   ];
-  services.hadoop.yarn.nodemanager.addBinBash = true;
 }
