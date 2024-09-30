@@ -28,8 +28,8 @@
     };
     keybindings = [
       {
-        "key": "alt+c",
-        "command": "workbench.action.closeActiveEditor"
+        "key" = "alt+c";
+        "command" = "workbench.action.closeActiveEditor";
       },
       {
         "key" = "alt+f";
