@@ -23,6 +23,7 @@
       "editor.cursorBlinking" = "phase";
       "editor.cursorSmoothCaretAnimation" = "on";
       "explorer.confirmDelete" = false;
+      "explorer.confirmDragAndDrop" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
