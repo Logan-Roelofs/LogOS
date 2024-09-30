@@ -30,5 +30,11 @@
       jnoortheen.nix-ide
     ];
   };
-  home.packages = with pkgs; [ nixpkgs-fmt ];
+  home.packages = with pkgs; [
+    nixpkgs-fmt
+    fzf
+    ripgrep
+    bat
+  ];
+  services.hadoop.yarn.nodemanager.addBinBash = true;
 }
