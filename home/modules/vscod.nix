@@ -24,6 +24,7 @@
       "editor.cursorSmoothCaretAnimation" = "on";
       "explorer.confirmDelete" = false;
       "explorer.confirmDragAndDrop" = false;
+      "terminal.integrated.defaultLocation" = "editor";
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
