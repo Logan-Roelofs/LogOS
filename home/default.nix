@@ -14,4 +14,5 @@
   nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
   home.stateVersion = "23.11";
+  home-manager.backupFileExtension = "hm-backup"
 }
