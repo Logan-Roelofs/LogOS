@@ -30,15 +30,15 @@
       {
         "key" = "alt+c";
         "command" = "workbench.action.closeActiveEditor";
-      },
+      }
       {
         "key" = "alt+f";
         "command" = "find-it-faster.findFiles";
-      };
+      }
       {
         "key" = "alt+g";
         "command" = "find-it-faster.findWithinFiles";
-      };
+      }
     ];
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
