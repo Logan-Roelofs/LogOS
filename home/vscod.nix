@@ -18,6 +18,10 @@
         "scminput" = true;
       };
       "editor.fontFamily" = "'Monaspace Neon'";
+      "vim.overrideCopy" = false;
+      "vim.useCtrlKeys" = false;
+      "editor.cursorBlinking" = "phase";
+      "editor.cursorSmoothCaretAnimation" = "on";
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim

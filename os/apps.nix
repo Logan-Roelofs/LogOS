@@ -41,6 +41,7 @@
     figma-linux
     xdg-utils
     nwg-displays
+    gh
     #    (vscode-with-extensions.override {
     #      vscode = vscodium-fhs;
     #      vscodeExtensions = with vscode-extensions; [
