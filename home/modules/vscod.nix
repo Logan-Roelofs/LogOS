@@ -26,11 +26,20 @@
       "explorer.confirmDragAndDrop" = false;
       "terminal.integrated.defaultLocation" = "editor";
     };
-    keybindings = {
-      workbench.action.closeActiveEditor = "alt+c";
-      find-it-faster.findFiles = "alt+f";
-      find-it-faster.findWithinFiles = "alt+g";
-    }
+    keybindings = [
+      {
+        "key": "alt+c",
+        "command": "workbench.action.closeActiveEditor"
+      },
+      {
+        "key" = "alt+f";
+        "command" = "find-it-faster.findFiles";
+      };
+      {
+        "key" = "alt+g";
+        "command" = "find-it-faster.findWithinFiles";
+      };
+    ];
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
       github.copilot-chat
