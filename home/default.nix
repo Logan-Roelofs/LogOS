@@ -1,12 +1,12 @@
 { inputs, config, pkgs, username, ... }: {
   imports = [
-    ./ags.nix
-    ./hyprland.nix
-    ./stylix.nix
     ./apps.nix
-    ./zsh.nix
-    ./nvim.nix
-    ./vscod.nix
+    ./modules/ags.nix
+    ./modules/hyprland.nix
+    ./modules/stylix.nix
+    ./modules/zsh.nix
+    ./modules/nvim.nix
+    ./modules/vscod.nix
   ];
 
   home.username = "logan";

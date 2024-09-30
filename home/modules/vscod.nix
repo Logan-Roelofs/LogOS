@@ -22,6 +22,7 @@
       "vim.useCtrlKeys" = false;
       "editor.cursorBlinking" = "phase";
       "editor.cursorSmoothCaretAnimation" = "on";
+      "explorer.confirmDelete" = false;
     };
     extensions = with pkgs.vscode-extensions; [
       vscodevim.vim
