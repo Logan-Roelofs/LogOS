@@ -32,7 +32,7 @@
         "command" = "workbench.action.closeActiveEditor";
       }
       {
-        "key" = "alt+f";
+        "key" = "alt+p";
         "command" = "find-it-faster.findFiles";
       }
       {
