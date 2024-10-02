@@ -1,9 +1,10 @@
 { config, pkgs, ... }: {
   
-  environment.systemPackages = [
-    pkgs.wireguard-ui
+  environment.systemPackages = with pkgs; [
+    wireguard-tools
+    wireguard-ui
   ];
-  
+
   programs.openvpn3.enable = true;
 
   services.openvpn.servers = {
