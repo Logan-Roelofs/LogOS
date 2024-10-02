@@ -9,7 +9,6 @@
     ./ss.nix
     ./home-manger.nix
     ./stylix.nix
-    ./modules/vpn.nix
   ];
 
   networking.extraHosts = ''
