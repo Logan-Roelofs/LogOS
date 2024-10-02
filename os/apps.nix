@@ -37,6 +37,7 @@
     espeak
     nixos-generators
     awscli2
+    openvpn3
     yarn
     figma-linux
     xdg-utils

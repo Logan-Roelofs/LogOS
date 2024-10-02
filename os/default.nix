@@ -11,6 +11,7 @@
     ./stylix.nix
   ];
 
+
   networking.extraHosts = ''
     10.10.11.230 cozyhosting.htb
   '';
