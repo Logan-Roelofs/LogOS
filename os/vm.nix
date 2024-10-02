@@ -1,6 +1,9 @@
 # To get clipboard sharing working between the host and the guest, you need to
 # install the spice-vdagent package on the guest and enable the spice-vdagentd
 { config, pkgs, username, ... }: {
+  
+  virtualisation.docker.enable = true;
+  
   # Enable dconf (System Management Tool)
   programs.dconf.enable = true;
 
