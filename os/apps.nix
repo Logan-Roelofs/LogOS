@@ -20,6 +20,7 @@
     chafa # Image to ASCII
     blueberry # Bluetooth manager
     openvpn # VPN
+    wireguard-ui
     yazi # Terminal file manager
     imagemagick # Image support for nvim
     luajitPackages.magick # Image support for nvim
