@@ -30,6 +30,7 @@
     home-manager # Home Manager
     terminator # Terminal
     cava
+    supabase-cli
     caido
     swww
     waypaper
