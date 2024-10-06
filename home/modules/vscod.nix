@@ -47,6 +47,5 @@
       jnoortheen.nix-ide
     ];
   };
-  home.packages = with pkgs; [ nixpkgs-fmt fzf ripgrep bat orca ];
+  home.packages = with pkgs; [ nixpkgs-fmt fzf ripgrep bat ];
 }
-
