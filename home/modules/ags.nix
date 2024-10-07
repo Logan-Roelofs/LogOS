@@ -26,14 +26,10 @@
       gtk3
     ];
   };
-  #home.file.".config/ags" = {
-  #  source = config.lib.file.mkOutOfStoreSymlink
-  #    "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
-  #  recursive = true;
-  #};
   home.file.".config/ags" = {
     source = config.lib.file.mkOutOfStoreSymlink
-      "${config.home.homeDirectory}/projects/ags/";
+      "${config.home.homeDirectory}/.config/logos/dotfiles/newags/";
     recursive = true;
   };
+
 }
