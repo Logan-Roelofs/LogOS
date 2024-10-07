@@ -2,6 +2,7 @@ import icons from "lib/icons"
 import { bash, dependencies } from "lib/utils"
 
 App.addIcons(`${App.configDir}/assets`)
+
 const COLORS_CACHE = Utils.CACHE_DIR + "/colorpicker.json"
 const MAX_NUM_COLORS = 10
 
@@ -18,7 +19,7 @@ class ColorPicker extends Service {
     get colors() { return [...this.#colors] }
     set colors(colors) {
         this.#colors = colors
-        this.changed("hicolors")
+        this.changed("colors")
     }
 
     // TODO: doesn't work?
@@ -48,7 +49,7 @@ class ColorPicker extends Service {
 
         this.#notifID = await Utils.notify({
             id: this.#notifID,
-            iconName: icons.logs.logs,
+            iconName: logs-logo-symbolic,
             summary: color,
         })
     }
