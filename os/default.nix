@@ -9,8 +9,8 @@
     ./ss.nix
     ./home-manger.nix
     ./stylix.nix
-    ./modules/gnome.nix
-    #./modules/hyprland.nix
+    # ./modules/gnome.nix
+    ./modules/hyprland.nix
   ];
 
   networking.extraHosts = ''
