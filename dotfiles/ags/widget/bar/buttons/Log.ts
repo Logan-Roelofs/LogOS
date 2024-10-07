@@ -1,5 +1,6 @@
 import PanelButton from "../PanelButton"
 import logs from "service/logs"
+import { Variable } from "resource:///com/github/Aylur/ags/variable.js"
 import Gdk from "gi://Gdk"
 
 const css = (color: string) => `
@@ -24,7 +25,7 @@ export default () => {
 
     return PanelButton({
         class_name: "color-picker",
-        child: Widget.Icon("logs-logo-symbolic"),
+        child: Widget.Icon(Variable),
         tooltip_text: logs.bind("colors").as(v => `${v.length} colors`),
         on_clicked: logs.pick,
         on_secondary_click: self => {

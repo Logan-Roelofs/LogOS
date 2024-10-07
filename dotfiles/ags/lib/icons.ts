@@ -1,5 +1,3 @@
-import logs from "service/logs"
-
 export const substitutes = {
     "transmission-gtk": "transmission",
     "blueberry.py": "blueberry",
@@ -12,6 +10,7 @@ export const substitutes = {
     "preferences-system": "emblem-system-symbolic",
     "com.github.Aylur.ags-symbolic": "controls-symbolic",
     "com.github.Aylur.ags": "controls-symbolic",
+    "color-select-symbolic": "color-select-symbolic",
 }
 
 export default {
