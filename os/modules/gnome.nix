@@ -4,10 +4,12 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
-  environment.gnome.excludePackages = (with pkgs; [
+  environment.gnome.excludePackages = (with pkgs; r
+    gnomeExtensions.gsnap # gnome tile windows
+    
+  ]) ++ (with pkgs.gnome; [
     gnome-photos
     gnome-tour
-  ]) ++ (with pkgs.gnome; [
     cheese # webcam tool
     gnome-music
     gnome-terminal
@@ -20,5 +22,27 @@
     iagno # go game
     hitori # sudoku game
     atomix # puzzle game
+    baobab
+    epiphany
+    pkgs.gnome-text-editor
+    gnome-calculator
+    gnome-calendar
+    gnome-characters
+    gnome-clocks
+    pkgs.gnome-console
+    gnome-contacts
+    gnome-font-viewer
+    gnome-logs
+    gnome-maps
+    gnome-music
+    gnome-system-monitor
+    gnome-weather
+    pkgs.loupe
+    nautilus
+    pkgs.gnome-connections
+    simple-scan
+    totem
+    yelp
   ]);
 }
+
