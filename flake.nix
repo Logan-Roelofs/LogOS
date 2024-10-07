@@ -28,7 +28,10 @@
 
       # 'sudo nixos-rebuild --flake .#logos'
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs username home-manager; };
+        specialArgs = {
+          inherit inputs username home-manager; 
+          asztal = self.packages.x86_64-linux.default;
+        };
         modules = [
           ./hardware/hardware-configuration.nix
           ./os/default.nix
