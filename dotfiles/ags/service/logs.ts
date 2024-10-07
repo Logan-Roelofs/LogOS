@@ -1,6 +1,7 @@
 import icons from "lib/icons"
 import { bash, dependencies } from "lib/utils"
 
+App.addIcons(`${App.configDir}/assets`)
 const COLORS_CACHE = Utils.CACHE_DIR + "/colorpicker.json"
 const MAX_NUM_COLORS = 10
 
@@ -47,7 +48,7 @@ class ColorPicker extends Service {
 
         this.#notifID = await Utils.notify({
             id: this.#notifID,
-            iconName: icons.ui.logs,
+            iconName: icons.logs.logs,
             summary: color,
         })
     }
