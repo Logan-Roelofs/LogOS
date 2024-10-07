@@ -8,8 +8,6 @@
     [
       gnomeExtensions.gsnap # gnome tile windows
     ]) ++ (with pkgs.gnome; [
-      gnome-photos
-      gnome-tour
       cheese # webcam tool
       gnome-music
       gnome-terminal
