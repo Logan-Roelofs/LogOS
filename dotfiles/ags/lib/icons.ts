@@ -29,7 +29,6 @@ export default {
     },
     ui: {
         close: "window-close-symbolic",
-        logs: "logs-logo-symbolic",
         colorpicker: "color-select-symbolic",
         info: "info-symbolic",
         link: "external-link-symbolic",
