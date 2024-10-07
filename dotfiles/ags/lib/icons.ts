@@ -1,3 +1,5 @@
+import logs from "service/logs"
+
 export const substitutes = {
     "transmission-gtk": "transmission",
     "blueberry.py": "blueberry",
@@ -14,9 +16,6 @@ export const substitutes = {
 
 export default {
     missing: "image-missing-symbolic",
-    logs:{
-        logs: "logs-logo-symbolic",
-    },
     nix: {
         nix: "nix-snowflake-symbolic",
     },
@@ -31,6 +30,7 @@ export default {
     },
     ui: {
         close: "window-close-symbolic",
+        logs: "logs-logo-symbolic",
         colorpicker: "color-select-symbolic",
         info: "info-symbolic",
         link: "external-link-symbolic",
