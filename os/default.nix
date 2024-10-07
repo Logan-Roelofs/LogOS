@@ -10,7 +10,8 @@
     ./home-manger.nix
     ./stylix.nix
     # ./modules/gnome.nix
-    ./modules/hyprland.nix
+    # ./modules/hyprland.nix
+    ./modules/agshyprland.nix
   ];
 
   networking.extraHosts = ''
