@@ -18,7 +18,7 @@ class ColorPicker extends Service {
     get colors() { return [...this.#colors] }
     set colors(colors) {
         this.#colors = colors
-        this.changed("colors")
+        this.changed("hicolors")
     }
 
     // TODO: doesn't work?
