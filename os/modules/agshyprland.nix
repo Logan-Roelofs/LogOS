@@ -7,8 +7,6 @@
   ...
 }: {
 
-  hyprland.enable = true;
-
   options.hyprland = {
     enable = lib.mkEnableOption "Hyprland";
   };
