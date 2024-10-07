@@ -10,11 +10,30 @@
       webkitgtk
       accountsservice
       pavucontrol
+      bun
+      dart-sass
+      fd
+      brightnessctl
+      swww
+      inputs.matugen.packages.${system}.default
+      slurp
+      wf-recorder
+      wl-clipboard
+      wayshot
+      swappy
+      hyprpicker
+      networkmanager
+      gtk3
     ];
   };
+  #home.file.".config/ags" = {
+  #  source = config.lib.file.mkOutOfStoreSymlink
+  #    "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
+  #  recursive = true;
+  #};
   home.file.".config/ags" = {
     source = config.lib.file.mkOutOfStoreSymlink
-      "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
+      "${config.home.homeDirectory}/projects/ags/";
     recursive = true;
   };
 }

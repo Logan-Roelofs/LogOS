@@ -7,7 +7,7 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.gsnap
   ];
-  environment.gnome.excludePackages = (with pkgs.gnome; [
+  environment.gnome.excludePackages = (with pkgs.q ; [
     cheese # webcam tool
     gnome-music
     gnome-terminal
@@ -42,5 +42,7 @@
     totem
     yelp
   ]);
-
+  deconf.settings = {
+    ""
+  }
 }
