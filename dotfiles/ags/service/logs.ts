@@ -47,7 +47,7 @@ class ColorPicker extends Service {
 
         this.#notifID = await Utils.notify({
             id: this.#notifID,
-            iconName: icons.logs.logo,
+            iconName: icons.logs.logs,
             summary: color,
         })
     }
