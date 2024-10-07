@@ -14,6 +14,9 @@ export const substitutes = {
 
 export default {
     missing: "image-missing-symbolic",
+    logs:{
+        logs: "logs-logo-symbolic",
+    },
     nix: {
         nix: "nix-snowflake-symbolic",
     },

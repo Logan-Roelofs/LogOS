@@ -1,4 +1,5 @@
 import PanelButton from "../PanelButton"
+import logs from "service/logs"
 import colorpicker from "service/colorpicker"
 import Gdk from "gi://Gdk"
 
