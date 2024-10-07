@@ -72,6 +72,7 @@ const options = mkOptions(OPTIONS, {
         //                "launcher",
         //                "taskbar",
         //"battery",
+        "log",
         "expander",
         //                "messages",
       ]),
