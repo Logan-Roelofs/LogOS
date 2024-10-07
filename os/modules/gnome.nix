@@ -3,7 +3,7 @@
     enable = true;
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
-  }
+  };
   environment.gnome.excludePackages = (with pkgs; [
     gnome-photos
     gnome-tour
@@ -11,7 +11,6 @@
     cheese # webcam tool
     gnome-music
     gnome-terminal
-    gedit # text editor
     epiphany # web browser
     geary # email reader
     evince # document viewer
