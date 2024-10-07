@@ -5,9 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    matugen.url = "github:InioX/matugen?ref=v2.2.0";
     ags.url = "github:Aylur/ags";
-    astal.url = "github:Aylur/astal";
     hyprland = {
       url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -24,14 +22,9 @@
       pkgs = import nixpkgs { inherit system; };
     in
     {
-      packages.x86_64-linux.default = nixpkgs.legacyPackages.x86_64-linux.callPackage ./dotfiles/newags { inherit inputs; };
-
       # 'sudo nixos-rebuild --flake .#logos'
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit inputs username home-manager; 
-          asztal = self.packages.x86_64-linux.default;
-        };
+        specialArgs = { inherit inputs username home-manager; };
         modules = [
           ./hardware/hardware-configuration.nix
           ./os/default.nix
