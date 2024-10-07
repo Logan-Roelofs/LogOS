@@ -9,6 +9,7 @@
     ./ss.nix
     ./home-manger.nix
     ./stylix.nix
+    ./modules/gnome.nix
   ];
 
   networking.extraHosts = ''
