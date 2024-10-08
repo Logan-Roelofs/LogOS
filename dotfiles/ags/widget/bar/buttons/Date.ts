@@ -9,14 +9,11 @@ export default () =>
   PanelButton({
     window: "datemenu",
     on_clicked: action.bind(),
-    vertical: true,
-    child: Widget.Box({
-      children: [
-        Widget.Label({
-          className: "date",
-          justification: "center",
-          label: time.bind(),
-        }),
-      ],
-    }),
+    children: [
+      Widget.Label({
+        className: "date",
+        justification: "center",
+        label: time.bind(),
+      }),
+    ],
   });
