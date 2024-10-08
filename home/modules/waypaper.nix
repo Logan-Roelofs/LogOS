@@ -4,7 +4,7 @@
     swww
   ];
   home.file.".config/waypaper" = {
-    source = builtins.path = "./wallpapers";
+    source = ./wallpapers;
     recursive = true;
   };
 }
