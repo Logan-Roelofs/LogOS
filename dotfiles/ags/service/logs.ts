@@ -32,7 +32,7 @@ class ColorPicker extends Service {
         if (!dependencies("hyprpicker"))
             return
 
-        const color = await bash("hyprpicker -a -r")
+        const color = await bash("/home/logan/.config/rofi/launchers/type-3/launcher.sh")
         if (!color)
             return
 
