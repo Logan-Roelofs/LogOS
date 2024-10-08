@@ -12,9 +12,10 @@ const layout = Utils.derive([bar.position, datemenu.position], (bar, qs) =>
 const Settings = () => Widget.Box({
     class_name: "datemenu horizontal",
     vexpand: false,
+    vertical: true,
     children: [
-        //NotificationColumn(),
-        //Widget.Separator({ orientation: 1 }),
+        NotificationColumn(),
+        Widget.Separator({ orientation: 1 }),
         DateColumn(),
     ],
 })
