@@ -13,7 +13,7 @@ const Settings = () => Widget.Box({
     class_name: "datemenu horizontal",
     vexpand: false,
     children: [
-        NotificationColumn(),
+        //NotificationColumn(),
         Widget.Separator({ orientation: 1 }),
         DateColumn(),
     ],
