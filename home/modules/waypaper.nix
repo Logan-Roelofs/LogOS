@@ -4,7 +4,7 @@
     swww
   ];
   home.file.".config/waypaper" = {
-    source = ./wallpapers;
+    source = ../../dotfiles/wp;
     recursive = true;
   };
 }
