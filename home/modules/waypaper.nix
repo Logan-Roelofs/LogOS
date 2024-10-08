@@ -3,9 +3,9 @@
     waypaper
     swww
   ];
-  #home.file.".config/waypaper" = {
-  #  source = config.lib.file.mkOutOfStoreSymlink
-  #    "${config.home.homeDirectory}/.config/logos/dotfiles/newags/";
-  #  recursive = true;
-  #};
+  builtins.path = 
+  home.file.".config/waypaper" = {
+    source = builtins.path = "./wallpapers";
+    recursive = true;
+  };
 }
