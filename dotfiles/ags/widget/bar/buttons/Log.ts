@@ -26,7 +26,7 @@ export default () => {
 
     return PanelButton({
         class_name: "color-picker",
-        child: Widget.Icon({icon: "logs-logo-symbolic", css: 'color: blue;',}),
+        child: Widget.Icon({icon: "logs-logo-symbolic", css: 'color: #479FE6;',}),
         tooltip_text: logs.bind("colors").as(v => `${v.length} colors`),
         on_clicked: logs.pick,
         on_secondary_click: self => {
