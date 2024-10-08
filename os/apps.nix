@@ -32,8 +32,6 @@
     cava
     supabase-cli
     caido
-    swww
-    waypaper
     tt
     espeak
     nixos-generators
@@ -111,7 +109,6 @@
     pipenv
 
     # Desktop Package Requirements
-    swww # Sway Wallpaper
     hyprpicker # Hyprland color picker
     fd # Fast file search
     bun # js run time
