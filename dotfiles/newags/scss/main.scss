@@ -1,0 +1,164 @@
+*:not(selection):not(tooltip) {
+  all: unset;
+  -gtk-dpi: 96;
+}
+
+// Variables
+@import "colors";
+
+$opacity: 0.35;
+$border-width: 0.1rem;
+
+// Mixins
+@mixin button($fg-color, $bg-color) {
+  color: $fg-color;
+  padding: 0.5rem 0.7rem;
+  border-radius: 1rem;
+  background: $bg-color;
+  transition: background 0.2s linear;
+
+  &:hover {
+    background: lighten($bg-color, 10%);
+  }
+
+  &.off {
+    color: rgba($fg-color, $opacity);
+    background: #383838;
+
+    &:hover {
+      background: lighten(#383838, 10%);
+    }
+  }
+}
+
+@mixin icon-button($fg-color, $bg-color) {
+  color: $fg-color;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: $bg-color;
+  transition: background 0.2s linear;
+
+  &:hover {
+    background: lighten($bg-color, 10%);
+  }
+}
+
+@mixin slider {
+  trough {
+    padding: 0 0.5rem;
+    border: 0.2rem solid transparent;
+    border-radius: 2rem;
+    background: #383838;
+
+    slider {
+      min-width: 1rem;
+      min-height: 1rem;
+      border-radius: 2rem;
+      background: #ffffff;
+    }
+
+    highlight {
+      margin: 0 -0.5rem;
+      min-height: 1rem;
+      border-radius: 2rem;
+      background: rgba(#ffffff, $opacity);
+    }
+  }
+}
+
+// Functions
+@function border-color($color) {
+  @return rgba($color, 0.15);
+}
+
+// Components
+@import "bar/bar";
+@import "panels/panel-1/panel";
+@import "panels/panel-2/panel";
+@import "launcher";
+@import "notification-popups";
+
+.screenshot-popup {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: $border-width solid border-color(#ffffff);
+  border-radius: 1rem;
+  background: #242424;
+
+  button+button {
+    margin-left: 0.5rem;
+  }
+
+  button {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #383838;
+    transition: background 0.2s linear;
+
+    &:hover {
+      background: lighten(#383838, 10%);
+    }
+
+    image {
+      font-size: 2rem;
+    }
+  }
+}
+
+.workspace-popup {
+  padding: 1rem;
+  border: $border-width solid border-color(#ffffff);
+  border-radius: 2rem;
+  background: #242424;
+
+  box+box {
+    margin-left: 0.5rem;
+  }
+
+  box {
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+    border-radius: 1rem;
+    background: #383838;
+    transition: background 0.2s linear;
+
+    &.active {
+      color: #ffffff;
+      background: lighten(#383838, 10%);
+    }
+  }
+}
+
+.brightness-osd,
+.volume-osd {
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 1rem;
+  border: $border-width solid border-color(#ffffff);
+  border-radius: 1rem;
+  background: #242424;
+
+  image+scale {
+    margin-left: 0.5rem;
+  }
+
+  image {
+    font-size: 1rem;
+  }
+
+  scale {
+    trough {
+      min-width: 12rem;
+      min-height: 0.5rem;
+      border-radius: 1rem;
+      background: #383838;
+
+      highlight {
+        min-width: 0.5rem;
+        min-height: 0.5rem;
+        border-radius: 1rem;
+        background: #ffffff;
+      }
+    }
+  }
+}

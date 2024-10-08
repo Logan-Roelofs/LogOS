@@ -1,0 +1,36 @@
+.media {
+  margin-bottom: 1rem;
+
+  .cover {
+    min-width: 4rem;
+    min-height: 4rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    background-color: #383838;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  }
+
+  .title {}
+
+  .artists {
+    color: rgba(#ffffff, $opacity);
+  }
+
+  button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: none;
+    transition: background 0.2s linear;
+
+    &:hover {
+      background: rgba(#ffffff, 0.1);
+    }
+
+    &.off {
+      color: rgba(#ffffff, $opacity);
+    }
+  }
+}

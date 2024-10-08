@@ -1,0 +1,15 @@
+.cava {
+  margin-left: -1rem;
+
+  progressbar {
+    trough {
+      min-width: 1rem;
+    }
+
+    progress {
+      min-height: 0.5rem;
+      min-width: 1.25rem;
+      background: #ffffff;
+    }
+  }
+}

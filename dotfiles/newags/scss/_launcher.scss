@@ -1,0 +1,69 @@
+.launcher {
+  padding: 1rem;
+  margin-left: 1rem;
+  min-width: 24rem;
+  border: 0.1rem solid border-color(#ffffff);
+  border-radius: 1rem;
+  background: #242424;
+
+  entry {
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    background: #383838;
+
+    image {
+      margin-right: 0.5rem;
+    }
+  }
+
+  scrolledwindow {
+    margin-top: 0.5rem;
+    min-height: 24rem;
+
+    /*
+    scrollbar {
+      min-width: 0.1rem;
+      border-radius: 1rem;
+      background: #383838;
+      transition:
+        min-width,
+        background 0.2s linear;
+
+      slider {
+        min-height: 1rem;
+        min-width: 0.1rem;
+        border-radius: 1rem;
+        background: $blue-3;
+      }
+
+      &:hover {
+        min-width: 0.2rem;
+        background: lighten(#383838, 10%);
+
+        slider {
+          min-width: 0.2rem;
+        }
+      }
+    }
+    */
+  }
+
+  .application {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: background 0.2s linear;
+
+    &:focus {
+      background: #383838;
+    }
+
+    image {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    label+label {
+      color: rgba(#ffffff, $opacity);
+    }
+  }
+}

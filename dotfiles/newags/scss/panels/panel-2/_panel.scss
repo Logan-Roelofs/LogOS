@@ -1,0 +1,32 @@
+@import "notification-center";
+@import "calendar";
+@import "system-monitor";
+@import "cava";
+
+.panel-2 {
+  min-width: 26rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  .info {
+    padding: 1rem;
+    border: $border-width solid border-color(#ffffff);
+    border-radius: 1rem;
+    background: #242424;
+
+    button {
+      @include icon-button(#ffffff, #242424);
+
+      >image {
+        transition: -gtk-icon-transform 0.2s linear;
+      }
+    }
+
+    separator {
+      margin: 0.5rem 0;
+      min-height: $border-width;
+      border-radius: 2rem;
+      background: border-color(#ffffff);
+    }
+  }
+}
