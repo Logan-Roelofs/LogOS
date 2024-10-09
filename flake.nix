@@ -22,7 +22,6 @@
       pkgs = import nixpkgs { inherit system; };
     in
     {
-      package.${system}.default = (import ./os/derivations/control-center/default.nix { inherit pkgs; });
       # 'sudo nixos-rebuild --flake .#logos'
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username home-manager; };
