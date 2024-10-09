@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, username, ... }: {
+{ config, pkgs, inputs, username, nixpkgs, ... }: {
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
   networking.extraHosts = ''
@@ -19,8 +19,8 @@
       find $out -type f -exec sed -i -e "s|${pkgs.gnome.gnome-control-center}|$out|g" {} \;
     '';
 
-  pkgs.runCommand "print-date" {
-    ativeBuildInputs = [ pkgs.coreutils ];
+  nixpkgs.runCommand "print-date" {
+    ativeBuildInputs = [ nixpkgs.coreutils ];
   } ''
     # line 5 in nix file = line 1 in bash script -> offset 4
     PS4='+ Line $(expr $LINENO + 4): '
