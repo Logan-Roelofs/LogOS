@@ -10,12 +10,9 @@
     ./home-manger.nix
     ./stylix.nix
     # ./modules/gnome.nix
-     ./modules/hyprland.nix
+    ./modules/hyprland.nix
+    ./modules/network.nix 
   ];
-
-  networking.extraHosts = ''
-    10.10.11.230 cozyhosting.htb
-  '';
 
   services.envfs.enable = true; # Enable envfs for user environments (e.g. /bin)
 
@@ -109,7 +106,6 @@
       '';
   };
 
-  networking.firewall.enable = false;
 
   # Remove nixos documentation
   documentation.enable = false;
@@ -143,8 +139,6 @@
   };
 
   # Define Network Settings
-  networking.hostName = "NixOS";
-  networking.networkmanager.enable = true;
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
