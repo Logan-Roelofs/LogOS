@@ -12,8 +12,8 @@
     gtk3
     gnome.gnome-control-center
   ];
-  gnome = pkgs.gnome // {
-    gnome-control-center = super.runCommand "gnome-control-center" { } ''
+  gnome = pkgs.gnome.gnome-control-center // {
+  gnome-control-center = pkgs.runCommand "gnome-control-center" { } ''
       cp -R ${pkgs.gnome-control-center} $out
       chmod -R +w $out
       rm $out/share/applications/gnome-{online-accounts,sharing}-panel.desktop
