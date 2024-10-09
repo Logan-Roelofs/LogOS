@@ -10,10 +10,9 @@
   networking.firewall.enable = false;
   environment.systemPackages = with pkgs; [
     gtk3
-    gnome
     gnome.gnome-control-center
   ];
-  gnome = super.gnome // {
+  gnome = pkgs.gnome // {
     gnome-control-center = super.runCommand "gnome-control-center" { } ''
       cp -R ${pkgs.gnome-control-center} $out
       chmod -R +w $out
