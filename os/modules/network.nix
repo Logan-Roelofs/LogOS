@@ -8,4 +8,8 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
   networking.firewall.enable = false;
+  environment.systemPackages = with pkgs; [
+    gtk3
+    gnome.gnome-control-center
+  ]
 }
