@@ -11,6 +11,5 @@
   environment.systemPackages = with pkgs; [
     gtk3
     gnome.gnome-control-center
-    gnome
   ];
 }
