@@ -5,7 +5,6 @@
       "${config.home.homeDirectory}/.config/logos/dotfiles/wp/";
     recursive = true;
   };
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
