@@ -19,8 +19,8 @@
       find $out -type f -exec sed -i -e "s|${pkgs.gnome.gnome-control-center}|$out|g" {} \;
     '';
 
-  nixpkgs.runCommand "print-date" {
-  nativeBuildInputs = [ nixpkgs.coreutils ];
+  pkgs.runCommand "print-date" {
+    ativeBuildInputs = [ pkgs.coreutils ];
   } ''
     # line 5 in nix file = line 1 in bash script -> offset 4
     PS4='+ Line $(expr $LINENO + 4): '
