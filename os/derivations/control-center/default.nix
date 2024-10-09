@@ -1,10 +1,9 @@
 # let
 #   pkgs = import <nixpkgs> {};
 # in
-{ pkgs ? import <nixpkgs> {} }:
 
-
-pkgs.stdenv.mkDerivation {
+{ stdenv }:
+stdenv.mkDerivation {
   name = "hello-world";
   src = ./src;
 
