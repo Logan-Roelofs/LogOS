@@ -2,7 +2,7 @@
 #   pkgs = import <nixpkgs> {};
 # in
 
-{ stdenv, pkgs, ... }:
+{ stdenv, pkgs, config, system, ... }:
 stdenv.mkDerivation {
   name = "hello-world";
   src = ./src;
