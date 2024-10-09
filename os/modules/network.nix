@@ -1,6 +1,6 @@
 { config, pkgs, inputs, username, ... }: {
   imports = [
-    ../derivations/control-center.nix
+    ../derivations/control-center/flake.nix
   ];
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
