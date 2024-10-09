@@ -11,5 +11,13 @@
   environment.systemPackages = with pkgs; [
     gtk3
     gnome.gnome-control-center
-  ]; 
+  ];
+  gnome = super.gnome // {
+    gnome-control-center = super.runCommand "gnome-control-center" { } ''
+      cp -R ${pkgs.gnome-control-center} $out
+      chmod -R +w $out
+      rm $out/share/applications/gnome-{online-accounts,sharing}-panel.desktop
+      find $out -type f -exec sed -i -e "s|${pkgs.gnome-control-center}|$out|g" {} \;
+    '';
+  };
 }
