@@ -12,4 +12,13 @@
     gtk3
     gnome.gnome-control-center
   ];
+  gnome.gnome-control-center = super.gnome.gnome-control-center // {
+    gnome.gnome-control-center = super.runCommand "${super.gnome.gnome-control-center.name}" { } ''
+          cp -R ${super.gnome.gnome-control-center} $out
+          chmod -R +w $out
+          rm $out/share/applications/gnome-{online-accounts,sharing}-panel.desktop
+          find $out -type f -exec sed -i -e "s|${super.gnome.gnome-control-center}|$out|g" {} \;
+        '';
+      };
+  };
 }
