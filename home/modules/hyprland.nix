@@ -70,7 +70,8 @@
 
       input = { "natural_scroll" = "true"; };
 
-      monitor = [ ",preferred,auto,1" "eDP-1,preferred,auto,1.333333" ];
+      monitor = [ ",preferred,auto,1" "eDP-1,preferred,auto,1" ];
+      #monitor = [ ",preferred,auto,1" "eDP-1,preferred,auto,1.333333" ];
 
       "$mainMod" = "SUPER";
 
