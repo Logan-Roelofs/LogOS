@@ -11,13 +11,22 @@
   environment.systemPackages = with pkgs; [
     gtk3
     gnome.gnome-control-center
-  ];
-  gnome = super.gnome // {
-    gnome-control-center = super.runCommand "${super.gnome.gnome-control-center.name}" { } ''
-      cp -R ${super.gnome.gnome-control-center} $out
+  ]; 
+  gnome-control-center = pkgs.gnome.gnome-control-center.runCommand "${pkgs.gnome.gnome-control-center.name}" { } ''
+      cp -R ${pkgs.gnome.gnome-control-center} $out
       chmod -R +w $out
       rm $out/share/applications/gnome-{online-accounts,sharing}-panel.desktop
-      find $out -type f -exec sed -i -e "s|${super.gnome.gnome-control-center}|$out|g" {} \;
+      find $out -type f -exec sed -i -e "s|${pkgs.gnome.gnome-control-center}|$out|g" {} \;
     '';
-  };
+
+  nixpkgs.runCommand "print-date" {
+  nativeBuildInputs = [ nixpkgs.coreutils ];
+  } ''
+    # line 5 in nix file = line 1 in bash script -> offset 4
+    PS4='+ Line $(expr $LINENO + 4): '
+    set -o xtrace # print commands
+    mkdir -p $out/date/
+    date > $out/date/today.txt
+    set +o xtrace # hide commands
+  ''
 }
