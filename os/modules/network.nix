@@ -1,7 +1,4 @@
 { config, pkgs, inputs, username, ... }: {
-  imports = [
-    ../derivations/control-center/default.nix
-  ];
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
   networking.extraHosts = ''
