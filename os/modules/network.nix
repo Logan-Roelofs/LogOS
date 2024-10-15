@@ -13,5 +13,11 @@
     gnome.gnome-control-center
     networkmanager-openvpn
     gnome.networkmanager-openvpn
+    networkmanager-fortisslvpn
+    gnome.networkmanager-fortisslvpn
+    networkmanager-openconnect
+    gnome.networkmanager-openconnect
+    networkmanager-vpnc
+    gnome.networkmanager-vpnc
   ];
 }
