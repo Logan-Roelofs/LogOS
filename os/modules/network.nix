@@ -11,6 +11,8 @@
   environment.systemPackages = with pkgs; [
     gtk3
     gnome.gnome-control-center
-    
+    networkmanager-openvpn
+    protonvpn-gui
+    protonvpn-cli
   ];
 }
