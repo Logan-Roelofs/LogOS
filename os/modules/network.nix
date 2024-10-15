@@ -12,5 +12,6 @@
     gtk3
     gnome.gnome-control-center
     networkmanager-openvpn
+    gnome.networkmanager-openvpn
   ];
 }
