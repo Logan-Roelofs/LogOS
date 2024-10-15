@@ -19,5 +19,10 @@
     gnome.networkmanager-openconnect
     networkmanager-vpnc
     gnome.networkmanager-vpnc
+    networkmanager-sstp
+    networkmanager-l2tp
+    networkmanager-iodine
+    gnome.networkmanager-iodine
+    networkmanager_strongswan
   ];
 }
