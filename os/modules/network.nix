@@ -1,4 +1,7 @@
 { config, pkgs, inputs, username, ... }: {
+    
+  networking.nat.enable = true; 
+  networking.firewall.checkReversePath = false; # or "loose"
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
   networking.extraHosts = ''
