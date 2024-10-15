@@ -12,7 +12,5 @@
     gtk3
     gnome.gnome-control-center
     networkmanager-openvpn
-    protonvpn-gui
-    protonvpn-cli
   ];
 }
