@@ -8,7 +8,6 @@
     ./dev/js.nix
     ./ss.nix
     ./home-manger.nix
-    ./stylix.nix
     # ./modules/gnome.nix
     ./modules/hyprland.nix
     ./modules/network.nix 

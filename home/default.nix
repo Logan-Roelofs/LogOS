@@ -3,7 +3,6 @@
     ./apps.nix
     ./modules/ags.nix
     ./modules/hyprland.nix
-    ./modules/stylix.nix
     ./modules/zsh.nix
     ./modules/nvim.nix
     ./modules/vscod.nix
