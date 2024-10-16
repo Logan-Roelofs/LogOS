@@ -1,6 +1,8 @@
 { config, pkgs, inputs, username, ... }: {
 
   networking.nat.enable = true;
+  services.mullvad-vpn.enable = true;
+
   networking.resolvconf.enable = true;
   networking.firewall.checkReversePath = "strict"; # or "false"
   networking.hostName = "NixOS";
@@ -14,6 +16,9 @@
   networking.firewall.enable = false;
   environment.systemPackages = with pkgs; [
     gtk3
+    mullvad-vpn
+    mullvad
+    mullvad-closest
     wireguard-tools
     wg-bond
     wg-netmanager
