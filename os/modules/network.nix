@@ -1,6 +1,7 @@
 { config, pkgs, inputs, username, ... }: {
     
   networking.nat.enable = true; 
+  networking.resolvconf.enable = true;
   networking.firewall.checkReversePath = false; # or "loose"
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
@@ -13,7 +14,6 @@
   networking.firewall.enable = false;
   environment.systemPackages = with pkgs; [
     gtk3
-    openresolv
     gnome.gnome-control-center
     networkmanager-openvpn
     gnome.networkmanager-openvpn
