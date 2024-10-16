@@ -2,7 +2,7 @@
     
   networking.nat.enable = true; 
   networking.resolvconf.enable = true;
-  networking.firewall.checkReversePath = false; # or "loose"
+  networking.firewall.checkReversePath = "loose"; # or "false"
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
   networking.extraHosts = ''
