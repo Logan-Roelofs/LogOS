@@ -7,6 +7,7 @@
     ./modules/nvim.nix
     ./modules/vscod.nix
     ./modules/waypaper.nix
+    ./modules/gtk.nix
   ];
 
   home.username = "logan";
