@@ -39,9 +39,9 @@
       privateKeyFile = "../../dotfiles/vpn/wg-proton-privatekey";
       peers = [
         {
-          publicKey = "TaxwFJ2ajJdHlowb91UhfBxl60lsjBicCxC+dE2wDEE=";
+          publicKey = "Lblqk058zWqS+I7pxpKo4ffxfceki0KTTGdEdvI4zUg=";
           allowedIPs = [ "0.0.0.0/0" ]; # Only send communication through mullvad if it is in the range of the given ips, allows for split tunneling
-          endpoint = "149.22.84.154:51820"; # my selected mullvad enpoint
+          endpoint = "149.22.88.59:51820"; # my selected mullvad enpoint
         }
       ];
     };
