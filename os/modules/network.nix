@@ -1,9 +1,6 @@
 { config, pkgs, inputs, username, ... }: {
 
-  networking.nat.enable = true;
-  services.mullvad-vpn.enable = true;
-  networking.resolvconf.enable = true;
-  networking.firewall.checkReversePath = "strict"; # or "false"
+  services.mullvad-vpn.enable = true;t
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
   networking.extraHosts = ''
