@@ -1,6 +1,6 @@
 { config, pkgs, inputs, username, ... }: {
-    
-  networking.nat.enable = true; 
+
+  networking.nat.enable = true;
   networking.resolvconf.enable = true;
   networking.firewall.checkReversePath = "strict"; # or "false"
   networking.hostName = "NixOS";
@@ -32,4 +32,18 @@
     gnome.networkmanager-iodine
     networkmanager_strongswan
   ];
+  networking.wg-quick.interfaces = {
+    wg-proton = {
+      address = [ "10.2.0.2/32" ];
+      dns = [ "10.2.0.1" ]; # mullvad public dns
+      privateKeyFile = "../../dotfiles/vpn/wg-proton-privatekey";
+      peers = [
+        {
+          publicKey = "TaxwFJ2ajJdHlowb91UhfBxl60lsjBicCxC+dE2wDEE=";
+          allowedIPs = [ "0.0.0.0/0" ]; # Only send communication through mullvad if it is in the range of the given ips, allows for split tunneling
+          endpoint = "149.22.84.154:51820"; # my selected mullvad enpoint
+        }
+      ];
+    };
+  }
 }
