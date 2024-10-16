@@ -30,5 +30,5 @@
       "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
     recursive = true;
   };
-
+  
 }

@@ -13,5 +13,5 @@
     nerdfonts
     monaspace
   ];
-
+  services.gvfs.enable = true;
 }
