@@ -27,7 +27,6 @@
         modules = [
           ./hardware/hardware-configuration.nix
           ./os/default.nix
-          inputs.stylix.nixosModules.stylix
           inputs.hyprland.nixosModules.default
           home-manager.nixosModules.home-manager
           {
