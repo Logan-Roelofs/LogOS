@@ -22,6 +22,6 @@
     gnome.networkmanager-openvpn
   ];
   networking.wg-quick.interfaces = {
-    wg-proton.configFile = "/home/logan/.config/logos/dotfiles/vpn/wg-proton-US-FREE-285032.conf";
+    wg-proton.configFile = "../../dotfiles/vpn/wg-proton-US-FREE-285032.conf";
   };
 }
