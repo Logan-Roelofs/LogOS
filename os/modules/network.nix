@@ -25,6 +25,5 @@
     hou-wg-001.configFile = "/home/logan/.config/logos/dotfiles/vpn/us-hou-wg-001.conf";
     hou-wg-002.configFile = "/home/logan/.config/logos/dotfiles/vpn/us-hou-wg-002.conf";
     hou-wg-003.configFile = "/home/logan/.config/logos/dotfiles/vpn/us-hou-wg-003.conf";
-    hou-wg-004.configFile = "/home/logan/.config/logos/dotfiles/vpn/us-hou-wg-004.conf";
   };
 }
