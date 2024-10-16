@@ -1,6 +1,6 @@
 { config, pkgs, inputs, username, ... }: {
 
-  services.mullvad-vpn.enable = true;t
+  services.mullvad-vpn.enable = true;
   networking.hostName = "NixOS";
   networking.networkmanager.enable = true;
   networking.extraHosts = ''
