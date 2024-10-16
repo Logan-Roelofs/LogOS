@@ -14,6 +14,9 @@
   networking.firewall.enable = false;
   environment.systemPackages = with pkgs; [
     gtk3
+    wireguard-tools
+    wg-bond
+    wg-netmanager
     gnome.gnome-control-center
     networkmanager-openvpn
     gnome.networkmanager-openvpn
