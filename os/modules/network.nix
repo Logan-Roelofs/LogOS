@@ -13,6 +13,7 @@
   networking.firewall.enable = false;
   environment.systemPackages = with pkgs; [
     gtk3
+    openresolv
     gnome.gnome-control-center
     networkmanager-openvpn
     gnome.networkmanager-openvpn
