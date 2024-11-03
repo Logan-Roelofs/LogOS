@@ -1,16 +1,15 @@
 { config, pkgs, lib, inputs, username, home-manager, ... }: {
   imports = [
     ./apps.nix
-    ./vm.nix
     ./dev/rust.nix
     ./dev/dev.nix
     ./dev/cpp.nix
     ./dev/js.nix
-    ./ss.nix
-    ./home-manger.nix
-    # ./modules/gnome.nix
+    ./modules/ss.nix
+    ./modules/home-manger.nix
     ./modules/hyprland.nix
     ./modules/network.nix 
+    ./moqdules/vm.nix
   ];
 
   services.envfs.enable = true; # Enable envfs for user environments (e.g. /bin)

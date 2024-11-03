@@ -1,9 +1,0 @@
-#!/bin/bash
-
-hyprctl reload
-
-if pgrep -x "ags" >/dev/null; then
-    pkill -x "ags"
-fi
-
-$HOME/.config/ags/config.js &>/dev/null &

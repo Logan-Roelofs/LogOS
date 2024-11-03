@@ -8,6 +8,7 @@
     ./modules/vscod.nix
     ./modules/waypaper.nix
     ./modules/gtk.nix
+    ./modules/rofi.nix
   ];
 
   home.username = "logan";
