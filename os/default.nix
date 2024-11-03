@@ -9,7 +9,7 @@
     ./modules/home-manger.nix
     ./modules/hyprland.nix
     ./modules/network.nix 
-    ./moqdules/vm.nix
+    ./modules/vm.nix
   ];
 
   services.envfs.enable = true; # Enable envfs for user environments (e.g. /bin)
