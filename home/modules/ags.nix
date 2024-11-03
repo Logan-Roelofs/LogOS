@@ -7,7 +7,7 @@
       gvfs
       gnome.gvfs
       gtksourceview
-      webkitgtk
+      webkitgtk_6_0
       accountsservice
       pavucontrol
       bun
