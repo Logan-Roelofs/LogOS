@@ -10,6 +10,7 @@
     ./modules/hyprland.nix
     ./modules/network.nix 
     ./modules/vm.nix
+    ./modules/control-pannel.nix
   ];
 
   services.envfs.enable = true; # Enable envfs for user environments (e.g. /bin)
