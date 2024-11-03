@@ -80,7 +80,7 @@ const options = mkOptions(OPTIONS, {
       end: opt<Array<import("widget/bar/Bar").BarWidget>>([
         // "media",
         "expander",
-        "colorpicker",
+        // "colorpicker",
         "systray",
         //"screenrecord",
         //                "powermenu",
