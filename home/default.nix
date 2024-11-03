@@ -9,6 +9,7 @@
     ./modules/waypaper.nix
     ./modules/gtk.nix
     ./modules/rofi.nix
+    ./modules/desktop.nix
   ];
 
   home.username = "logan";
