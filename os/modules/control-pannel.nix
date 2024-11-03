@@ -1,5 +1,5 @@
 { config, pkgs, inputs, ... }: {
-  environment.etc."/etc/profiles/per-user/logan/share/applications/control-pannel.desktop" = {
+  environment.etc."/profiles/per-user/logan/share/applications/control-pannel.desktop" = {
     mode = "0644";
     text = ''
       [Desktop Entry]
