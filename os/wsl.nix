@@ -2,7 +2,7 @@
  wsl.useWindowsDriver = true;
   programs.sway.enable = true;
   wsl.enable = true;
-  wsl.defaultUser = "nixos";
+  wsl.defaultUser = ${username};
   wsl.startMenuLaunchers = true;
   environment.variables = {
     DONT_PROMPT_WSL_INSTALL = "true";
