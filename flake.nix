@@ -55,6 +55,6 @@
             home-manager.extraSpecialArgs = { inherit inputs username; };
           }
         ];
-      }
+      };
     };
 }
