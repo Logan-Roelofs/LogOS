@@ -82,7 +82,7 @@ typeset -gA JOVIAL_SYMBOL=(
 #
 typeset -gA JOVIAL_PALETTE=(
     # hostname
-    host '%F{green}'
+    host '%F{blue}'
 
     # common user name
     user '%F{green}'
@@ -154,7 +154,7 @@ typeset -gA JOVIAL_AFFIXES=(
     # user.prefix            '%F{red}red%F{green}green%F{blue}blue%F{blue}blue%F{green}green%F{yellow}yellow%F{white}white%F{black}black%F{reset}'
     user.prefix            ''
     username               ''
-    user.suffix            ' ${JOVIAL_PALETTE[conj.]}in'
+    user.suffix            ' ${JOVIAL_PALETTE[conj.]}'
 
     path.prefix            ' '
     current-dir            '%~'
