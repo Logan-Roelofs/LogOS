@@ -6,6 +6,8 @@
   wsl.startMenuLaunchers = true;
   environment.variables = {
     DONT_PROMPT_WSL_INSTALL = "true";
+    LIBGL_ALWAYS_INDIRECT = "1";
+    DISPLAY= "$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0";
   };
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
