@@ -2,7 +2,7 @@
  wsl.useWindowsDriver = true;
   programs.sway.enable = true;
   wsl.enable = true;
-  wsl.defaultUser = "nixos";
+  wsl.defaultUser = "${username}";
   wsl.startMenuLaunchers = true;
   environment.variables = {
     DONT_PROMPT_WSL_INSTALL = "true";
@@ -20,4 +20,5 @@
     pkgs.gnome
   ];
   system.stateVersion = "24.05"; # Do not change 
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 }

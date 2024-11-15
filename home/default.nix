@@ -12,8 +12,8 @@
     ./modules/desktop.nix
   ];
 
-  home.username = "logan";
-  home.homeDirectory = "/home/logan";
+  home.username = "${username}";
+  home.homeDirectory = "/home/${username}";
   nixpkgs.config.allowUnfree = true;
   home.stateVersion = "23.11";
 }
