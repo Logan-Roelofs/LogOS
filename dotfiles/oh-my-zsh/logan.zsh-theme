@@ -156,7 +156,7 @@ typeset -gA JOVIAL_AFFIXES=(
     username               ''
     user.suffix            ' ${JOVIAL_PALETTE[conj.]}'
 
-    path.prefix            ' '
+    path.prefix            ''
     current-dir            '%~'
     path.suffix            ''
 
