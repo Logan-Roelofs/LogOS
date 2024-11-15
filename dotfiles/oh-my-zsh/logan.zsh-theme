@@ -82,41 +82,41 @@ typeset -gA JOVIAL_SYMBOL=(
 #
 typeset -gA JOVIAL_PALETTE=(
     # hostname
-    host '%F{magenta}'
+    host '%F{blue}'
 
     # common user name
-    user '%F{cyan}'
+    user '%F{green}'
 
     # only root user
     root '%B%F{203}'
 
     # current work dir path
-    path '%B%F{magenta}%}'
+    path '%B%F{blue}%}'
 
     # git status info (dirty or clean / rebase / merge / cherry-pick)
-    git '%F{cyan}'
+    git '%F{green}'
 
     # virtual env activate prompt for python
-    venv '%F{cyan}'
+    venv '%F{green}'
  
     # current time when prompt render, pin at end-of-line
-    time '%F{cyan}'
+    time '%F{green}'
 
     # elapsed time of last command executed
-    elapsed '%F{cyan}'
+    elapsed '%F{green}'
 
     # exit code of last command
-    exit.mark '%F{cyan}'
-    exit.code '%B%F{cyan}'
+    exit.mark '%F{green}'
+    exit.code '%B%F{green}'
 
     # 'conj.': short for 'conjunction', like as, at, in, on, using
-    conj. '%F{cyan}'
+    conj. '%F{green}'
 
     # shell typing area pointer
-    typing '%F{cyan}'
+    typing '%F{green}'
 
     # for other common case text color
-    normal '%F{cyan}'
+    normal '%F{green}'
 
     success '%F{green}'
     error '%F{red}'
@@ -151,7 +151,7 @@ typeset -gA JOVIAL_AFFIXES=(
     hostname               '${(%):-%n}@${(%):-%m}'
     host.suffix            '${JOVIAL_PALETTE[normal]}]${JOVIAL_PALETTE[conj.]}'
 
-    # user.prefix            '%F{red}red%F{green}green%F{blue}blue%F{magenta}magenta%F{cyan}cyan%F{yellow}yellow%F{white}white%F{black}black%F{reset}'
+    # user.prefix            '%F{red}red%F{green}green%F{blue}blue%F{blue}blue%F{green}green%F{yellow}yellow%F{white}white%F{black}black%F{reset}'
     user.prefix            ''
     username               ''
     user.suffix            ' ${JOVIAL_PALETTE[conj.]}in'
