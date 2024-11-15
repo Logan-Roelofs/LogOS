@@ -8,6 +8,7 @@
     DONT_PROMPT_WSL_INSTALL = "true";
   };
   nixpkgs.config.allowUnfree = true;
+  services.xrdp.defaultWindowManager = "xterm";
   environment.systemPackages = [
     pkgs.vscodium
     pkgs.emacs
@@ -17,6 +18,7 @@
     pkgs.git
     pkgs.gtk2-x11
     pkgs.gtk2
+    pkgs.xfce.xfce4-session
   ];
   system.stateVersion = "24.05"; # Do not change 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
