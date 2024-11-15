@@ -11,6 +11,8 @@
   };
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+  environment.shells = with pkgs; [ zsh ];
+  security.sudo.enable = true;
   nixpkgs.config.allowUnfree = true;
   services.xrdp.defaultWindowManager = "xterm";
   environment.systemPackages = [
@@ -23,6 +25,7 @@
     pkgs.gtk2-x11
     pkgs.gtk2
     pkgs.xfce.xfce4-session
+    pkgs.sudo
   ];
   system.stateVersion = "24.05"; # Do not change 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
