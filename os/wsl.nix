@@ -17,7 +17,6 @@
     pkgs.git
     pkgs.gtk2-x11
     pkgs.gtk2
-    pkgs.gnome
   ];
   system.stateVersion = "24.05"; # Do not change 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

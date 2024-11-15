@@ -41,6 +41,7 @@
           }
         ];
       };
+      # 'sudo nixos-rebuild --flake .#winLogos'
       nixosConfigurations.winLogos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username home-manager; };
         modules = [
