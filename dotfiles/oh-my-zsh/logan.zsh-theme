@@ -91,7 +91,7 @@ typeset -gA JOVIAL_PALETTE=(
     root '%B%F{203}'
 
     # current work dir path
-    path '%B%F{blue}%}'
+    path '%F{blue}'
 
     # git status info (dirty or clean / rebase / merge / cherry-pick)
     git '%F{green}'
