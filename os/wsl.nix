@@ -7,6 +7,7 @@
   environment.variables = {
     DONT_PROMPT_WSL_INSTALL = "true";
   };
+  users.defaultUserShell = pkgs.zsh;
   nixpkgs.config.allowUnfree = true;
   services.xrdp.defaultWindowManager = "xterm";
   environment.systemPackages = [

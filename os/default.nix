@@ -113,7 +113,10 @@
   services.upower.enable = true;
 
   programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+  
   # Define Main User
+  
   users.users.${username} = {
     shell = pkgs.zsh;
     isNormalUser = true;
