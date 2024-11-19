@@ -7,9 +7,7 @@
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   environment.variables.KITTY_DISABLE_WAYLAND = "1";
   fonts.packages = with pkgs; [
-    font-a
-    
-    vvvvvesome
+    font-awesome
     ubuntu_font_family
     nerdfonts
     monaspace
