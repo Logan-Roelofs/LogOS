@@ -16,6 +16,6 @@
     mullvad-closest
     wireguard-tools
     wg-netmanager
-    gnome.gnome-control-center
+    gnome-control-center
   ];
 }

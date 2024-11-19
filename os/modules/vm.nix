@@ -21,7 +21,7 @@
     win-spice
     bridge-utils
     libosinfo
-    gnome.adwaita-icon-theme
+    adwaita-icon-theme
   ];
 
   # Manage the virtualisation services
