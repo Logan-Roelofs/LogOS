@@ -19,6 +19,6 @@
     gnome.nautilus # File manager
     gnome.gnome-system-monitor # System monitor
     gnome.gnome-control-center # System settings
-  ]
+  ];
   services.gvfs.enable = true;
 }
