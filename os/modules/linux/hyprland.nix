@@ -13,10 +13,10 @@
     monaspace
   ];
   environment.systemPackages = with pkgs; [
-    gnome.adwaita-icon-theme # Icon theme
-    gnome.nautilus # File manager
-    gnome.gnome-system-monitor # System monitor
-    gnome.gnome-control-center # System settings
+    adwaita-icon-theme # Icon theme
+    nautilus # File manager
+    gnome-system-monitor # System monitor
+    gnome-control-center # System settings
   ];
   services.gvfs.enable = true;
 }

@@ -63,5 +63,5 @@
   ];
 
   # This is required to run DaVinci Resolve to run on my AMD APU
-  hardware.opengl.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
+  hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
 }
