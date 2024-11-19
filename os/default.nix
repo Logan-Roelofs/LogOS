@@ -1,12 +1,14 @@
 { config, pkgs, lib, inputs, username, home-manager, ... }: {
   imports = [
-    ./modules/apps.nix
+    ./modules/home-manger.nix
     ./modules/vm.nix
     ./modules/tmux.nix
-    ./linux/modules/ss.nix
-    ./linux/modules/home-manger.nix
-    ./linux/modules/hyprland.nix
-    ./linux/modules/network.nix 
+    ./modules/apps/linuxapps.nix
+    ./modules/apps/defaultapps.nix
+    ./modules/apps/securityapps.nix
+    ./modules/linux/hyprland.nix
+    ./modules/linux/network.nix 
+    ./modules/linux/ss.nix
   ];
   
   # Enable envfs for user environments (e.g. /bin)

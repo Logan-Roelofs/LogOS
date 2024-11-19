@@ -1,5 +1,9 @@
 { config, pkgs, lib, inputs, username, home-manager, ... }: {
- wsl.useWindowsDriver = true;
+  imports = [
+    ./modules/apps/securityapps.nix
+    ./modules/apps/defaultapps.nix
+  ];
+  wsl.useWindowsDriver = true;
   programs.sway.enable = true;
   wsl.enable = true;
   wsl.defaultUser = "${username}";
