@@ -20,6 +20,5 @@
     nfs-utils # NFS client
     dig # DNS lookup
     theharvester # Email, subdomain, and people search
-
-  ]
+  ];
 }
