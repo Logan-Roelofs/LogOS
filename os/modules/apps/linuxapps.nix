@@ -5,5 +5,5 @@
     wl-clipboard-x11 # Clipboard manager
     remmina # Remote desktop client
     rofi-wayland # Application launcher
-  ]
+  ];
 }
