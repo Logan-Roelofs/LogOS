@@ -1,7 +1,12 @@
 { inputs, config, pkgs, ... }: {
   imports = [ inputs.ags.homeManagerModules.default ];
 
-  home.packages = with pkgs; [ electron_30 nodejs ];
+  home.packages = with pkgs; [ 
+    electron_30
+    nodejs
+    waypaper
+    swww
+  ];
   home.file.".config/wp/" = {
     source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.homeDirectory}/.config/logos/dotfiles/wp/";
@@ -172,10 +177,6 @@
     recursive = true;
   };
   # wall papaer 
-  home.packages = with pkgs; [ 
-    waypaper
-    swww
-  ];
   home.file.".config/waypaper" = {
     source = ../../dotfiles/wp;
     recursive = true;
