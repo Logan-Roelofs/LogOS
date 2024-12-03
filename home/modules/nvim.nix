@@ -18,6 +18,7 @@
     # Other
     imagemagick
     wl-clipboard
+    luajitPackages.magick
   ];
   programs.neovim = {
     enable = true;

@@ -1,5 +1,9 @@
 { config, pkgs, lib, inputs, username, home-manager, ... }: {
- wsl.useWindowsDriver = true;
+  imports = [
+    ./modules/apps/securityapps.nix
+    ./modules/apps/defaultapps.nix
+  ];
+  wsl.useWindowsDriver = true;
   programs.sway.enable = true;
   wsl.enable = true;
   wsl.defaultUser = "${username}";
@@ -25,4 +29,8 @@
   system.stateVersion = "24.05"; # Do not change 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+<<<<<<< HEAD
+=======
+
+>>>>>>> b7b57922234d7d257afedeeccff525632b8ef38f
 }

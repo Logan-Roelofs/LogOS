@@ -1,5 +1,12 @@
 { inputs, config, pkgs, ... }: {
-  home.packages = with pkgs; [ electron_30 nodejs ];
+  imports = [ inputs.ags.homeManagerModules.default ];
+
+  home.packages = with pkgs; [ 
+    electron_30
+    nodejs
+    waypaper
+    swww
+  ];
   home.file.".config/wp/" = {
     source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.homeDirectory}/.config/logos/dotfiles/wp/";
@@ -121,5 +128,57 @@
         "$mainMod, mouse:273, resizewindow"
       ];
     };
+  };
+  # desktop entry for gnomes control-center 
+  xdg.desktopEntries = {
+    control-center = {
+      name = "control-center";
+      genericName = "Control Center";
+      exec = "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center %U";
+      terminal = false;
+      categories = [ "Application" ];
+    };
+  };
+  # rofi app launcher 
+  home.file.".config/rofi" = {
+    source = config.lib.file.mkOutOfStoreSymlink
+    "${config.home.homeDirectory}/.config/logos/dotfiles/rofi/";
+    recursive = true;
+  };
+  # ags 
+  programs.ags = {
+    enable = true;
+    # additional packages to add to gjs's runtime
+    extraPackages = with pkgs; [
+      gvfs
+      gnome.gvfs
+      gtksourceview
+      webkitgtk_6_0
+      accountsservice
+      pavucontrol
+      bun
+      dart-sass
+      fd
+      brightnessctl
+      swww
+      slurp
+      wf-recorder
+      wl-clipboard
+      wayshot
+      swappy
+      hyprpicker
+      networkmanager
+      gtk3
+    ];
+  };
+  home.file.".config/ags" = {
+    source = config.lib.file.mkOutOfStoreSymlink
+      "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
+    recursive = true;
+  };
+  # wall papaer 
+  home.file.".config/waypaper" = {
+    source = ../../dotfiles/wp;
+    recursive = true;
   };
 }

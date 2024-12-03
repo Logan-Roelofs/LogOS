@@ -10,6 +10,7 @@
     slurp # select a region of the screen
     swappy # gui for editing screenshots
     wl-clipboard # clipboard manager
+    grimblast # Screenshot tool
     #convert
     #^ not sure what package this comes from  but we already have it installed
   ];
