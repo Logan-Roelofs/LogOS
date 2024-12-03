@@ -48,6 +48,7 @@
       popup-nvim
       nvim-web-devicons
       nui-nvim
+      nerdfonts
     ];
     extraLuaConfig =
       # lua
