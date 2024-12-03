@@ -19,6 +19,7 @@
     imagemagick
     wl-clipboard
     luajitPackages.magick
+    nerdfonts
   ];
   programs.neovim = {
     enable = true;
@@ -48,7 +49,6 @@
       popup-nvim
       nvim-web-devicons
       nui-nvim
-      nerdfonts
     ];
     extraLuaConfig =
       # lua
