@@ -3,16 +3,17 @@
     ./modules/home-manger.nix
     ./modules/vm.nix
     ./modules/tmux.nix
+    ./modules/font.nix
     ./modules/apps/linuxapps.nix
     ./modules/apps/defaultapps.nix
     ./modules/apps/securityapps.nix
     ./modules/linux/hyprland.nix
-    ./modules/linux/network.nix 
+    ./modules/linux/network.nix
     ./modules/linux/ss.nix
   ];
-  
+
   # Enable envfs for user environments (e.g. /bin)
-  services.envfs.enable = true; 
+  services.envfs.enable = true;
 
   # Remove nixos documentation
   documentation.enable = false;
@@ -21,10 +22,10 @@
   security.polkit.enable = true;
   services.upower.enable = true;
 
-  # enable better shell for all users 
+  # enable better shell for all users
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  
+
   # Define Main User
   users.users.${username} = {
     shell = pkgs.zsh;
