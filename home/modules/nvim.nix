@@ -19,7 +19,6 @@
     imagemagick
     wl-clipboard
     luajitPackages.magick
-    nerdfonts
   ];
   programs.neovim = {
     enable = true;
