@@ -164,7 +164,30 @@
     recursive = true;
   };
   # ags
-  programs.ags = { enable = true; };
+  programs.ags = {
+    enable = true;
+    extraPackages = with pkgs; [
+      gvfs
+      gnome.gvfs
+      gtksourceview
+      webkitgtk_6_0
+      accountsservice
+      pavucontrol
+      bun
+      dart-sass
+      fd
+      brightnessctl
+      swww
+      slurp
+      wf-recorder
+      wl-clipboard
+      wayshot
+      swappy
+      hyprpicker
+      networkmanager
+      gtk3
+    ];
+  };
   home.file.".config/ags" = {
     source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
