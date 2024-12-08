@@ -1,7 +1,32 @@
 { inputs, config, pkgs, ... }: {
   imports = [ inputs.ags.homeManagerModules.default ];
 
-  home.packages = with pkgs; [ electron_30 bun nodejs waypaper swww ];
+  home.packages = with pkgs; [
+    electron_30
+    bun
+    nodejs
+    waypaper
+    swww
+    gvfs
+    gnome.gvfs
+    gtksourceview
+    webkitgtk_6_0
+    accountsservice
+    pavucontrol
+    bun
+    dart-sass
+    fd
+    brightnessctl
+    swww
+    slurp
+    wf-recorder
+    wl-clipboard
+    wayshot
+    swappy
+    hyprpicker
+    networkmanager
+    gtk3
+  ];
   home.file.".config/wp/" = {
     source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.homeDirectory}/.config/logos/dotfiles/wp/";
