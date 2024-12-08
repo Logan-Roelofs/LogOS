@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    ags.url = "github:Aylur/ags";
+    ags.url = "github:aylur/ags/v1";
     hyprland = {
       url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,8 +23,7 @@
       username = "logan";
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
-    in
-    {
+    in {
       # 'sudo nixos-rebuild --flake .#logos'
       nixosConfigurations.logos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs username home-manager; };
