@@ -2,7 +2,7 @@
   fonts.packages = with pkgs; [
     font-awesome
     ubuntu_font_family
-    pkgs.nerdfonts
+    #pkgs.nerdfonts
     monaspace
   ];
   environment.systemPackages = with pkgs;

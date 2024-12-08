@@ -12,4 +12,5 @@
   home.homeDirectory = "/home/${username}";
   nixpkgs.config.allowUnfree = true;
   home.stateVersion = "23.11";
+  font.packages = [ ... ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts)
 }
