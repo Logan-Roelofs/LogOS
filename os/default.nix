@@ -58,7 +58,7 @@
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "23.05";
   nix = {
-    package = pkgs.nixFlakes;
+    package = pkgs.nixVersions.stable;
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
