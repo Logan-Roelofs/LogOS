@@ -2,7 +2,7 @@
   imports = [ inputs.ags.homeManagerModules.default ];
 
   home.packages = with pkgs; [
-    electron_30
+    electron_32
     bun
     nodejs
     waypaper
