@@ -14,7 +14,7 @@
 
   # Enable envfs for user environments (e.g. /bin)
   services.envfs.enable = true;
-  font.packages = [ ... ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
+
   # Remove nixos documentation
   documentation.enable = false;
 
