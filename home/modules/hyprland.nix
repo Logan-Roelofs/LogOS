@@ -6,7 +6,6 @@
     bun
     nodejs
     waypaper
-    swww
     gvfs
     gnome.gvfs
     gtksourceview
@@ -166,31 +165,7 @@
     recursive = true;
   };
   # ags
-  programs.ags = {
-    enable = true;
-    # additional packages to add to gjs's runtime
-    extraPackages = with pkgs; [
-      gvfs
-      gnome.gvfs
-      gtksourceview
-      webkitgtk_6_0
-      accountsservice
-      pavucontrol
-      bun
-      dart-sass
-      fd
-      brightnessctl
-      swww
-      slurp
-      wf-recorder
-      wl-clipboard
-      wayshot
-      swappy
-      hyprpicker
-      networkmanager
-      gtk3
-    ];
-  };
+  programs.ags = { enable = true; };
   home.file.".config/ags" = {
     source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
