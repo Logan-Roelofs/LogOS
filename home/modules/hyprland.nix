@@ -6,7 +6,6 @@
     bun
     nodejs
     waypaper
-    gvfs
     gnome.gvfs
     gtksourceview
     webkitgtk_6_0
