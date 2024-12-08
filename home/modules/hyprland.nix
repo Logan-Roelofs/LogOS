@@ -1,12 +1,7 @@
 { inputs, config, pkgs, ... }: {
   imports = [ inputs.ags.homeManagerModules.default ];
 
-  home.packages = with pkgs; [ 
-    electron_30
-    nodejs
-    waypaper
-    swww
-  ];
+  home.packages = with pkgs; [ electron_30 bun nodejs waypaper swww ];
   home.file.".config/wp/" = {
     source = config.lib.file.mkOutOfStoreSymlink
       "${config.home.homeDirectory}/.config/logos/dotfiles/wp/";
@@ -129,7 +124,7 @@
       ];
     };
   };
-  # desktop entry for gnomes control-center 
+  # desktop entry for gnomes control-center
   xdg.desktopEntries = {
     control-center = {
       name = "control-center";
@@ -139,13 +134,13 @@
       categories = [ "Application" ];
     };
   };
-  # rofi app launcher 
+  # rofi app launcher
   home.file.".config/rofi" = {
     source = config.lib.file.mkOutOfStoreSymlink
-    "${config.home.homeDirectory}/.config/logos/dotfiles/rofi/";
+      "${config.home.homeDirectory}/.config/logos/dotfiles/rofi/";
     recursive = true;
   };
-  # ags 
+  # ags
   programs.ags = {
     enable = true;
     # additional packages to add to gjs's runtime
@@ -176,7 +171,7 @@
       "${config.home.homeDirectory}/.config/logos/dotfiles/ags/";
     recursive = true;
   };
-  # wall papaer 
+  # wall papaer
   home.file.".config/waypaper" = {
     source = ../../dotfiles/wp;
     recursive = true;
