@@ -10,6 +10,7 @@
     ./modules/linux/hyprland.nix
     ./modules/linux/network.nix
     ./modules/linux/ss.nix
+    ./modules/linux/displaymanager.nix
   ];
 
   # Enable envfs for user environments (e.g. /bin)
