@@ -42,7 +42,6 @@
     gimp-with-plugins # Image editor
     inkscape-with-extensions
 
-
     # GUI Applications
     spotify # Music streaming
     appimage-run # AppImage runner
@@ -57,6 +56,7 @@
     hugo # Static site generator
     godot_4 # Game engine
     pipenv
+    nodejs_23 # Node.js
 
     (python3.withPackages (ps: with ps; [ pip requests impacket pyftpdlib ]))
     inputs.nixpkgs-python.packages.x86_64-linux."2.7"
