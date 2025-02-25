@@ -1,5 +1,6 @@
 <div align="center">
   <img src="https://github.com/Logan-Roelofs/LogOS/blob/main/dotfiles/logs-logo-symbolic.svg" width="50" height="50">
+  <img src="https://github.com/Logan-Roelofs/LogOS/blob/main/dotfiles/nix-snowflake-symbolic.svg" width="50" height="50">
   <h1 id="title">LogOS</h1>
 </div>
 
