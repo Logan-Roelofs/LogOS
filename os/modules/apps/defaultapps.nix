@@ -58,8 +58,8 @@
     pipenv
     nodejs_23 # Node.js
 
-    (python3.withPackages (ps: with ps; [ pip requests impacket pyftpdlib ]))
-    inputs.nixpkgs-python.packages.x86_64-linux."2.7"
+    #(python3.withPackages (ps: with ps; [ pip requests impacket pyftpdlib ]))
+    #inputs.nixpkgs-python.packages.x86_64-linux."2.7"
   ];
 
   # This is required to run DaVinci Resolve to run on my AMD APU
