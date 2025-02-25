@@ -3,7 +3,7 @@
     # Security Tools
     rustscan # Fast port scanner
     nmap # Network scanner
-    john # Password cracker
+    # CAUSING BUILD ERROR john # Password cracker
     hashcat # Password cracker
     hash-identifier # Hash identifier
     burpsuite # Web application security testing
