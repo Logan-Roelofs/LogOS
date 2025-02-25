@@ -18,7 +18,6 @@
     ffuf # Fast web fuzzer
     nfs-utils # NFS client
     dig # DNS lookup
-    theharvester # Email, subdomain, and people search
+    # THIS IS CAUSING BUILD TO FAIL... PYTHON SLOWAPI IS BROKEN  theharvester # Email, subdomain, and people search
   ];
 }
-
