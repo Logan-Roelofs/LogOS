@@ -16,9 +16,9 @@
     whatweb # Web scanner
     exploitdb # Exploit database
     ffuf # Fast web fuzzer
-    cewl # Custom word list generator
     nfs-utils # NFS client
     dig # DNS lookup
     theharvester # Email, subdomain, and people search
   ];
 }
+
