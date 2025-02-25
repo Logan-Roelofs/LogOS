@@ -10,7 +10,7 @@
       url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # nixpkgs-python.url = "github:cachix/nixpkgs-python";
+    nixpkgs-python.url = "github:cachix/nixpkgs-python";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
     NixOS-WSL = {
       url = "github:nix-community/NixOS-WSL";
