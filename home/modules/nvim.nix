@@ -4,7 +4,7 @@
     # https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
     pyright
     quick-lint-js
-    javascript-typescript-langserver
+    # THIS IS CAUSING ISSUES WITH BUILD javascript-typescript-langserver
 
     # List of formatters:
     # https://github.com/stevearc/conform.nvim?tab=readme-ov-file#formatters
