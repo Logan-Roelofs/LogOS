@@ -56,5 +56,12 @@
           }
         ];
       };
+      # 'sudo nixos-rebuild --flake .#iso'
+      nixosConfigurations.iso = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs username; };
+        modules = [
+          ./os/default.nix
+        ];
+      };
     };
 }
