@@ -100,7 +100,8 @@
 
       "$mainMod" = "SUPER";
 
-      windowrule = [ "tile,title:^(kitty)$" "tile,steam_app_2379780" ];
+      windowrule =
+        [ "tile,title:^(kitty)$" "tile,title:^(steam_app_2379780)$" ];
 
       bind = [
         "$mainMod, Q, exec, kitty"
